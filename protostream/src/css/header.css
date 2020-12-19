@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(0, 12, 29);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 2%;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+li {
+  color: rgb(212, 212, 212);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+li:hover {
+  color: white;
+  transform: scale(1.2);
+}
