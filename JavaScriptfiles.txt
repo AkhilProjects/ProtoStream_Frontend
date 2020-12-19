@@ -1,4 +1,4 @@
 Particle.js
-SmoothScroll.js
+SmoothScrollbar.js
 Anime.js
 KUTE.js
