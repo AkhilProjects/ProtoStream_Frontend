@@ -1,4 +1,11 @@
 :root {
-  --primary: ;
-  --
+  --primary: #233142;
+  --primary-altr: #222831;
+  --primary-sec: #455d7a;
+  --primary-sec-altr: #38414e;
+  --secondary: #f95959;
+  --secondary-altr: #5c5abb;
+  --secondary-sec: #e3e3e3;
+  --secondary-sec-altr: #97a2b2;
+  --text-hover: #ffffff;
 }
