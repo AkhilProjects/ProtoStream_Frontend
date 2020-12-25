@@ -1,0 +1,76 @@
+body {
+  overflow-x: hidden;
+  background: linear-gradient(120deg, #182539, #213c56, #0a1721);
+}
+.landing-page {
+  height: 95vh;
+  color: #fff;
+  width: 100%;
+
+  .landing-page-container {
+    display: flex;
+    padding: 2%;
+
+    .hero-details {
+      width: 50%;
+      display: grid;
+      place-content: center;
+      padding: 3%;
+
+      .hero-heading {
+        width: 90%;
+        font-size: 6vmin;
+        margin-bottom: 2%;
+        user-select: none;
+      }
+
+      .sub-head {
+        font-size: 2vmin;
+        margin-bottom: 1%;
+        color: rgba(255, 255, 255, 0.6);
+        user-select: none;
+      }
+      span {
+        font-size: 2.1vmin;
+        user-select: none;
+      }
+      .register {
+        width: 20%;
+        font-size: 2.3vmin;
+        text-shadow: 0 0 5px black;
+        padding: 2%;
+        border-radius: 2px;
+        margin-top: 10%;
+        background-color: #71b939;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .register:hover {
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
+      }
+    }
+
+    .hero-image {
+      width: 50%;
+      pointer-events: none;
+      user-select: none;
+
+      .circle {
+        position: absolute;
+        right: -10%;
+        width: 90vh;
+        height: 90vh;
+        border-radius: 50%;
+        background-color: rgba(170, 170, 170, 0.13);
+      }
+
+      .landing-page-fox {
+        width: 60%;
+        position: relative;
+        left: 20%;
+      }
+    }
+  }
+}

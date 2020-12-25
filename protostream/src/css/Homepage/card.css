@@ -1,0 +1,14 @@
+.card img {
+  width: 80%;
+}
+
+.card .Job-name {
+  background: linear-gradient(91.32deg, #85ea9d 35.95%, #5ab0cb 154.03%);
+  background-clip: text;
+  color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5% auto;
+}
+/*# sourceMappingURL=card.css.map */

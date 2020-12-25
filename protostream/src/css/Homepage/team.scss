@@ -1,0 +1,50 @@
+.team {
+  width: 100%;
+  height: 96vh;
+  background-color: #ffffff;
+  padding-top: 2%;
+  text-align: center;
+
+  .heading {
+    text-align: center;
+    background: linear-gradient(91.32deg, #85ea9d 35.95%, #5ab0cb 154.03%);
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    margin: auto;
+    font-size: 6vmin;
+    margin-bottom: 2%;
+    user-select: none;
+  }
+  .sub-head {
+    font-size: 3vmin;
+    user-select: none;
+  }
+
+  .cards {
+    display: flex;
+    width: 80%;
+    margin: 4% auto;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .internships {
+    width: 15%;
+    font-size: 2.3vmin;
+    text-shadow: 0 0 5px black;
+    padding: 1%;
+    border-radius: 2px;
+    background-color: #71b939;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .internships:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
+  }
+}

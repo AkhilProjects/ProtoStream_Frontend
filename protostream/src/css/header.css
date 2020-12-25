@@ -1,71 +1,79 @@
-@import "./Variable-Dark.css";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-.logo {
-  color: var(--text-hover);
-  font-size: 22px;
-}
-
 .header {
+  color: white;
+  padding: 0 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(5px);
-  width: 100%;
-  background-color: var(--primary-altr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-ul {
+.header .logo {
+  font-size: 3vmin;
+  color: #71b939;
+  text-shadow: 0 0 5px black;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  width: 40%;
-  color: var(--secondary-sec);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
-  /* background-color: blue; */
+  width: 40%;
 }
-li {
+
+.header ul li {
+  font-size: 2vmin;
   cursor: pointer;
-  transition: all 0.1s ease-in;
-  /* background-color: red; */
-  padding: 3%;
-  transition: all 0.2s ease-in-out;
-  border-bottom: 4px solid transparent;
-  min-width: fit-content;
-  width: 100%;
+  padding: 2%;
+  border-radius: 10px;
+  color: #ffffffbb;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.active {
-  background-color: #1b2129;
-  color: white;
-  border-bottom: 4px solid #5c5abb;
+.header ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffff;
 }
 
-li:hover {
-  color: white;
-  /* transform: scale(1.05); */
+.header .btns {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.login-btn {
-  padding: 0.5% 2%;
-  font-size: 1.2em;
-  color: var(--text-hover);
+.header .btns .btn {
   border: none;
-  border-radius: 5px;
-  background-color: var(--secondary-altr);
+  font-size: 2.4vmin;
+  padding: 1vmin 2vmin;
   cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.login-btn:hover {
-  background-color: #5c5abb9c;
+.header .btns .btn:hover {
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
 }
+
+.header .btns .login-btn {
+  background-color: #71b939;
+  color: #ffffff;
+  text-shadow: 0 0 5px black;
+}
+
+.header .btns .signup-btn {
+  color: black;
+}
+/*# sourceMappingURL=header.css.map */

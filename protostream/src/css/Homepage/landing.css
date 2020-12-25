@@ -1,0 +1,98 @@
+body {
+  overflow-x: hidden;
+  background: linear-gradient(120deg, #182539, #213c56, #0a1721);
+}
+
+.landing-page {
+  height: 95vh;
+  color: #fff;
+  width: 100%;
+}
+
+.landing-page .landing-page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+}
+
+.landing-page .landing-page-container .hero-details {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 3%;
+}
+
+.landing-page .landing-page-container .hero-details .hero-heading {
+  width: 90%;
+  font-size: 6vmin;
+  margin-bottom: 2%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.landing-page .landing-page-container .hero-details .sub-head {
+  font-size: 2vmin;
+  margin-bottom: 1%;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.landing-page .landing-page-container .hero-details span {
+  font-size: 2.1vmin;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.landing-page .landing-page-container .hero-details .register {
+  width: 20%;
+  font-size: 2.3vmin;
+  text-shadow: 0 0 5px black;
+  padding: 2%;
+  border-radius: 2px;
+  margin-top: 10%;
+  background-color: #71b939;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.landing-page .landing-page-container .hero-details .register:hover {
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
+}
+
+.landing-page .landing-page-container .hero-image {
+  width: 50%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.landing-page .landing-page-container .hero-image .circle {
+  position: absolute;
+  right: -10%;
+  width: 90vh;
+  height: 90vh;
+  border-radius: 50%;
+  background-color: rgba(170, 170, 170, 0.13);
+}
+
+.landing-page .landing-page-container .hero-image .landing-page-fox {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+/*# sourceMappingURL=landing.css.map */

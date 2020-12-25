@@ -6,12 +6,16 @@ const Header = () => {
     <header className="header">
       <h3 className="logo">ProtoStream</h3>
       <ul>
-        <li className="active">Home</li>
-        <li>Resources</li>
+        <li>Home</li>
+        <li>Projects</li>
+        <li>Internships</li>
+        <li>Schemes</li>
         <li>About</li>
-        <li>Technical Skills</li>
       </ul>
-      <button className="login-btn">Login</button>
+      <div className="btns">
+        <button className="btn login-btn">Login</button>
+        <button className="btn signup-btn">Sign up</button>
+      </div>
     </header>
   );
 };
