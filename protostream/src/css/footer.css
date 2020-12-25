@@ -1,0 +1,85 @@
+.footer {
+  width: 100%;
+  background-color: #0f0f0f;
+  color: white;
+  padding: 3% 0;
+  font-size: 2.2vmin;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 1%;
+}
+
+.footer .container .box .head,
+.footer .container .box .logo {
+  width: 70%;
+  padding: 2%;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.253);
+  font-size: 4vmin;
+}
+
+.footer .container .box .para {
+  color: #747171;
+  font-weight: lighter;
+  line-height: 2;
+}
+
+.footer .container .box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .container .box ul li {
+  color: #747171;
+  font-weight: lighter;
+  line-height: 2;
+}
+
+.footer .container .box ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+
+.footer .social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.footer .social-media ul li {
+  font-size: 4vmin;
+  color: #747171;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.footer .social-media ul li:hover {
+  color: white;
+}
+/*# sourceMappingURL=footer.css.map */
