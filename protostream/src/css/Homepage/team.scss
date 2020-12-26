@@ -11,6 +11,7 @@
     background-clip: text;
     color: transparent;
     width: fit-content;
+    font-family: 'Poppins', sans-serif;
     margin: auto;
     font-size: 6vmin;
     margin-bottom: 2%;
@@ -19,6 +20,7 @@
   .sub-head {
     font-size: 3vmin;
     user-select: none;
+    font-family: 'Poppins', sans-serif;
   }
 
   .cards {
@@ -42,6 +44,7 @@
     border: none;
     cursor: pointer;
     transition: all 0.2s ease;
+    font-family: 'Rubik', sans-serif;
   }
 
   .internships:hover {

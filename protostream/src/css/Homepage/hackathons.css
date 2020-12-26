@@ -1,0 +1,68 @@
+.Hackathon-page {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-image: url(../../assets/images/Hackathon.gif);
+  background-repeat: repeat;
+}
+
+.Hackathon-page .hackathon-page-container {
+  margin: 0;
+  padding: 3%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Hackathon-page .hackathon-page-container .head-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.Hackathon-page .hackathon-page-container .head-sec .head {
+  font-family: "Poppins", sans-serif;
+  font-size: 7vmin;
+  width: 70%;
+}
+
+.Hackathon-page .hackathon-page-container .sub-head-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  width: 40%;
+  padding: 4%;
+  padding-bottom: 0;
+}
+
+.Hackathon-page .hackathon-page-container .sub-head-sec .sub-head {
+  font-size: 3vmin;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Hackathon-page .hackathon-page-container .sub-head-sec .hackathons {
+  background: linear-gradient(93.53deg, #69ddad 19.6%, #409784 93.87%);
+  width: 25%;
+  font-size: 2.3vmin;
+  text-shadow: 0 0 5px black;
+  padding: 2%;
+  border-radius: 2px;
+  margin-top: 5%;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=hackathons.css.map */

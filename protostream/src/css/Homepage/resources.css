@@ -1,0 +1,84 @@
+body {
+  overflow-x: hidden;
+}
+
+.resources-page {
+  height: 100vh;
+  color: #fff;
+  background-color: #0F161E;
+  width: 100%;
+}
+
+.resources-page .resources-page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+}
+
+.resources-page .resources-page-container .hero-details {
+  width: 40%;
+  padding: 3%;
+}
+
+.resources-page .resources-page-container .hero-details .hero-heading {
+  width: 90%;
+  font-size: 7vmin;
+  margin-bottom: 4%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.resources-page .resources-page-container .hero-details .sub-head {
+  font-size: 3vmin;
+  margin-bottom: 1%;
+  font-family: "Montserrat", sans-serif;
+  color: #B1B1B1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.resources-page .resources-page-container .hero-details .hackathons {
+  width: 25%;
+  font-size: 2.3vmin;
+  text-shadow: 0 0 5px black;
+  padding: 2%;
+  border-radius: 2px;
+  margin-top: 10%;
+  background: linear-gradient(93.53deg, #1d78c4 19.6%, #9a7df1 93.87%);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.resources-page .resources-page-container .hero-details .hackathons:hover {
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
+  background: linear-gradient(93.53deg, #9a7df1, #1d78c4);
+}
+
+.resources-page .resources-page-container .hero-image {
+  width: 60%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.resources-page .resources-page-container .hero-image .resources-image {
+  width: 90vmin;
+  height: 90vmin;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=resources.css.map */

@@ -1,0 +1,90 @@
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+.prototyping-page {
+  height: 100vh;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+
+  .prototyping-page-container {
+    display: flex;
+    padding: 2%;
+
+    .hero-details {
+      width: 50%;
+      display: grid;
+      place-content: center;
+      padding: 5%;
+
+      .hero-heading {
+        width: 90%;
+        font-size: 7vmin;
+        background: linear-gradient(
+          90.85deg,
+          rgba(251, 204, 2, 0.9) 17.75%,
+          rgba(236, 138, 0, 0.9) 30.49%,
+          rgba(237, 66, 158, 0.9) 45%,
+          rgba(157, 74, 213, 0.9) 60.92%,
+          rgba(0, 206, 249, 0.9) 74.37%
+        );
+        font-family: "Poppins", sans-serif;
+        background-clip: text;
+        color: transparent;
+        width: fit-content;
+        margin-bottom: 5%;
+        user-select: none;
+      }
+
+      .sub-head {
+        font-size: 3vmin;
+        margin-bottom: 1%;
+        // color: rgba(255, 255, 255, 0.6);
+        font-family: "Montserrat", sans-serif;
+        // font-weight: bold;
+        color: #55585e;
+        width: 80%;
+        user-select: none;
+      }
+      span {
+        font-size: 3.1vmin;
+        user-select: none;
+         font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        color: #55585e
+      }
+      .learn-more {
+        width: 25%;
+        font-size: 2.3vmin;
+        text-shadow: 0 0 5px black;
+        padding: 2%;
+        border-radius: 2px;
+        font-family: 'Rubik', sans-serif;
+        margin-top: 10%;
+        background: linear-gradient(93.53deg, #fbd11b 19.6%, #f09d1a 93.87%);
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .learn-more:hover {
+        box-shadow: 0px 5px 4px 0px #00000052;
+        // transform: scale(1.1);
+      }
+    }
+
+    .hero-image {
+      width: 50%;
+      pointer-events: none;
+      user-select: none;
+
+      .prototyping-image {
+        width: 100%;
+        position: relative;
+        left: 10%;
+        top: 40%;
+      }
+    }
+  }
+}

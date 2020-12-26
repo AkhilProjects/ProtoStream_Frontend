@@ -29,6 +29,7 @@
   padding: 2%;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.253);
   font-size: 4vmin;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer .container .box .para {

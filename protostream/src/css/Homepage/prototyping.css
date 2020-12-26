@@ -1,0 +1,104 @@
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.prototyping-page {
+  height: 100vh;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+}
+
+.prototyping-page .prototyping-page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+}
+
+.prototyping-page .prototyping-page-container .hero-details {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 5%;
+}
+
+.prototyping-page .prototyping-page-container .hero-details .hero-heading {
+  width: 90%;
+  font-size: 7vmin;
+  background: linear-gradient(90.85deg, rgba(251, 204, 2, 0.9) 17.75%, rgba(236, 138, 0, 0.9) 30.49%, rgba(237, 66, 158, 0.9) 45%, rgba(157, 74, 213, 0.9) 60.92%, rgba(0, 206, 249, 0.9) 74.37%);
+  font-family: "Poppins", sans-serif;
+  background-clip: text;
+  color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 5%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.prototyping-page .prototyping-page-container .hero-details .sub-head {
+  font-size: 3vmin;
+  margin-bottom: 1%;
+  font-family: "Montserrat", sans-serif;
+  color: #55585e;
+  width: 80%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.prototyping-page .prototyping-page-container .hero-details span {
+  font-size: 3.1vmin;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  color: #55585e;
+}
+
+.prototyping-page .prototyping-page-container .hero-details .learn-more {
+  width: 25%;
+  font-size: 2.3vmin;
+  text-shadow: 0 0 5px black;
+  padding: 2%;
+  border-radius: 2px;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 10%;
+  background: linear-gradient(93.53deg, #fbd11b 19.6%, #f09d1a 93.87%);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.prototyping-page .prototyping-page-container .hero-details .learn-more:hover {
+  -webkit-box-shadow: 0px 5px 4px 0px #00000052;
+          box-shadow: 0px 5px 4px 0px #00000052;
+}
+
+.prototyping-page .prototyping-page-container .hero-image {
+  width: 50%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.prototyping-page .prototyping-page-container .hero-image .prototyping-image {
+  width: 100%;
+  position: relative;
+  left: 10%;
+  top: 40%;
+}
+/*# sourceMappingURL=prototyping.css.map */

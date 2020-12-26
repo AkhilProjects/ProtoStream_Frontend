@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  background: linear-gradient(120deg, #182539, #213c56, #0a1721);
+  background: linear-gradient(115.06deg, #182539 24.03%, #213c56 58.07%, #0a1721 94.99%);
 }
 
 .landing-page {
@@ -27,6 +27,7 @@ body {
 .landing-page .landing-page-container .hero-details .hero-heading {
   width: 90%;
   font-size: 6vmin;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 2%;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -35,25 +36,31 @@ body {
 }
 
 .landing-page .landing-page-container .hero-details .sub-head {
-  font-size: 2vmin;
+  font-size: 3vmin;
+  width: 80%;
   margin-bottom: 1%;
   color: rgba(255, 255, 255, 0.6);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
 }
 
 .landing-page .landing-page-container .hero-details span {
-  font-size: 2.1vmin;
+  font-size: 3.2vmin;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
 }
 
 .landing-page .landing-page-container .hero-details .register {
   width: 20%;
+  font-family: "Rubik", sans-serif;
   font-size: 2.3vmin;
   text-shadow: 0 0 5px black;
   padding: 2%;
