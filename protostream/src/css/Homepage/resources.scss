@@ -5,7 +5,7 @@ body {
 .resources-page {
   height: 100vh;
   color: #fff;
-  background-color: #0F161E;
+  background-color: #0f161e;
   width: 100%;
 
   .resources-page-container {
@@ -30,7 +30,7 @@ body {
         font-size: 3vmin;
         margin-bottom: 1%;
         font-family: "Montserrat", sans-serif;
-        color: #B1B1B1;
+        color: #b1b1b1;
         user-select: none;
       }
 
@@ -48,8 +48,13 @@ body {
         transition: all 1s ease;
       }
       .hackathons:hover {
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
-        background: linear-gradient(93.53deg, #9a7df1, #1d78c4);
+        background-image: linear-gradient(
+          90deg,
+          #1d78c4 0%,
+          #9a7df1 40%,
+          #1d78c4 80%
+        );
+        animation: slidebg 10s linear infinite;
       }
     }
 

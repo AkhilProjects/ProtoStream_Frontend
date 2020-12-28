@@ -10,7 +10,7 @@ import Team from "./components/Home/Team";
 const Home = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <LandingPage />
       <Team />
       <Prototyping />

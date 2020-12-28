@@ -21,20 +21,24 @@ body {
       .hero-heading {
         width: 90%;
         font-size: 7vmin;
-        background: linear-gradient(
-          90.85deg,
-          rgba(251, 204, 2, 0.9) 17.75%,
-          rgba(236, 138, 0, 0.9) 30.49%,
-          rgba(237, 66, 158, 0.9) 45%,
-          rgba(157, 74, 213, 0.9) 60.92%,
-          rgba(0, 206, 249, 0.9) 74.37%
+
+        background-image: linear-gradient(
+          90deg,
+          #fbcc02e6 0%,
+          #ec8a00e6 29%,
+          #ed429ee6 40%,
+          #9d4ad5e6 60%,
+          #00cef9e6 80%,
+          #fbcc02e6 100%
         );
+        animation: slidebg 13s linear infinite;
         font-family: "Poppins", sans-serif;
         background-clip: text;
         color: transparent;
         width: fit-content;
         margin-bottom: 5%;
         user-select: none;
+        transition: all 1s ease;
       }
 
       .sub-head {
@@ -50,9 +54,9 @@ body {
       span {
         font-size: 3.1vmin;
         user-select: none;
-         font-family: "Montserrat", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: normal;
-        color: #55585e
+        color: #55585e;
       }
       .learn-more {
         width: 25%;
@@ -60,17 +64,23 @@ body {
         text-shadow: 0 0 5px black;
         padding: 2%;
         border-radius: 2px;
-        font-family: 'Rubik', sans-serif;
+        font-family: "Rubik", sans-serif;
         margin-top: 10%;
         background: linear-gradient(93.53deg, #fbd11b 19.6%, #f09d1a 93.87%);
         color: #ffffff;
         border: none;
         cursor: pointer;
-        transition: all 0.2s ease;
+        transition: all 0.8s ease;
       }
       .learn-more:hover {
-        box-shadow: 0px 5px 4px 0px #00000052;
-        // transform: scale(1.1);
+        // box-shadow: 0px 5px 4px 0px #00000052;
+        background-image: linear-gradient(
+          90deg,
+          #f09d1a 0%,
+          #fbd11b 40%,
+          #f09d1a 80%
+        );
+        animation: slidebg 13s linear infinite;
       }
     }
 
@@ -86,5 +96,11 @@ body {
         top: 40%;
       }
     }
+  }
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 140vw;
   }
 }

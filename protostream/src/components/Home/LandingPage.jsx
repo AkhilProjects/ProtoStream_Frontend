@@ -7,9 +7,16 @@ const LandingPage = () => {
     <div className="landing-page">
       <div className="landing-page-container">
         <div className="hero-details">
-          <h1 className="hero-heading">
+          {/* <h1 className="hero-heading">
             Building the Future, One Idea at a time.
-          </h1>
+          </h1> */}
+          <div
+            class="glitch"
+            data-text="Building the Future, One Idea at a time."
+          >
+            Building the Future, One Idea at a time.
+          </div>
+          <div class="glow">CYBERCOUNTESS</div>
           <p className="sub-head">
             Ideas and Dreams are what makes Entrepreneurs different , but those
             dreams turned into reality is what makes the world different.

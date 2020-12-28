@@ -28,7 +28,10 @@ body {
 .prototyping-page .prototyping-page-container .hero-details .hero-heading {
   width: 90%;
   font-size: 7vmin;
-  background: linear-gradient(90.85deg, rgba(251, 204, 2, 0.9) 17.75%, rgba(236, 138, 0, 0.9) 30.49%, rgba(237, 66, 158, 0.9) 45%, rgba(157, 74, 213, 0.9) 60.92%, rgba(0, 206, 249, 0.9) 74.37%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fbcc02e6), color-stop(29%, #ec8a00e6), color-stop(40%, #ed429ee6), color-stop(60%, #9d4ad5e6), color-stop(80%, #00cef9e6), to(#fbcc02e6));
+  background-image: linear-gradient(90deg, #fbcc02e6 0%, #ec8a00e6 29%, #ed429ee6 40%, #9d4ad5e6 60%, #00cef9e6 80%, #fbcc02e6 100%);
+  -webkit-animation: slidebg 13s linear infinite;
+          animation: slidebg 13s linear infinite;
   font-family: "Poppins", sans-serif;
   background-clip: text;
   color: transparent;
@@ -40,6 +43,8 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .prototyping-page .prototyping-page-container .hero-details .sub-head {
@@ -71,19 +76,21 @@ body {
   text-shadow: 0 0 5px black;
   padding: 2%;
   border-radius: 2px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   margin-top: 10%;
   background: linear-gradient(93.53deg, #fbd11b 19.6%, #f09d1a 93.87%);
   color: #ffffff;
   border: none;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 .prototyping-page .prototyping-page-container .hero-details .learn-more:hover {
-  -webkit-box-shadow: 0px 5px 4px 0px #00000052;
-          box-shadow: 0px 5px 4px 0px #00000052;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f09d1a), color-stop(40%, #fbd11b), color-stop(80%, #f09d1a));
+  background-image: linear-gradient(90deg, #f09d1a 0%, #fbd11b 40%, #f09d1a 80%);
+  -webkit-animation: slidebg 13s linear infinite;
+          animation: slidebg 13s linear infinite;
 }
 
 .prototyping-page .prototyping-page-container .hero-image {
@@ -100,5 +107,17 @@ body {
   position: relative;
   left: 10%;
   top: 40%;
+}
+
+@-webkit-keyframes slidebg {
+  to {
+    background-position: 140vw;
+  }
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 140vw;
+  }
 }
 /*# sourceMappingURL=prototyping.css.map */

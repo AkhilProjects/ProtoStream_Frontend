@@ -5,7 +5,7 @@ body {
 .resources-page {
   height: 100vh;
   color: #fff;
-  background-color: #0F161E;
+  background-color: #0f161e;
   width: 100%;
 }
 
@@ -36,7 +36,7 @@ body {
   font-size: 3vmin;
   margin-bottom: 1%;
   font-family: "Montserrat", sans-serif;
-  color: #B1B1B1;
+  color: #b1b1b1;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -59,9 +59,10 @@ body {
 }
 
 .resources-page .resources-page-container .hero-details .hackathons:hover {
-  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
-          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
-  background: linear-gradient(93.53deg, #9a7df1, #1d78c4);
+  background-image: -webkit-gradient(linear, left top, right top, from(#1d78c4), color-stop(40%, #9a7df1), color-stop(80%, #1d78c4));
+  background-image: linear-gradient(90deg, #1d78c4 0%, #9a7df1 40%, #1d78c4 80%);
+  -webkit-animation: slidebg 10s linear infinite;
+          animation: slidebg 10s linear infinite;
 }
 
 .resources-page .resources-page-container .hero-image {

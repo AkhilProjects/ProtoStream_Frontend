@@ -4,8 +4,9 @@
   padding: 0;
   margin: 0;
   background-image: url(../../assets/images/Hackathon.gif);
-  // background-size: cover;
-  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
   .hackathon-page-container {
     margin: 0;
@@ -52,6 +53,18 @@
         cursor: pointer;
         // transition: all 1s ease;
       }
+
+      .hackathons:hover {
+        background-image: linear-gradient(
+          90deg,
+          #409784 0%,
+          #69ddad 40%,
+          #409784 80%
+        );
+        animation: slidebg 10s linear infinite;
+      }
     }
   }
 }
+
+
