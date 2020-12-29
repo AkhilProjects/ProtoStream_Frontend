@@ -1,6 +1,8 @@
 import React from "react";
 import "../../css/Homepage/resources.css";
 import Resource from "../../assets/images/Resources.jpg";
+import { NavLink } from "react-router-dom";
+
 
 const Resources = () => {
   return (
@@ -13,7 +15,9 @@ const Resources = () => {
             prepare, learn and create new techologies and Learn Business and
             Entrepreneurship
           </p>
-          <button className="hackathons">Hackathons</button>
+          <NavLink to="/internships" className="buttons">
+            <button className="hackathons">Hackathons</button>
+          </NavLink>
         </div>
         <div className="hero-image">
           <img src={Resource} alt="" className="resources-image" />

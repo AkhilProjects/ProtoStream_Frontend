@@ -8,6 +8,7 @@
   .logo {
     font-size: 3vmin;
     color: #71b939;
+    text-decoration: none;
     text-shadow: 0 0 5px black;
   }
 
@@ -17,16 +18,20 @@
     list-style: none;
     width: 40%;
 
-    li {
+    .navlink {
       font-size: 2vmin;
       cursor: pointer;
       padding: 2%;
       border-radius: 10px;
+      text-decoration: none;
       color: #ffffffbb;
       transition: all 0.2s ease;
     }
 
-    li:hover {
+    li {
+    }
+
+    .navlink:hover {
       background-color: rgba(255, 255, 255, 0.2);
       color: #ffff;
     }

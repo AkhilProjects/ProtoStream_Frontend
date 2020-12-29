@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/Homepage/prototyping.css";
 import prototyping from "../../assets/images/prototyping.png";
+import { NavLink } from "react-router-dom";
 
 const Prototyping = () => {
   return (
@@ -16,7 +17,9 @@ const Prototyping = () => {
           <span>
             From Business Plan to Prototypes to Product , we’ll get you covered.
           </span>
-          <button className="learn-more">Learn more</button>
+          <NavLink to="/projects" className="buttons">
+            <button className="learn-more">Learn more</button>
+          </NavLink>
         </div>
         <div className="hero-image">
           <img src={prototyping} alt="" className="prototyping-image" />

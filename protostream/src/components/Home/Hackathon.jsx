@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/Homepage/hackathons.css";
+import { NavLink } from "react-router-dom";
 
 const Hackathon = () => {
   return (
@@ -13,7 +14,9 @@ const Hackathon = () => {
             Get Details about the latest Inter-College Competitions , Hackathons
             , Programs and Coding Events and Register at your ease
           </p>
-          <button className="hackathons">Hackathons</button>
+          <NavLink to="/internships" className="buttons">
+            <button className="hackathons">Hackathons</button>
+          </NavLink>
         </div>
       </div>
     </div>

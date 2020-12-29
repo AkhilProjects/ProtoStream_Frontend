@@ -1,11 +1,11 @@
 import React from "react";
 
-const Resources = () => {
+const Projects = () => {
   return (
     <div>
-      <h1>This is the Resources Page</h1>
+      <h1>This is the Projects Page</h1>
     </div>
   );
 }
 
-export default Resources;
+export default Projects;

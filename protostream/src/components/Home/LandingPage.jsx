@@ -1,7 +1,8 @@
 import React from "react";
 import "../../css/Homepage/landing.css";
 import LandingPagefox from "../../assets/images/LandingPageFox.png";
-
+import { NavLink } from "react-router-dom";
+ 
 const LandingPage = () => {
   return (
     <div className="landing-page">
@@ -16,13 +17,14 @@ const LandingPage = () => {
           >
             Building the Future, One Idea at a time.
           </div>
-          <div class="glow">CYBERCOUNTESS</div>
           <p className="sub-head">
             Ideas and Dreams are what makes Entrepreneurs different , but those
             dreams turned into reality is what makes the world different.
           </p>
           <span>You know what valuable company is nobody building ?</span>
-          <button className="register">Register</button>
+          <NavLink to="/signup" className="buttons">
+            <button className="register">Register</button>
+          </NavLink>
         </div>
         <div className="hero-image">
           <div className="circle"></div>
