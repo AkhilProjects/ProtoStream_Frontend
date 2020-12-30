@@ -17,11 +17,11 @@
 
       .head,
       .logo {
-        width: 70%;
+        width: fit-content;
         padding: 2%;
         border-bottom: 0.5px solid rgba(255, 255, 255, 0.253);
         font-size: 4vmin;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
       }
 
       .para {
@@ -69,6 +69,39 @@
 
       li:hover {
         color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer {
+    .container {
+      flex-direction: column;
+
+      .box {
+        .head,
+        .logo {
+          font-size: 25px;
+          width: fit-content;
+        }
+
+        .para {
+          font-size: 16px;
+        }
+
+        ul {
+          font-size: 16px;
+        }
+      }
+    }
+    .social-media {
+      ul {
+        width: 70%;
+        margin: 2%;
+        li {
+          font-size: 25px;
+        }
       }
     }
   }

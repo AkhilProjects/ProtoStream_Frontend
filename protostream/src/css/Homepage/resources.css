@@ -82,4 +82,46 @@ body {
   position: relative;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 414px) {
+  .resources-page {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .resources-page .resources-page-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .resources-page .resources-page-container .hero-details {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .resources-page .resources-page-container .hero-details .hero-heading {
+    width: 90%;
+    font-size: 50px;
+    margin: 5% auto;
+  }
+  .resources-page .resources-page-container .hero-details .sub-head {
+    font-size: 20px;
+    margin: 10% auto;
+    width: 90%;
+  }
+  .resources-page .resources-page-container .hero-details .hackathons {
+    font-size: 20px;
+    width: 50%;
+    margin: 10%;
+  }
+  .resources-page .resources-page-container .hero-image {
+    width: 100%;
+  }
+  .resources-page .resources-page-container .hero-image .resources-image {
+    width: 100%;
+    border-radius: 0;
+  }
+}
 /*# sourceMappingURL=resources.css.map */

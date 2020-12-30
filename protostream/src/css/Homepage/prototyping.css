@@ -120,4 +120,46 @@ body {
     background-position: 140vw;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .prototyping-page {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .prototyping-page .prototyping-page-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .prototyping-page .prototyping-page-container .hero-details {
+    width: 80%;
+    margin: 3% auto;
+    text-align: center;
+  }
+  .prototyping-page .prototyping-page-container .hero-details .hero-heading {
+    font-size: 50px;
+    width: 100%;
+  }
+  .prototyping-page .prototyping-page-container .hero-details .sub-head {
+    font-size: 20px;
+    width: 100%;
+  }
+  .prototyping-page .prototyping-page-container .hero-details span {
+    margin: 5% 0;
+    font-size: 22px;
+  }
+  .prototyping-page .prototyping-page-container .hero-details .learn-more {
+    width: 50%;
+    font-size: 20px;
+  }
+  .prototyping-page .prototyping-page-container .hero-image {
+    width: 100%;
+  }
+  .prototyping-page .prototyping-page-container .hero-image .prototyping-image {
+    left: 0;
+  }
+}
 /*# sourceMappingURL=prototyping.css.map */

@@ -9,7 +9,14 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: 'Poppins', sans-serif;
+  font-size: 5vmin;
+  font-family: "Poppins", sans-serif;
   margin: 5% auto;
+}
+
+@media screen and (max-width: 414px) {
+  .card {
+    margin: 20px 0;
+  }
 }
 /*# sourceMappingURL=card.css.map */

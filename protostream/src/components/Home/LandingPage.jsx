@@ -2,7 +2,7 @@ import React from "react";
 import "../../css/Homepage/landing.css";
 import LandingPagefox from "../../assets/images/LandingPageFox.png";
 import { NavLink } from "react-router-dom";
- 
+
 const LandingPage = () => {
   return (
     <div className="landing-page">

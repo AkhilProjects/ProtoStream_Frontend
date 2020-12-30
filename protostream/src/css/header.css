@@ -78,4 +78,13 @@
 .header .btns .signup-btn {
   color: black;
 }
+
+@media screen and (max-width: 414px) {
+  .header {
+    padding: 0 2%;
+  }
+  .header .logo {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=header.css.map */

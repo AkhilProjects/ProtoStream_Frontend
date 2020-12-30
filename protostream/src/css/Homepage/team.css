@@ -71,4 +71,31 @@
   -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
 }
+
+@media screen and (max-width: 414px) {
+  .team {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .team .heading {
+    font-size: 45px;
+    margin-top: 80px;
+  }
+  .team .sub-head {
+    font-size: 20px;
+  }
+  .team .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team .internships {
+    font-size: 20px;
+    width: 50%;
+    margin: 5% 0;
+    margin-bottom: 100px;
+  }
+}
 /*# sourceMappingURL=team.css.map */

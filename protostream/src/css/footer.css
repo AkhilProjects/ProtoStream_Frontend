@@ -25,11 +25,13 @@
 
 .footer .container .box .head,
 .footer .container .box .logo {
-  width: 70%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 2%;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.253);
   font-size: 4vmin;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer .container .box .para {
@@ -82,5 +84,34 @@
 
 .footer .social-media ul li:hover {
   color: white;
+}
+
+@media screen and (max-width: 414px) {
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .container .box .head,
+  .footer .container .box .logo {
+    font-size: 25px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer .container .box .para {
+    font-size: 16px;
+  }
+  .footer .container .box ul {
+    font-size: 16px;
+  }
+  .footer .social-media ul {
+    width: 70%;
+    margin: 2%;
+  }
+  .footer .social-media ul li {
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

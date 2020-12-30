@@ -74,4 +74,51 @@
   -webkit-animation: slidebg 10s linear infinite;
           animation: slidebg 10s linear infinite;
 }
+
+@media screen and (max-width: 414px) {
+  .Hackathon-page {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .Hackathon-page .hackathon-page-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .Hackathon-page .hackathon-page-container .head-sec {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Hackathon-page .hackathon-page-container .head-sec .head {
+    font-size: 40px;
+    width: 90%;
+  }
+  .Hackathon-page .hackathon-page-container .sub-head-sec {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2%;
+  }
+  .Hackathon-page .hackathon-page-container .sub-head-sec .sub-head {
+    font-size: 20px;
+    width: 100%;
+  }
+  .Hackathon-page .hackathon-page-container .sub-head-sec .hackathons {
+    font-size: 20px;
+    width: 50%;
+    margin: 10% 0;
+  }
+}
 /*# sourceMappingURL=hackathons.css.map */

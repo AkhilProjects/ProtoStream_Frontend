@@ -104,3 +104,48 @@ body {
     background-position: 140vw;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .prototyping-page {
+    height: fit-content;
+
+    .prototyping-page-container {
+      flex-direction: column;
+      padding: 0;
+
+      .hero-details {
+        width: 80%;
+        margin: 3% auto;
+        text-align: center;
+
+        .hero-heading {
+          font-size: 50px;
+          width: 100%;
+        }
+
+        .sub-head {
+          font-size: 20px;
+          width: 100%;
+        }
+
+        span {
+          margin: 5% 0;
+          font-size: 22px;
+        }
+
+        .learn-more {
+          width: 50%;
+          font-size: 20px;
+        }
+      }
+
+      .hero-image {
+        width: 100%;
+
+        .prototyping-image {
+          left: 0;
+        }
+      }
+    }
+  }
+}

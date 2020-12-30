@@ -74,3 +74,46 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 414px) {
+  .resources-page {
+    height: fit-content;
+
+    .resources-page-container {
+      flex-direction: column;
+      margin: auto;
+
+      .hero-details {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+
+        .hero-heading {
+          width: 90%;
+          font-size: 50px;
+          margin: 5% auto;
+        }
+        .sub-head {
+          font-size: 20px;
+          margin: 10% auto;
+          width: 90%;
+        }
+
+        .hackathons {
+          font-size: 20px;
+          width: 50%;
+          margin: 10%;
+        }
+      }
+
+      .hero-image {
+        width: 100%;
+
+        .resources-image {
+          width: 100%;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

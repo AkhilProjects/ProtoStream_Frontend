@@ -51,3 +51,29 @@
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
   }
 }
+
+
+@media screen and (max-width: 414px){
+  .team{
+    height: fit-content;
+
+    .heading{
+      font-size: 45px;
+      margin-top: 80px;
+    }
+
+    .sub-head{
+      font-size: 20px;
+    }
+
+    .cards{
+      flex-direction: column;
+    }
+    .internships{
+      font-size: 20px;
+      width: 50%;
+      margin: 5% 0;
+      margin-bottom: 100px;
+    }
+  }
+}

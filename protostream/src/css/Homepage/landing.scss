@@ -210,3 +210,51 @@ body {
     transform: rotateX(0deg) skewX(0deg);
   }
 }
+
+//For Mobile Devices
+
+@media screen and (max-width: 414px) {
+  .landing-page {
+    height: 175vh;
+
+    .landing-page-container {
+      flex-direction: column;
+
+      .hero-details {
+        padding: 0;
+        height: 95vh;
+        text-align: center;
+        width: 100%;
+
+        .glitch {
+          font-size: 50px;
+          margin: 5% 0;
+        }
+
+        .sub-head {
+          font-size: 20px;
+          width: 100%;
+          margin: 5% 0;
+        }
+        span {
+          font-size: 25px;
+          margin: 5% 2%;
+        }
+
+        .register {
+          width: 50%;
+          font-size: 25px;
+        }
+      }
+
+      .hero-image {
+        width: 100%;
+
+        .landing-page-fox {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
