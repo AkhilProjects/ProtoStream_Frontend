@@ -1,69 +1,73 @@
 import React from "react";
 import "./css/footer.css";
+import instagram from "./assets/images/instagram.svg";
+import facebook from "./assets/images/facebook.svg";
+import twitter from "./assets/images/twitter.svg";
+import youtube from "./assets/images/youtube.svg";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="container">
-        <div className="box">
-          <h2 className="logo">ProtoStream</h2>
-          <p className="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            saepe, voluptates libero ducimus maxime ab numquam rem soluta. Ab
-            fugit culpa itaque odit impedit reiciendis ex quisquam fuga aliquam
-            officia!
-          </p>
-        </div>
-        <div className="box">
-          <h2 className="head">Content</h2>
-          <p className="para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-            repellendus, fugiat vero suscipit nesciunt sunt eveniet neque optio
-            corrupti id!
-          </p>
-          <ul>
-            <li>schafermike960@gmail.com</li>
-            <li>Phone: +918476090539</li>
-            <li>Fax: 8338735636</li>
-          </ul>
-        </div>
-        <div className="box">
-          <h2 className="head">Site Links</h2>
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Blog</li>
-            <li>FAQ</li>
-            <li>Terms</li>
-            <li>Privacy Policy</li>
-          </ul>
-        </div>
-        <div className="box">
-          <h2 className="head">Our Newsletter</h2>
-          <p className="para">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-            libero? Esse provident commodi ipsa mollitia cum possimus beatae,
-            officia eaque dolorem? Numquam rerum dignissimos quia nemo non quis,
-            excepturi enim.
-          </p>
-        </div>
+      <div className="box">
+        <div className="head">ProtoStream</div>
+        <p className="para">
+          We focus on reducing the threshold it takes to create the startups and
+          provide mentorship to all students to boost the ecosystem for
+          innovation and building the future
+        </p>
+        <ul className="icons">
+          <li>
+            <a href="#">
+              <img src={instagram} alt="" className="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={facebook} alt="" className="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={youtube} alt="" className="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src={twitter} alt="" className="icon" />
+            </a>
+          </li>
+        </ul>
       </div>
-      <div className="social-media">
-        <ul>
+      <div className="box">
+        <div className="head">Contact</div>
+
+        <p>KIET Group of Institutions </p>
+        <p>Delhi-NCR, Meerut Road (NH-58) </p>
+        <p>Ghaziabad-201206 </p>
+        <br />
+        <p> Tel-01232-227980</p>
+        <p> Toll Free No:1800 3130 056</p>
+      </div>
+      <div className="box">
+        <div className="head">Site link</div>
+        <ul className="site-links">
           <li>
-            <i className="fab fa-instagram"></i>
+            <a href="#">Home</a>
           </li>
           <li>
-            <i className="fab fa-facebook"></i>
+            <a href="#">About us</a>
           </li>
           <li>
-            <i className="fab fa-twitter"></i>
+            <a href="#">Contact</a>
           </li>
           <li>
-            <i className="fab fa-youtube"></i>
+            <a href="#">Team</a>
           </li>
           <li>
-            <i className="fab fa-blogger-b"></i>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">Terms & Privacy policy</a>
           </li>
         </ul>
       </div>

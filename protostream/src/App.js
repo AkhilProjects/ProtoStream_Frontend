@@ -5,7 +5,7 @@ import Internships from "./Internships";
 import Projects from "./Projects";
 import Schemes from "./Schemes";
 import About from "./About";
-
+import Footer from "./Footer";
 import Header from "./Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
           <Route path="/signup" exact component={Signup} />
           <Route path="/login" exact component={Signup} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

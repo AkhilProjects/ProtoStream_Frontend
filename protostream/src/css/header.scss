@@ -1,77 +1,60 @@
+@import "./variables.css";
+
 .header {
-  color: white;
-  padding: 0 3%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 3rem;
+  font-family: "Poppins", sans-serif;
 
-  .logo {
-    font-size: 3vmin;
-    color: #71b939;
-    text-decoration: none;
-    text-shadow: 0 0 5px black;
+  .navbar-logo {
+    user-select: none;
+  }
+  .menu-icon {
+    display: none;
   }
 
-  ul {
+  .nav-menu {
     display: flex;
-    justify-content: space-between;
     list-style: none;
-    width: 40%;
-
-    .navlink {
-      font-size: 2vmin;
-      cursor: pointer;
-      padding: 2%;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #ffffffbb;
-      transition: all 0.2s ease;
-    }
-
-    li {
-    }
-
-    .navlink:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-      color: #ffff;
-    }
-  }
-
-  .btns {
-    width: 15%;
-    display: flex;
+    width: 50%;
     justify-content: space-around;
 
-    .btn {
-      border: none;
-      font-size: 2.4vmin;
-      padding: 1vmin 2vmin;
+    .nav-item {
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
       cursor: pointer;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease;
+
+      .nav-links {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1rem;
+      }
     }
 
-    .btn:hover {
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.678);
-    }
-
-    .login-btn {
-      background-color: #71b939;
-      color: #ffffff;
-      text-shadow: 0 0 5px black;
-    }
-
-    .signup-btn {
-      color: black;
+    .nav-item:hover {
+      background: var(--accent-sec) 59.57%;
     }
   }
-}
-
-@media screen and (max-width: 414px) {
-  .header {
-    padding: 0 2%;
-
-    .logo {
-      font-size: 20px;
+  .buttons {
+    .btn {
+      background: linear-gradient(
+        90.49deg,
+        var(--accent-pr) 17.35%,
+        var(--accent-sec) 59.57%
+      );
+      padding: 0.5rem 2rem;
+      color: #1d1d1d;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.2s ease-in;
+    }
+    .btn:hover {
+      filter: brightness(1.3);
     }
   }
 }

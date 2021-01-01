@@ -1,106 +1,57 @@
 .footer {
-  width: 100%;
-  background-color: rgb(15, 15, 15);
-  color: white;
-  // height: 60vh;
-  padding: 3% 0;
-  font-size: 2.2vmin;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
 
-  .container {
-    display: flex;
-    padding: 3%;
-    justify-content: space-between;
+  .box {
+    flex: 1;
+    margin: 2rem;
 
-    .box {
-      flex: 1;
-      margin: 0 1%;
-
-      .head,
-      .logo {
-        width: fit-content;
-        padding: 2%;
-        border-bottom: 0.5px solid rgba(255, 255, 255, 0.253);
-        font-size: 4vmin;
-        font-family: "Poppins", sans-serif;
-      }
-
-      .para {
-        color: rgb(116, 113, 113);
-        font-weight: lighter;
-        line-height: 2;
-      }
-
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-          color: rgb(116, 113, 113);
-          font-weight: lighter;
-          line-height: 2;
-        }
-
-        li:hover {
-          text-decoration: underline;
-          cursor: pointer;
-          color: white;
-        }
-      }
+    .head {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #fff;
+      width: fit-content;
+      padding-bottom: 0.5rem;
+      padding-right: 1rem;
+      color: #fff;
     }
-  }
 
-  .social-media {
-    ul {
+    p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .para {
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 2rem;
+    }
+
+    .icons {
       display: flex;
       list-style: none;
-      width: 40%;
-      align-items: center;
-      justify-content: space-between;
-      margin: auto;
-      margin-top: 3%;
 
       li {
-        font-size: 4vmin;
-        color: rgb(116, 113, 113);
-        cursor: pointer;
-        transition: all 0.1s ease;
+        margin-right: 2rem;
+        opacity: 0.7;
+        transition: all 0.2s ease-in;
       }
-
       li:hover {
-        color: white;
+        opacity: 1;
       }
     }
-  }
-}
+    .site-links {
+      list-style: none;
 
-@media screen and (max-width: 414px) {
-  .footer {
-    .container {
-      flex-direction: column;
-
-      .box {
-        .head,
-        .logo {
-          font-size: 25px;
-          width: fit-content;
+      li {
+        a {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.7);
         }
-
-        .para {
-          font-size: 16px;
-        }
-
-        ul {
-          font-size: 16px;
-        }
-      }
-    }
-    .social-media {
-      ul {
-        width: 70%;
-        margin: 2%;
-        li {
-          font-size: 25px;
+        a:hover {
+          color: #fff;
+          text-decoration: underline;
         }
       }
     }
