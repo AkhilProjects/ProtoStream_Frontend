@@ -72,8 +72,8 @@
 
   button {
     border-radius: 20px;
-    border: 1px solid #f95959;
-    background-color: #f95959;
+    border: 1px solid var(--accent-sec);
+    background-color: var(--accent-sec);
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
@@ -160,9 +160,12 @@
   }
 
   .overlay {
-    background: #f95959;
-    background: -webkit-linear-gradient(to right, #5c5abb, #f95959);
-    background: linear-gradient(to right, #5c5abb, #f95959);
+    background: -webkit-linear-gradient(
+      to right,
+      var(--accent-pr),
+      var(--accent-sec)
+    );
+    background: linear-gradient(to right, var(--accent-pr), var(--accent-sec));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
