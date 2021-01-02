@@ -1,4 +1,4 @@
-@import url(/home/himanshu/projects/ProtoStream_Frontend/protostream/src/css/variables.css);
+@import "../variables.css";
 * {
   margin: 0;
   padding: 0;
