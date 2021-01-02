@@ -45,7 +45,8 @@
         var(--accent-sec) 59.57%
       );
       padding: 0.5rem 2rem;
-      color: #1d1d1d;
+      // color: #1d1d1d;
+      color: var(--text-color);
       font-size: 1.3rem;
       font-weight: bold;
       border: none;
