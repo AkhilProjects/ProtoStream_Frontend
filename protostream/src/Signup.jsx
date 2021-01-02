@@ -1,22 +1,10 @@
 import React, { useState } from "react";
-// import "./css/auth.css";
 import {} from "./css/registration.css";
-// import background from "./components/background.jpg";
-import LoginForm from "./components/Signup/LoginForm";
-import SignupForm from "./components/Signup/SignupForm";
 
 const Signup = () => {
   const [addclass, setAddClass] = useState("container");
 
   return (
-    // <div classNameNameName="Login-page">
-    //   <h1 classNameNameName="logo-sign">ProtoStream</h1>
-    //   <img src={background} alt="" classNameNameName="image" />
-    //   <LoginForm />
-    //   {/* <img src={background} alt="" classNameName="image" /> */}
-    //   <div classNameName="black"></div>
-    // </div>
-
     <div className="registration">
       <div className={addclass} id="container">
         <div className="form-container sign-up-container">
