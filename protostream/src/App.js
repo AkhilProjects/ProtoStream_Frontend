@@ -7,7 +7,9 @@ import Schemes from "./Schemes";
 import About from "./About";
 import Footer from "./Footer";
 import Header from "./Header";
+import ErrorPage from "./ErrorPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 const App = () => {
   return (
     <Router>
@@ -19,6 +21,7 @@ const App = () => {
           <Route path="/projects" exact component={Projects} />
           <Route path="/schemes" exact component={Schemes} />
           <Route path="/about" exact component={About} />
+          <Route path="/errorpage" exact component={ErrorPage} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/login" exact component={Signup} />
         </Switch>
