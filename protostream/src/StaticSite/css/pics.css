@@ -1,0 +1,57 @@
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.card-container .card {
+  padding: 2%;
+  width: 600px;
+  background-color: #353535;
+  margin: auto;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.568);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.568);
+  height: 200px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.card-container .card .btn {
+  background: linear-gradient(90.49deg, var(--accent-pr) 17.35%, var(--accent-sec) 59.57%);
+  margin-top: 5%;
+  padding: 0.5rem 2rem;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.card-container .card .btn:hover {
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.internships,
+.schemes,
+.projects {
+  width: 100%;
+  height: 85vh;
+  background: url(../assets/images/page.svg);
+  background-size: cover;
+}
+/*# sourceMappingURL=pics.css.map */

@@ -1,0 +1,13 @@
+.projects {
+  width: 100%;
+  height: fit-content;
+
+  .projects-container {
+    width: 90%;
+    margin: auto;
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
