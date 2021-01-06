@@ -4,6 +4,7 @@ import Signup from "./components/Signup";
 import Internships from "./Internships";
 import Projects from "./Projects";
 import Schemes from "./Schemes";
+import DashBoard from "./DashBoard";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -12,8 +13,11 @@ import Contact from "./components/footer/Contact";
 import Terms from "./components/footer/Terms";
 import Team from "./components/footer/Team";
 import FAQ from "./components/footer/FAQ";
+import ProjectHackathon from "./components/Projects/ProjectHackathon";
+import Addform from "./components/Projects/Form/Addform";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Finalyear from "./components/Projects/finalyear/Finalyear";
 
 const App = () => {
   return (
@@ -24,6 +28,15 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/internships" exact component={Internships} />
           <Route path="/projects" exact component={Projects} />
+          <Route path="/dashboard" exact component={DashBoard} />
+
+          <Route
+            path="/projects/hackathons"
+            exact
+            component={ProjectHackathon}
+          />
+          <Route path="/projects/finalyear" exact component={Finalyear} />
+          <Route path="/projects/addform" exact component={Addform} />
           <Route path="/schemes" exact component={Schemes} />
           <Route path="/about" exact component={About} />
           <Route path="/errorpage" exact component={ErrorPage} />
