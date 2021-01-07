@@ -1,14 +1,65 @@
 import React, { useState } from "react";
+import { authenticate, isAuthenticated, signin } from "../auth";
+import {Redirect} from "react-router-dom"
 import "../css/registration.css";
+
 
 const Signup = () => {
   const [addclass, setAddClass] = useState("container");
+  const [values, setValues] = useState({
+    email:"test.1923cs1029@kiet.edu",
+    password:"12345",
+    error:"",
+    loading:false,
+    didRedirect:false,
+  })
+  const {email,password,error,loading,didRedirect} = values;
+  const {user} = isAuthenticated();
 
+  const handleChange = (name) =>(event) =>{
+    console.log("inside handlechange");
+    setValues({...values,error:false,[name]:event.target.value})
+  }
+  
+  const onSubmitSignIn=  (event)=>{
+    event.preventDefault();
+    setValues({...values,error:false,loading:true});
+     signin({email,password}).then((data) =>{
+      if (data.error){
+        console.log("in error");
+        setValues({...values,error:data.error,loading:false})
+      }else{
+        authenticate(data,() =>{
+          console.log("inside authenticate");
+          setValues({
+            ...values,didRedirect:true,
+          })
+          performRedirect();
+          console.log(values);
+        })
+      }
+    })
+  }
+  
+  const performRedirect = () =>{
+    console.log("inside performRedirect");
+    if (didRedirect){
+      console.log("inside did redirect");
+      console.log(user);
+      if (user && user.role === 0){
+        console.log("inside redirect    ");
+        return <Redirect to="/dashboard"/>
+      }
+    }
+  }
+
+
+  const onSubmitSignUp = () =>{}
   return (
     <div className="registration">
       <div className={addclass} id="container">
         <div className="form-container sign-up-container">
-          <form action="#">
+          <form>
             <h1>Create Account</h1>
             <div className="social-container">
               <a href="#" className="social">
@@ -16,14 +67,14 @@ const Signup = () => {
               </a>
             </div>
             <span>or use your email for registration</span>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <button>Sign Up</button>
+            <input type="text" placeholder="Name" name="name"/>
+            <input type="email" placeholder="Email" name="email"/>
+            <input type="password" placeholder="Password" name="password"/>
+            <button onClick={onSubmitSignUp}>Sign Up</button>
           </form>
         </div>
         <div className="form-container sign-in-container">
-          <form action="#">
+          <form >
             <h1>Sign in</h1>
             <div className="social-container">
               <a href="#" className="social">
@@ -31,10 +82,10 @@ const Signup = () => {
               </a>
             </div>
             <span>or use your account</span>
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input onChange={handleChange("email")} type="email" placeholder="Email" name="email"/>
+            <input onChange={handleChange("password")} type="password" placeholder="Password" name="password " />
             <a href="#">Forgot your password?</a>
-            <button>Sign In</button>
+            <button onClick={onSubmitSignIn}>Sign In</button>
           </form>
         </div>
         <div className="overlay-container">
@@ -67,6 +118,7 @@ const Signup = () => {
         </div>
       </div>
     </div>
+  
   );
 };
 
