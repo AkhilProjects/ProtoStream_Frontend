@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/internships" exact component={Internships} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/dashboard" exact component={DashBoard} />
-
+        
           <Route
             path="/projects/hackathons"
             exact
