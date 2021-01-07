@@ -1,0 +1,6 @@
+@import "./variables.css";
+body {
+  background: linear-gradient(161.09deg, #242424ec, #1d1d1d),
+    url(../assets/images/noise.svg);
+  background-attachment: fixed;
+}

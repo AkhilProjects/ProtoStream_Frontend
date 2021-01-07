@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.logo-sign {
+  position: absolute;
+  color: white;
+  margin: 2%;
+  font-weight: lighter;
+  pointer-events: none;
+}
+.Login-page {
+  display: flex;
+  margin: auto;
+  background-color: black;
+}
+
+.image {
+  height: 100vh;
+  pointer-events: none;
+}
+
+form {
+  min-width: 350px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: 100vh;
+  max-height: 1440px;
+  color: white;
+  padding: 5em;
+  overflow: auto;
+}
+
+form::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.head {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 2%;
+  pointer-events: none;
+}
+label {
+  margin: 4%;
+  margin-bottom: -15px;
+  z-index: 10;
+  padding: 0 2%;
+  width: fit-content;
+  font-size: 1.2em;
+  background-color: black;
+}
+input {
+  padding: 3%;
+  font-size: 1.3em;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  border-color: var(--secondary);
+}
+
+span {
+  text-align: right;
+  margin-bottom: 5%;
+}
+span a {
+  color: var(--secondary-altr);
+}
+
+.btn {
+  color: white;
+  margin-top: 1%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  padding: 3%;
+  font-size: 1.3em;
+  border-radius: 10px;
+  margin-bottom: 1%;
+}
+
+.login {
+  background-color: var(--secondary);
+  border: 3px solid var(--secondary);
+}
+
+.login:hover {
+  /* box-shadow: 1px 2px 10pxvar(--secondary); */
+  background-color: transparent;
+  color: var(--secondary);
+}
+.google {
+  background-color: var(--secondary-altr);
+  border: 3px solid var(--secondary-altr);
+}
+
+.google:hover {
+  /* box-shadow: 1px 2px 10pxvar(--secondary); */
+  background-color: transparent;
+  color: var(--secondary-altr);
+}
+
+.signup {
+  margin: 10%;
+  text-align: center;
+}
+
+
+
+.black{
+  background-color: black;
+}

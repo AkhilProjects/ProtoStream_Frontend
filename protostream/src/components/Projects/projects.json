@@ -1,0 +1,80 @@
+{
+  "Projects": [
+    {
+      "title": "Roxet",
+      "leader": "Karan Chopra",
+      "roll_no": 1702910144,
+      "branch": "ME",
+      "submission_date": "17/05/2021",
+      "summary": "Creating Reusable Rockets for space exploration and transportation of supplies and sending satellites to the orbit",
+      "members_details": [
+        {
+          "name": "Akshay Sharma",
+          "roll_no": 1702910167,
+          "branch": "ME"
+        },
+        {
+          "name": "Rohan Kumar",
+          "roll_no": 1702910168,
+          "branch": "CE"
+        },
+        {
+          "name": "Aman Kaushik",
+          "roll_no": 1702910267,
+          "branch": "CSE"
+        }
+      ]
+    },
+
+    {
+      "title": "Sploosh",
+      "leader": "Uday Narayan",
+      "roll_no": 1702910344,
+      "branch": "CSE",
+      "submission_date": "12/03/2021",
+      "summary": "New Technique for Rain water harvesting and Saline Water Use as Coolant in Nuclear Power Plants",
+      "members_details": [
+        {
+          "name": "Akshay Sharma",
+          "roll_no": 1702910167,
+          "branch": "ME"
+        },
+        {
+          "name": "Rohan Kumar",
+          "roll_no": 1702910168,
+          "branch": "CE"
+        },
+        {
+          "name": "Aman Kaushik",
+          "roll_no": 1702910267,
+          "branch": "CSE"
+        }
+      ]
+    },
+    {
+      "title": "BookStrom",
+      "leader": "Karan Chopra",
+      "roll_no": 1702910144,
+      "branch": "ME",
+      "submission_date": "17/05/2021",
+      "summary": "A new platform for sharing and selling books  and writing their brief summaries and general discussions.",
+      "members_details": [
+        {
+          "name": "Akshay Sharma",
+          "roll_no": 1702910167,
+          "branch": "ME"
+        },
+        {
+          "name": "Rohan Kumar",
+          "roll_no": 1702910168,
+          "branch": "CE"
+        },
+        {
+          "name": "Aman Kaushik",
+          "roll_no": 1702910267,
+          "branch": "CSE"
+        }
+      ]
+    }
+  ]
+}
