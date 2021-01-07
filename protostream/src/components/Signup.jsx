@@ -20,11 +20,11 @@ const Signup = () => {
     console.log("inside handlechange");
     setValues({...values,error:false,[name]:event.target.value})
   }
-  
+
   const onSubmitSignIn=  (event)=>{
     event.preventDefault();
     setValues({...values,error:false,loading:true});
-     signin({email,password}).then((data) =>{
+     signin({email,password}).then((data) =>{  
       if (data.error){
         console.log("in error");
         setValues({...values,error:data.error,loading:false})
@@ -40,7 +40,7 @@ const Signup = () => {
       }
     })
   }
-  
+
   const performRedirect = () =>{
     console.log("inside performRedirect");
     if (didRedirect){
@@ -118,7 +118,7 @@ const Signup = () => {
         </div>
       </div>
     </div>
-  
+
   );
 };
 
