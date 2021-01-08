@@ -13,7 +13,7 @@ const Dashboard = () => {
           <p className="student"> Branch</p>
           <p className="student">session</p>
 
-          <button className="log-out">
+          <button className="log-out" >
             <i class="fas fa-sign-out-alt"></i> Log Out
           </button>
         </div>

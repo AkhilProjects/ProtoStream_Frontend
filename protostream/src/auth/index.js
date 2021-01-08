@@ -1,6 +1,7 @@
-const API = require("../backend");
+const { API } = require("../backend");
 
 export const signup = (user) => {
+  console.log(user);
   return fetch(`${API}/register`, {
     method: "POST",
     headers: {
@@ -18,9 +19,8 @@ export const signup = (user) => {
 };
 export const signin = (user) => {
   console.log("inside signin route");
-  console.log(`${API}`);
-  console.log(`${API}/login`);
-  return fetch("http://localhost:8000/login", {
+
+  return fetch(`${API}/login`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -45,12 +45,15 @@ export const authenticate = (data, next) => {
 
 export const isAuthenticated = () => {
   if (typeof window == "undefined") {
+    console.log("jwt not found");
     return false;
   }
 
   if (localStorage.getItem("jwt")) {
+    console.log("inside jwt");
     return JSON.parse(localStorage.getItem("jwt"));
   } else {
+    console.log("inside false error!!");
     return false;
   }
 };

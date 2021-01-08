@@ -1,5 +1,3 @@
-import "./css/App.css";
-<<<<<<< HEAD
 import Home from "./Home";
 import Signup from "./components/Signup";
 import Internships from "./Internships";
@@ -15,38 +13,37 @@ import Terms from "./components/footer/Terms";
 import Team from "./components/footer/Team";
 import FAQ from "./components/footer/FAQ";
 import ProjectHackathon from "./components/Projects/ProjectHackathon";
-import Innotech from "./components/Projects/Innotech";
 import Addform from "./components/Projects/Form/Addform";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Finalyear from "./components/Projects/finalyear/Finalyear";
+import PrivateRoute from "./auth/helper/privateRoutes";
 
-const App = () => {
+const Routes = () => {
   return (
     <Router>
       <div className="App">
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/internships" exact component={Internships} />
-          <Route path="/projects" exact component={Projects} />
-          <Route path="/dashboard" exact component={DashBoard} />
+          <PrivateRoute path="/internships" exact component={Internships} />
+          <PrivateRoute path="/projects" exact component={Projects} />
+          <PrivateRoute path="/user/dashboard" exact component={DashBoard} />
 
-          <Route
+          <PrivateRoute
             path="/projects/hackathons"
             exact
             component={ProjectHackathon}
           />
-          <Route
-            path="/projects/innotech"
+          <PrivateRoute
+            path="/projects/finalyear"
             exact
-            component={Innotech}
+            component={Finalyear}
           />
-          <Route path="/projects/finalyear" exact component={Finalyear} />
-          <Route path="/projects/addform" exact component={Addform} />
-          <Route path="/schemes" exact component={Schemes} />
+          <PrivateRoute path="/projects/addform" exact component={Addform} />
+          <PrivateRoute path="/schemes" exact component={Schemes} />
           <Route path="/about" exact component={About} />
-          <Route path="/errorpage" exact component={ErrorPage} />
+          <PrivateRoute path="/errorpage" exact component={ErrorPage} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/login" exact component={Signup} />
           <Route path="/contact" exact component={Contact} />
@@ -58,12 +55,6 @@ const App = () => {
       </div>
     </Router>
   );
-=======
-import React from "react";
-
-const App = () => {
-  return <div></div>;
->>>>>>> origin/master
 };
 
-export default App;
+export default Routes;
