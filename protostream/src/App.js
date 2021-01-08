@@ -14,6 +14,7 @@ import Terms from "./components/footer/Terms";
 import Team from "./components/footer/Team";
 import FAQ from "./components/footer/FAQ";
 import ProjectHackathon from "./components/Projects/ProjectHackathon";
+import Innotech from "./components/Projects/Innotech";
 import Addform from "./components/Projects/Form/Addform";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -29,11 +30,16 @@ const App = () => {
           <Route path="/internships" exact component={Internships} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/dashboard" exact component={DashBoard} />
-        
+
           <Route
             path="/projects/hackathons"
             exact
             component={ProjectHackathon}
+          />
+          <Route
+            path="/projects/innotech"
+            exact
+            component={Innotech}
           />
           <Route path="/projects/finalyear" exact component={Finalyear} />
           <Route path="/projects/addform" exact component={Addform} />

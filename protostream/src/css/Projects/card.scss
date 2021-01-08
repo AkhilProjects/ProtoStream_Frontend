@@ -36,7 +36,9 @@
       margin: 0 auto;
       justify-content: space-around;
 
-      .add-project {
+     .add{
+       text-decoration: none;
+        .add-project {
         color: var(--text-color);
         font-size: 1.1rem;
         background-color: transparent;
@@ -52,6 +54,7 @@
           margin: 5px;
         }
       }
+     }
 
       .card-name {
         background-color: #3a3a3a;

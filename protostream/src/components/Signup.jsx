@@ -24,7 +24,7 @@ const Signup = () => {
   const onSubmitSignIn=  (event)=>{
     event.preventDefault();
     setValues({...values,error:false,loading:true});
-     signin({email,password}).then((data) =>{  
+     signin({email,password}).then((data) =>{
       if (data.error){
         console.log("in error");
         setValues({...values,error:data.error,loading:false})
