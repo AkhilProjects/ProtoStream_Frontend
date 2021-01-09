@@ -1,0 +1,82 @@
+.innotech {
+  width: 100%;
+  height: 90vh;
+}
+
+.innotech .container {
+  height: 100%;
+  margin: 2%;
+}
+
+.innotech .container .heading {
+  font-family: "Poppins", sans-serif;
+  margin: 1% 5%;
+  color: var(--text-color);
+}
+
+.innotech .container .main-container {
+  width: 95%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 2rem;
+  background: linear-gradient(111.9deg, var(--accent-pr), var(--accent-sec));
+  height: 90%;
+}
+
+.innotech .container .main-container .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2%;
+}
+
+.innotech .container .main-container .navigation .years {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.innotech .container .main-container .navigation .years li {
+  margin-right: 10px;
+}
+
+.innotech .container .main-container .navigation .years li button {
+  padding: 10px;
+  font-size: 2rem;
+  border: none;
+  font-weight: bolder;
+  font-family: "Montserrat";
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.innotech .container .main-container .navigation input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bg-sec);
+  color: var(--text-color);
+  outline: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.innotech .container .main-container .navigation input:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.innotech .container .main-container .list-container {
+  margin: 2% 0;
+}
+/*# sourceMappingURL=Innotech.css.map */

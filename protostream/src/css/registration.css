@@ -1,0 +1,299 @@
+.registration {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+.registration .container {
+  background-color: #363636;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.registration .container .form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.registration .container .form-container form {
+  background-color: #363636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+.registration h1 {
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+}
+
+.registration h2 {
+  text-align: center;
+}
+
+.registration p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+.registration span {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.registration a {
+  color: #eee;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.registration button {
+  border-radius: 20px;
+  border: 1px solid var(--accent-sec);
+  color: #ffffff;
+  background-color: var(--accent-sec);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 80ms ease-in;
+  transition: -webkit-transform 80ms ease-in;
+  transition: transform 80ms ease-in;
+  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
+}
+
+.registration button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.registration button:focus {
+  outline: none;
+}
+
+.registration button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.registration input {
+  background-color: #616161;
+  border: none;
+  color: #ffffff;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.registration .sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.registration .container.right-panel-active .sign-in-container {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.registration .sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.registration .container.right-panel-active .sign-up-container {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  -webkit-animation: show 0.6s;
+          animation: show 0.6s;
+}
+
+@-webkit-keyframes show {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+@keyframes show {
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.registration .overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.registration .container.right-panel-active .overlay-container {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.registration .overlay {
+  background: -webkit-gradient(linear, left top, right top, from(var(--accent-pr)), to(var(--accent-sec)));
+  background: linear-gradient(to right, var(--accent-pr), var(--accent-sec));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+.registration .container.right-panel-active .overlay {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.registration .overlay-panel {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+.registration .overlay-left {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+.registration .container.right-panel-active .overlay-left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.registration .overlay-right {
+  right: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.registration .container.right-panel-active .overlay-right {
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+.registration .social-container {
+  margin: 20px 0;
+}
+
+.registration .social-container a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+/*# sourceMappingURL=registration.css.map */
