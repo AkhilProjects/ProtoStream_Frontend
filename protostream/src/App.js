@@ -1,5 +1,5 @@
 import "./css/App.css";
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import Home from "./Home";
 import Signup from "./components/Signup";
 import Internships from "./Internships";
@@ -58,12 +58,13 @@ const App = () => {
       </div>
     </Router>
   );
-=======
-import React from "react";
+}
+// =======
+// import React from "react";
 
-const App = () => {
-  return <div></div>;
->>>>>>> origin/master
-};
+// const App = () => {
+//   return <div></div>;
+// // >>>>>>> origin/master
+// };
 
 export default App;
