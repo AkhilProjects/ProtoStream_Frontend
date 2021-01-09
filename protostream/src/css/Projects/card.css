@@ -48,7 +48,11 @@
       justify-content: space-around;
 }
 
-.card-link .card .btns .add-project {
+.card-link .card .btns .add {
+  text-decoration: none;
+}
+
+.card-link .card .btns .add .add-project {
   color: var(--text-color);
   font-size: 1.1rem;
   background-color: transparent;
@@ -64,7 +68,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.card-link .card .btns .add-project img {
+.card-link .card .btns .add .add-project img {
   width: 30px;
   margin: 5px;
 }

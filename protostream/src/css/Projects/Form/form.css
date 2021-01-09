@@ -1,7 +1,10 @@
 .addform {
   width: 100%;
-  height: 90vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-family: "Poppins", sans-serif;
+  margin: 5% 0;
 }
 
 .addform .container {
@@ -25,7 +28,7 @@
 
 .addform .container .main-container form {
   width: 60%;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .addform .container .main-container form .field {
@@ -43,7 +46,7 @@
 
 .addform .container .main-container form .field .input {
   width: 75%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0.5rem;
   background-color: transparent;
   border: none;
@@ -55,7 +58,7 @@
   padding: 1rem 2rem;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.61);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.61);
-  font-size: 1rem;
+  font-size: 0.8rem;
   width: 25%;
   border-radius: 10px;
   border: none;
@@ -93,6 +96,7 @@
 .addform .container .main-container .nextpage {
   width: 15%;
   float: right;
+  margin-bottom: 2%;
   background-color: #4d4d4d;
   color: var(--text-color);
   padding: 1rem;
