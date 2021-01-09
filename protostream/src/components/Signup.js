@@ -44,6 +44,18 @@ const Signup = () => {
     });
   };
 
+  const errorMessage = () => {
+    if (error) {
+      return <Redirect to="/error" />;
+    }
+  };
+
+  const loadingMessage = () => {
+    if (loading) {
+      //! loading...
+    }
+  };
+
   const performRedirect = () => {
     console.log("inside performRedirect");
     if (didRedirect) {
@@ -175,6 +187,8 @@ const Signup = () => {
     <div>
       {signInForm()}
       {performRedirect()}
+      {errorMessage()}
+      {loadingMessage()}
     </div>
   );
 };
