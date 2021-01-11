@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../css/header.css";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
+import { isAuthenticated } from "../auth";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -18,11 +19,23 @@ const Header = () => {
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-item">
-          <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
-            Home
-          </NavLink>
-        </li>
+        {isAuthenticated() && isAuthenticated().user.role === 0 ? (
+          <li className="nav-item">
+            <NavLink
+              to="/user/dashboard"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Dashboard
+            </NavLink>
+          </li>
+        ) : (
+          <li className="nav-item">
+            <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
+              Home
+            </NavLink>
+          </li>
+        )}
         <li className="nav-item">
           <NavLink
             to="/projects"
@@ -50,15 +63,29 @@ const Header = () => {
             Schemes
           </NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink to="/about" className="nav-links" onClick={closeMobileMenu}>
-            About
+        {isAuthenticated() && isAuthenticated().user.role === 1 ? (
+          <NavLink to="/user/startups" className="buttons">
+            <button className="btn">Startups</button>
           </NavLink>
-        </li>
+        ) : (
+          <li className="nav-item">
+            <NavLink
+              to="/about"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              About
+            </NavLink>
+          </li>
+        )}
       </ul>
-      <NavLink to="/login" className="buttons">
-        <button className="btn">Login</button>
-      </NavLink>
+      {!isAuthenticated() ? (
+        <NavLink to="/login" className="buttons">
+          <button className="btn">Login</button>
+        </NavLink>
+      ) : (
+        ""
+      )}
     </header>
   );
 };

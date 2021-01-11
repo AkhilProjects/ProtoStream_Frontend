@@ -63,6 +63,7 @@ export const isAuthenticated = () => {
 
   if (localStorage.getItem("jwt")) {
     console.log("inside jwt");
+    console.log(JSON.parse(localStorage.getItem("jwt")));
     return JSON.parse(localStorage.getItem("jwt"));
   } else {
     console.log("inside false error!!");
