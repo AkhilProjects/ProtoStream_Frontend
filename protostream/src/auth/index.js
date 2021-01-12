@@ -17,6 +17,28 @@ export const signup = (user) => {
       console.log(error);
     });
 };
+
+export const allHackathons = async () =>{
+  console.log("api:",API);
+   await fetch(`${API}/hackathon/allHackathons`,{
+    method:"GET",
+    headers:{
+        Accept:"application/json",
+        "Content-Type":"application/json",
+    },
+  
+  })
+  .then((response) =>{
+    var a = response.json()
+    console.log(a);
+    return a;
+  })
+  .catch(err => console.error(err));
+} 
+
+
+
+
 export const signin = (user) => {
   console.log("inside signin route");
 

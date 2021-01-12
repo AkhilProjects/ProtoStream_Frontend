@@ -6,8 +6,6 @@ import { isAuthenticated, signout } from "./auth";
 import {useHistory} from "react-router-dom";
 
 
-
-
 const Dashboard = () => {
   const {user} = isAuthenticated();
   const {Profilename,ProfileBranch,ProfileYear} = user.profiledata;

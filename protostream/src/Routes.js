@@ -14,6 +14,8 @@ import Team from "./components/footer/Team";
 import FAQ from "./components/footer/FAQ";
 import ProjectHackathon from "./components/Projects/ProjectHackathon";
 import Addform from "./components/Projects/Form/Addform";
+import Form from "./components/Projects/Form/Form";
+
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Finalyear from "./components/Projects/finalyear/Finalyear";
@@ -40,7 +42,7 @@ const Routes = () => {
             exact
             component={Finalyear}
           />
-          <PrivateRoute path="/projects/addform" exact component={Addform} />
+          <PrivateRoute path="/projects/addform" exact component={Form} />
           <PrivateRoute path="/schemes" exact component={Schemes} />
           <Route path="/about" exact component={About} />
           <PrivateRoute path="/errorpage" exact component={ErrorPage} />
