@@ -18,26 +18,18 @@ export const signup = (user) => {
     });
 };
 
-export const allHackathons = async () =>{
-  console.log("api:",API);
-   await fetch(`${API}/hackathon/allHackathons`,{
-    method:"GET",
-    headers:{
-        Accept:"application/json",
-        "Content-Type":"application/json",
-    },
-  
+export const allHackathons = () => {
+  console.log("api:", API);
+  return fetch(`${API}/hackathon/allHackathons`, {
+    method: "GET",
   })
-  .then((response) =>{
-    var a = response.json()
-    console.log(a);
-    return a;
-  })
-  .catch(err => console.error(err));
-} 
-
-
-
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
 
 export const signin = (user) => {
   console.log("inside signin route");
@@ -51,6 +43,7 @@ export const signin = (user) => {
     body: JSON.stringify(user),
   })
     .then((response) => {
+      console.log(response);
       return response.json();
     })
     .catch((error) => {
@@ -84,8 +77,6 @@ export const isAuthenticated = () => {
   }
 
   if (localStorage.getItem("jwt")) {
-    console.log("inside jwt");
-    console.log(JSON.parse(localStorage.getItem("jwt")));
     return JSON.parse(localStorage.getItem("jwt"));
   } else {
     console.log("inside false error!!");

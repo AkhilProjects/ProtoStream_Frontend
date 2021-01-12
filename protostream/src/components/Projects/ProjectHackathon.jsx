@@ -3,27 +3,31 @@ import Listcard from "./Listcard";
 import Modal from "./Modal";
 import "../../css/Projects/projectHackathon.css";
 import "./projects.json";
-import {hackathonProvider} from "./fetchdata";
+import { hackathonProvider } from "./fetchdata";
 import { allHackathons } from "../../auth/index";
 
 function ProjectHackathon() {
-
   const getResponse = () => {
-    var AllHackathons = allHackathons();
-    AllHackathons.then(response => console.log(response)).catch(err => console.log(err))
-    // var AllHackathons = allHackathons().then().catch(err=>console.log(err))
-    // console.log(AllHackathons);
-    // allHackathons()
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((err) => console.error(err));
+    var hackathons = [];
+    allHackathons()
+      .then((data) => {
+        console.log(data);
+        data.map((hackathon) => {
+          hackathons.push(hackathon);
+        });
+        return data;
+      })
+      .catch((err) => console.log(err));
 
-  }
+    return hackathons;
+  };
+  console.log("getResponse", getResponse);
   return (
     <div className="projectHackathon">
       <div className="container">
-        <h1 className="heading" onClick={getResponse}>Hackathons Projects</h1>
+        <h1 className="heading" onClick={getResponse}>
+          Hackathons Projects
+        </h1>
         <div className="main-container">
           {/* <Modal /> */}
           <div className="navigation">
