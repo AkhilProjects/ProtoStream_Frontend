@@ -1,5 +1,6 @@
 import React from "react";
 import {} from "../../css/Projects/Modal.css";
+import { hackathonProvider } from "./fetchdata";
 
 function Modal() {
   return (

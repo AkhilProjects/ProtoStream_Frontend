@@ -3,12 +3,25 @@ import Listcard from "./Listcard";
 import Modal from "./Modal";
 import "../../css/Projects/projectHackathon.css";
 import "./projects.json";
+import {hackathonProvider} from "./fetchdata";
+import { allHackathons } from "../../auth/index";
 
 function ProjectHackathon() {
+
+  const getResponse = () => {
+    var AllHackathons = allHackathons();
+    console.log(AllHackathons);
+    // allHackathons()
+    //   .then((response) => {
+    //     console.log(response);
+    //   })
+    //   .catch((err) => console.error(err));
+
+  }
   return (
     <div className="projectHackathon">
       <div className="container">
-        <h1 className="heading">Hackathons Projects</h1>
+        <h1 className="heading" onClick={getResponse}>Hackathons Projects</h1>
         <div className="main-container">
           {/* <Modal /> */}
           <div className="navigation">
