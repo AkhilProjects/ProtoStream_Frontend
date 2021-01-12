@@ -9,8 +9,9 @@ import { allHackathons } from "../../auth/index";
 function ProjectHackathon() {
 
   const getResponse = () => {
-    var AllHackathons = allHackathons();
-    console.log(AllHackathons);
+    
+    // var AllHackathons = allHackathons().then().catch(err=>console.log(err))
+    // console.log(AllHackathons);
     // allHackathons()
     //   .then((response) => {
     //     console.log(response);

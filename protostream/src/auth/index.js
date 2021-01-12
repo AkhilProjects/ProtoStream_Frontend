@@ -29,8 +29,9 @@ export const allHackathons = async () =>{
   
   })
   .then((response) =>{
-    // console.log(response.json());
-    return response.json();
+    var a = response.json()
+    console.log(a);
+    return a;
   })
   .catch(err => console.error(err));
 } 
