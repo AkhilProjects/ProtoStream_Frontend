@@ -17,6 +17,20 @@ export const signup = (user) => {
       console.log(error);
     });
 };
+
+export const allHackathons = () => {
+  console.log("api:", API);
+  return fetch(`${API}/hackathon/allHackathons`, {
+    method: "GET",
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+
 export const signin = (user) => {
   console.log("inside signin route");
 
@@ -29,6 +43,7 @@ export const signin = (user) => {
     body: JSON.stringify(user),
   })
     .then((response) => {
+      console.log(response);
       return response.json();
     })
     .catch((error) => {
@@ -62,7 +77,6 @@ export const isAuthenticated = () => {
   }
 
   if (localStorage.getItem("jwt")) {
-    console.log("inside jwt");
     return JSON.parse(localStorage.getItem("jwt"));
   } else {
     console.log("inside false error!!");

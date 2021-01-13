@@ -3,19 +3,21 @@ import "./css/DashBoard/dashboard.css";
 import profile from "./assets/images/profile.svg";
 import Box from "./components/Dashboard/Box";
 import { isAuthenticated, signout } from "./auth";
-import {Redirect} from "react-router-dom";
-
-
+import {useHistory} from "react-router-dom";
 
 
 const Dashboard = () => {
   const {user} = isAuthenticated();
   const {Profilename,ProfileBranch,ProfileYear} = user.profiledata;
 
+  let history = useHistory();
   const onClickLogout = () =>{
     signout(() =>{
-      return <Redirect to="/login"/>
+      history.push("/login")
     })
+  }
+  const onClickMyProjects = () =>{
+
   }
 
 
@@ -35,7 +37,7 @@ const Dashboard = () => {
           </div>
   
           <div className="content">
-            <Box heading="My Projects" para="Your projects and startups" />
+            <Box heading="My Projects" para="Your projects and startups" onClick={onClickMyProjects}/>
             <Box
               heading="Resource Box"
               para="Your curated list of tools and business courses to help you along
@@ -61,7 +63,6 @@ const Dashboard = () => {
     <div>
 
       {dashboardForm()}
-      {/* {onClickLogout()} */}
     </div>
   );
 };

@@ -92,4 +92,8 @@
   list-style: none;
   margin: 2%;
 }
+
+.closed {
+  display: none;
+}
 /*# sourceMappingURL=Modal.css.map */

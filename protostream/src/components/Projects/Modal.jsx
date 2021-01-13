@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {} from "../../css/Projects/Modal.css";
 
 function Modal() {
