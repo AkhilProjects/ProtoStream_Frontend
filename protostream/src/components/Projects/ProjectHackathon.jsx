@@ -68,6 +68,7 @@ function ProjectHackathon() {
                     description={hackathon.projectSummary}
                     // branch={}
                     members="5"
+                    id = {hackathon._id}
                     branch={hackathon.leaderBranch}
                   />
                 
