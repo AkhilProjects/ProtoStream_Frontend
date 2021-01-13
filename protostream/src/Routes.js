@@ -15,7 +15,6 @@ import FAQ from "./components/footer/FAQ";
 import ProjectHackathon from "./components/Projects/ProjectHackathon";
 import Addform from "./components/Projects/Form/Addform";
 import Form from "./components/Projects/Form/Form";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Finalyear from "./components/Projects/finalyear/Finalyear";
 import PrivateRoute from "./auth/helper/privateRoutes";
@@ -30,12 +29,11 @@ const Routes = () => {
           <PrivateRoute path="/internships" exact component={Internships} />
           <PrivateRoute path="/projects" exact component={Projects} />
           <PrivateRoute path="/user/dashboard" exact component={DashBoard} />
-
-          <PrivateRoute
-            path="/projects/hackathons"
-            exact
-            component={ProjectHackathon}
-          />
+            <PrivateRoute
+              path="/projects/hackathons"
+              exact
+              component={ProjectHackathon}
+            />
           <PrivateRoute
             path="/projects/finalyear"
             exact

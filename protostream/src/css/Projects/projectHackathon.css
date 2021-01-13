@@ -21,6 +21,7 @@
   padding: 2rem;
   background: linear-gradient(111.9deg, var(--accent-pr), var(--accent-sec));
   height: 90%;
+  overflow: auto;
 }
 
 .projectHackathon .container .main-container .navigation {
