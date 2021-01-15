@@ -1,0 +1,29 @@
+.cardteam {
+  padding: 1.5rem;
+  background-color: #FFF;
+  border-radius: 10px;
+  margin: 1%;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cardteam .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  margin-bottom: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cardteam .field .head {
+  margin-right: 20px;
+}
+
+.cardteam .field .sub {
+  font-weight: bold;
+}
+/*# sourceMappingURL=cardteam.css.map */

@@ -1,7 +1,8 @@
 import React, {useContext, useState} from "react";
 import "../../css/Projects/listcard.css";
+import {  } from "../../css/Projects/Modal.css";
 
-function Listcard({ project_name, description, branch, members, id }) {
+function Listcard({ project_name, description, branch, members, id, date, lmobile, lmail, lname, lrno }) {
   const [active, setActive] = useState(false)
   const showModal = () => {
     setActive(true);
@@ -16,29 +17,28 @@ function Listcard({ project_name, description, branch, members, id }) {
       <p className="branch">{branch}</p>
       <p className="members">{members} members</p>
       <button onClick={showModal}>{">"}</button>
-      <div className={active ? "modal": "closed"}>
-        <button className="close" onClick={hideModal}>+</button>
-        <h1 className="title">{id}</h1>
+      <div className={active ? "modal" : "closed"}>
+        <button className="close" onClick={hideModal}>
+          +
+        </button>
+        <h1 className="title">{project_name}</h1>
         <div className="details">
           <div className="left">
             <div className="details-sec">
               <p className="head">Team Leader: </p>
-              <span className="ans">Karan Chopra</span>
+              <span className="ans">{lname}</span>
             </div>
             <div className="details-sec">
               <p className="head">Roll Number: </p>
-              <span className="ans">1702910144</span>
+              <span className="ans">{lrno}</span>
             </div>
             <div className="details-sec">
               <p className="head">Branch: </p>
-              <span className="ans">ME</span>
+              <span className="ans">{branch}</span>
             </div>
             <div className="details-sec column">
               <p className="head">Summary: </p>
-              <span className="ans">
-                Creating Reusable Rockets for space exploration and
-                transportation of supplies and sending satellites to the orbit
-              </span>
+              <span className="ans">{description}</span>
             </div>
           </div>
           <div className="right">
@@ -52,7 +52,7 @@ function Listcard({ project_name, description, branch, members, id }) {
             </div>
             <div className="details-sec">
               <p className="head">Submission Date: </p>
-              <span className="ans">17/05/2021</span>
+              <span className="ans">{date.substring(0, 10)}</span>
             </div>
             <div className="details-sec">
               <p className="head">Prize/Award won: </p>
