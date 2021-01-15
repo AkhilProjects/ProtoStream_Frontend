@@ -1,0 +1,22 @@
+.cardteam {
+    padding: 1.5rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    margin: 1%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    .field{
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        margin-bottom: 10px;
+        justify-content: space-between;
+
+        .head{
+            margin-right: 20px;    
+        }
+
+        .sub{
+            font-weight: bold;
+        }
+    }
+}

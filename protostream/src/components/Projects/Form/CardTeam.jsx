@@ -1,10 +1,10 @@
 import React from 'react'
-
+import '../../../css/Projects/Form/cardteam.css'
 function CardTeam({name, rno, branch, email}) {
     return (
       <div className="cardteam">
         <div className="field">
-          <p className="head">Member Name: </p>
+          <p className="head">Name: </p>
           <p className="sub">{name}</p>
         </div>
         <div className="field">

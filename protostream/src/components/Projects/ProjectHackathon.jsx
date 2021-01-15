@@ -1,8 +1,6 @@
 import React, {useContext, useState, useEffect} from "react";
 import Listcard from "./Listcard";
-// import Modal from "./Modal";
 import "../../css/Projects/projectHackathon.css";
-// import { HackathonContext } from "./fetchdata";
 import { allHackathons } from "../../auth/index";
 
 function ProjectHackathon() {
@@ -12,14 +10,33 @@ function ProjectHackathon() {
   const getResponse = async () => {
     const response = await allHackathons()
     console.log("response",response);
+    response.map(items => {
+      console.log("Year", items.createdAt.split('-')[0]);
+    })
     setHackathons(response);
   };
 
+  // const count_years = () => {
+  //   var count = [];
+  //   var year = 0;
+  //   AllHackathons.map(item => {
+  //     year = item.createdAt.split("-")[0];
+  //     console.log("count Year", item.createdAt.split("-")[0]);
+  //     for(let i = 0; i < count.length; i++){
+  //       if(count[i] != year)
+  //         count.push(year);
+  //     }
+  //   });
+
+  //   console.log("count",count, year);
+  // }
+  
   useEffect(() => {
     getResponse();
+    
   }, [])
+
   return (
-    <hackathonProvider>
       <div className="projectHackathon">
         <div className="container">
           <h1 className="heading">Hackathons Projects</h1>
@@ -28,13 +45,7 @@ function ProjectHackathon() {
             <div className="navigation">
               <ul className="years">
                 <li>
-                  <button>2018</button>
-                </li>
-                <li>
-                  <button>2019</button>
-                </li>
-                <li>
-                  <button>2020</button>
+                  <button>2021</button>
                 </li>
               </ul>
 
@@ -68,8 +79,14 @@ function ProjectHackathon() {
                     description={hackathon.projectSummary}
                     // branch={}
                     members="5"
+                    key = {hackathon._id}
                     id = {hackathon._id}
                     branch={hackathon.leaderBranch}
+                    date = {hackathon.createdAt}
+                    lmobile={hackathon.leaderMobile}
+                    lmail={hackathon.leaderMailId}
+                    lname={hackathon.leaderName}
+                    lrno={'1900290100073'}
                   />
                 
               ))}
@@ -77,7 +94,6 @@ function ProjectHackathon() {
           </div>
         </div>
       </div>
-    </hackathonProvider>
   );
 }
 
