@@ -211,7 +211,7 @@ export class Form extends Component {
           />
         );
       case 6:
-        return <Submit values={values} />;
+        return <Submit />;
     }
   }
 }

@@ -1,33 +1,33 @@
 .footer-container {
-  background-color: #1b1b1b;
+  background-color: var(--bg-sec);
   .footer {
     display: flex;
     justify-content: space-around;
     width: 90%;
     padding: 5rem 0;
     margin: auto;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-pr);
 
     .box {
       flex: 1;
       margin: 2rem;
 
       .head {
-        font-size: 2rem;
+        font-size: var(--heading-med);
         margin-bottom: 1.5rem;
         border-bottom: 1px solid #fff;
         width: fit-content;
         padding-bottom: 0.5rem;
         padding-right: 1rem;
-        color: #fff;
+        color: var(--text-pr);
       }
 
       p {
-        color: rgba(255, 255, 255, 0.7);
+        color: var(--text-sec);
       }
 
       .para {
-        color: rgba(255, 255, 255, 0.7);
+        color: var(--text-sec);
         margin-bottom: 2rem;
       }
 
@@ -50,10 +50,10 @@
         li {
           a {
             text-decoration: none;
-            color: rgba(255, 255, 255, 0.7);
+            color: var(--text-sec);
           }
           a:hover {
-            color: #fff;
+            color: var(--text-pr);
             text-decoration: underline;
           }
         }

@@ -6,7 +6,7 @@
 
     .side-bar {
       border-radius: 10px;
-      background: #1d1d1d;
+      background: var(--comp-pr);
       padding: 2rem;
       display: flex;
       flex-direction: column;
@@ -23,17 +23,17 @@
       }
 
       .name {
-        font-family: "Poppins", sans-serif;
-        font-size: 1.5rem;
+        font-family: var(--font-pr);
+        font-size: var(--heading-small);
         color: var(--accent-sec);
         margin: 1rem 0;
         width: 100%;
       }
 
       .student {
-        font-size: 1.2rem;
-        font-family: "Poppins", sans-serif;
-        color: var(--text-color);
+        font-size: var(--heading-small);
+        font-family: var(--font-pr);
+        color: var(--text-pr);
         margin: 0.5rem;
       }
 
@@ -41,11 +41,15 @@
         border-radius: 10px;
         padding: 1rem 2rem;
         border: none;
-        background-color: #2b2b2b;
-        font-family: "Poppins", sans-serif;
-        font-size: 1.2rem;
-        color: #ffffff;
+        background-color: var(--comp-sec);
+        font-family: var(--font-pr);
+        font-size: var(--button);
+        color: var(--text-pr);
         position: relative;
+      }
+
+      .log-out:hover{
+        background-color: var(--comp-sec-hover);
       }
     }
 

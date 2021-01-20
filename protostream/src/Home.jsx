@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from './components/Footer'
 import Asection from "./components/Home/Asection";
 import Section from "./components/Home/Section";
 import Startups from "./components/Home/Startups";
@@ -50,6 +51,7 @@ const Home = () => {
         classname="section"
       />
       <Startups />
+      <Footer />
     </div>
   );
 };
