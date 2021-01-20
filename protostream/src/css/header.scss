@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 3rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-pr);
 
   .navbar-logo {
     user-select: none;
@@ -19,7 +19,7 @@
     justify-content: space-around;
     border-radius: 10px;
     padding: 1rem;
-    background-color: #353535;
+    background-color: var(--comp-pr);
 
     .nav-item {
       padding: 0.5rem 1rem;
@@ -29,8 +29,8 @@
 
       .nav-links {
         text-decoration: none;
-        color: var(--text-color);
-        font-size: 1rem;
+        color: var(--text-pr);
+        font-size: var(--para);
       }
     }
 
@@ -47,8 +47,8 @@
       );
       padding: 0.5rem 2rem;
       // color: #1d1d1d;
-      color: var(--text-color);
-      font-size: 1.3rem;
+      color: var(--text-pr);
+      font-size: var(--button);
       font-weight: bold;
       border: none;
       border-radius: 5px;

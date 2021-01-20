@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #1b1b1b;
+  background-color: var(--bg-sec);
 }
 
 .footer-container .footer {
@@ -11,7 +11,7 @@
   width: 90%;
   padding: 5rem 0;
   margin: auto;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-pr);
 }
 
 .footer-container .footer .box {
@@ -22,7 +22,7 @@
 }
 
 .footer-container .footer .box .head {
-  font-size: 2rem;
+  font-size: var(--heading-med);
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #fff;
   width: -webkit-fit-content;
@@ -30,15 +30,15 @@
   width: fit-content;
   padding-bottom: 0.5rem;
   padding-right: 1rem;
-  color: #fff;
+  color: var(--text-pr);
 }
 
 .footer-container .footer .box p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-sec);
 }
 
 .footer-container .footer .box .para {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-sec);
   margin-bottom: 2rem;
 }
 
@@ -66,11 +66,11 @@
 
 .footer-container .footer .box .site-links li a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-sec);
 }
 
 .footer-container .footer .box .site-links li a:hover {
-  color: #fff;
+  color: var(--text-pr);
   text-decoration: underline;
 }
 /*# sourceMappingURL=footer.css.map */

@@ -50,7 +50,7 @@ const Routes = () => {
           <Route path="/faqs" exact component={FAQ} />
           <Route path="/team" exact component={Team} />
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

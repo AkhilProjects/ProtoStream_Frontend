@@ -137,14 +137,18 @@ export default class Member3 extends Component {
                   value={values.MemberEmail2}
                 />
               </div>
+              <button className="verify" onClick={this.continue}>
+                Add Member
+                <img src={plus} alt="" />
+              </button>
             </form>
             {/* <button className="nextpage">
               Submit
             </button> */}
-            <button className="verify" onClick={this.continue}>
+            {/* <button className="verify" onClick={this.continue}>
               Add Member
               <img src={plus} alt="" />
-            </button>
+            </button> */}
             <button className="nextpage prev" onClick={this.back}>
               Back
               {/* <img src={arrow} alt="" /> */}

@@ -9,7 +9,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1rem 3rem;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-pr);
 }
 
 .header .navbar-logo {
@@ -33,7 +33,7 @@
       justify-content: space-around;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #353535;
+  background-color: var(--comp-pr);
 }
 
 .header .nav-menu .nav-item {
@@ -46,8 +46,8 @@
 
 .header .nav-menu .nav-item .nav-links {
   text-decoration: none;
-  color: var(--text-color);
-  font-size: 1rem;
+  color: var(--text-pr);
+  font-size: var(--para);
 }
 
 .header .nav-menu .nav-item:hover {
@@ -57,8 +57,8 @@
 .header .buttons .btn {
   background: linear-gradient(90.49deg, var(--accent-pr) 17.35%, var(--accent-sec) 59.57%);
   padding: 0.5rem 2rem;
-  color: var(--text-color);
-  font-size: 1.3rem;
+  color: var(--text-pr);
+  font-size: var(--button);
   font-weight: bold;
   border: none;
   border-radius: 5px;

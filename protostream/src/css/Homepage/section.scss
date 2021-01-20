@@ -24,8 +24,8 @@
       padding: 2rem;
 
       .heading {
-        font-size: 3rem;
-        font-family: "Poppins", sans-serif;
+        font-size: var(--heading-main);
+        font-family: var(--font-pr);
         background: linear-gradient(
           90.49deg,
           var(--accent-pr) 17.35%,
@@ -38,17 +38,17 @@
       }
 
       .sub-head {
-        font-size: 1.3rem;
-        font-family: "Montserrat", sans-serif;
-        color: var(--text-color);
+        font-size: var(--para);
+        font-family: var(--font-sec);
+        color: var(--text-pr);
         margin-bottom: 1rem;
         user-select: none;
       }
 
       .span {
-        font-size: 1.4rem;
-        font-family: "Montserrat", sans-serif;
-        color: var(--text-color);
+        font-size: var(--span);
+        font-family: var(--font-sec);
+        color: var(--text-pr);
         user-select: none;
       }
 
@@ -61,8 +61,8 @@
         padding: 0.7rem 2rem;
         margin-top: 3rem;
         // color: #1d1d1d;
-        color: var(--text-color);
-        font-size: 1.3rem;
+        color: var(--text-pr);
+        font-size: var(--button);
         font-weight: bold;
         border: none;
         border-radius: 5px;
@@ -98,7 +98,7 @@
   .container {
     .hero-details {
       .heading {
-        color: var(--text-color);
+        color: var(--text-pr);
       }
       .btn {
         background: #fff;
