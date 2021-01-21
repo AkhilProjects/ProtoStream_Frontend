@@ -8,14 +8,14 @@ function Finalyear() {
       <div className="container">
         <h1 className="heading">Final Year Projects</h1>
         <div className="main-container">
-          <Card name="CSE" />
-          <Card name="IT" />
-          <Card name="ME" />
-          <Card name="EE" />
-          <Card name="CIVIL" />
-          <Card name="ECE" />
-          <Card name="EN" />
-          <Card name="PHARMA" />
+          <Card name="CSE" src="#" />
+          <Card name="IT" src="#" />
+          <Card name="ME" src="#" />
+          <Card name="EE" src="#" />
+          <Card name="CIVIL" src="#" />
+          <Card name="ECE" src="#" />
+          <Card name="EN" src="#" />
+          <Card name="PHARMA" src="#" />
         </div>
       </div>
     </div>
