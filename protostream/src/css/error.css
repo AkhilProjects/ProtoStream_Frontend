@@ -24,7 +24,7 @@
 .errorpage .box .details {
   width: 60%;
   text-align: center;
-  color: var(--text-color);
+  color: var(--text-pr);
   font-family: var(--font-pr);
 }
 

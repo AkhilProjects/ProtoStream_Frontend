@@ -62,13 +62,13 @@
       padding: 5%;
       grid-row-gap: 2rem;
       grid-column-gap: 2rem;
-      background-color: #1d1d1c;
+      background-color: var(--comp-pr);
       margin: 2rem;
 
       .reg {
         width: 100%;
         height: 100%;
-        background-color: #2b2b2b;
+        background-color: var(--comp-sec);
         border-radius: 10px;
         cursor: pointer;
         display: flex;
@@ -78,19 +78,19 @@
         flex-direction: column;
         padding: 2rem;
         transition: all 0.2s ease;
-        font-family: "Montserrat", sans-serif;
-        color: var(--text-color);
+        font-family: var(--font-sec);
+        color: var(--text-pr);
 
         h2 {
           margin-bottom: 3%;
-          font-size: 1.6rem;
+          font-size: var(--heading-small);
         }
 
        button{
            font-size: 5rem;
            color: var(--text-color);
            font-weight: bolder;
-           font-family: 'Poppins';
+           font-family: var(--font-pr);
            background-color: transparent;
            border: none;
        }

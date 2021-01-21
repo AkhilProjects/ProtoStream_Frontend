@@ -1,7 +1,7 @@
 .addform {
   width: 100%;
   height: 80vh;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-pr);
   margin: 5% 0;
 
   .container {
@@ -10,7 +10,7 @@
 
     .heading {
       margin: 1% 5%;
-      color: var(--text-color);
+      color: var(--text-pr);
     }
 
     .main-container {
@@ -33,8 +33,8 @@
         .main-head, h1{
           font-size: 2.5rem;
           text-align: center;
-          color: var(--text-color);
-          font-family: 'Poppins', sans-serif;
+          color: var(--text-pr);
+          font-family: var(--font-pr);
         }
         .leader-details{
           display: flex;
@@ -45,7 +45,7 @@
               width: 40%;
                .details-sec{
                 display: flex;
-                font-family: 'Poppins', sans-serif;
+                font-family:  var(--font-pr);
                 font-weight: normal;
                 margin-bottom: 10px;
 
@@ -84,6 +84,7 @@
       form {
         width: 60%;
         font-size: 1rem;
+
         .field {
           display: flex;
           justify-content: space-between;
@@ -97,6 +98,29 @@
             background-color: transparent;
             border: none;
             border-bottom: 2px solid #000;
+          }
+
+          .file{
+            // background-color:;
+            padding: 1rem;
+          }
+          .file::before{
+          }
+          .file::-webkit-file-upload-button{
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: var(--comp-sec);
+            color: var(--text-pr);
+            font-family: var(--font-sec);
+            font-weight: bold;
+            font-size: var(--span);
+            cursor: pointer;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.137);
+            border-radius: 10px;
+          }
+
+          .file::-webkit-file-upload-button:hover{
+            background-color: var(--comp-pr);
           }
         }
       }
@@ -140,7 +164,7 @@
         bottom: -30px;
         right: 5%;
         background-color: #4d4d4d;
-        color: var(--text-color);
+        color: var(--text-pr);
         padding: 1rem;
       }
       .nextpage:hover {
@@ -200,7 +224,7 @@
       transition: all 0.2s ease;
       width: 100%;
       background-color: #4d4d4d;
-      color: var(--text-color);
+      color: var(--text-pr);
       padding: 1rem;
     }
     button:hover{

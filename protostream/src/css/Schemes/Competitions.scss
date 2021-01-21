@@ -1,0 +1,33 @@
+.schemes-comp{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 5rem;
+    font-family: var(--font-pr);
+
+    .heading{
+        font-family: var(--font-pr);
+        color: var(--text-pr);
+        font-size: var(--heading-med);
+    }
+    .menu{
+        background-color: var(--comp-pr);
+        border-radius: 10px;
+        width: fit-content;
+        list-style: none;
+        display: flex;
+        margin: 2rem 0;
+
+        .item{
+            margin: 0 1rem;
+            color: var(--accent-sec);
+            font-weight: bold;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: var(--heading-small);
+        }
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

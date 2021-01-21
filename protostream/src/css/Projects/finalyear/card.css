@@ -26,8 +26,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Poppins", sans-serif;
-  color: var(--text-color);
+  font-family: var(--font-pr);
+  color: var(--text-pr);
   cursor: pointer;
   -webkit-box-shadow: 0 4px 10px #000000ad;
           box-shadow: 0 4px 10px #000000ad;
