@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from "./Card";
 import '../../css/Schemes/Competitions.css'
+import codechef from "../../assets/images/Codecheflogo.svg";
 
 function Competitions() {
     return (
@@ -18,43 +19,43 @@ function Competitions() {
             name="codechef"
             regdate="15 Jan 2021"
             startdate="20 Jan 2021"
-            src="#"
+            src={codechef}
           />
           <Card
             name="codechef"
             regdate="15 Jan 2021"
             startdate="20 Jan 2021"
-            src="#"
+            src={codechef}
           />
           <Card
             name="codechef"
             regdate="15 Jan 2021"
             startdate="20 Jan 2021"
-            src="#"
+            src={codechef}
           />
           <Card
             name="codechef"
             regdate="15 Jan 2021"
             startdate="20 Jan 2021"
-            src="#"
+            src={codechef}
           />
           <Card
             name="codechef"
             regdate="15 Jan 2021"
             startdate="20 Jan 2021"
-            src="#"
+            src={codechef}
           />
           <Card
             name="codechef"
             regdate="15 Jan 2021"
             startdate="20 Jan 2021"
-            src="#"
+            src={codechef}
           />
           <Card
             name="codechef"
             regdate="15 Jan 2021"
             startdate="20 Jan 2021"
-            src="#"
+            src={codechef}
           />
         </div>
       </div>
