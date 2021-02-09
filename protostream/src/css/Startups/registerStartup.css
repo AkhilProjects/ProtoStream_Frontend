@@ -1,0 +1,256 @@
+.register-startup {
+  width: 90%;
+  padding: 2rem;
+  height: 80vh;
+  margin: auto;
+  background: linear-gradient(111.9deg, var(--accent-pr) 26.31%, var(--accent-sec) 87.23%);
+  border-radius: 10px;
+  font-family: var(--font-pr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.register-startup .container-1 {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  color: var(--text-pr);
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.register-startup .container-1 .heading {
+  font-size: var(--heading-main);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+.register-startup .container-1 .sub-head {
+  text-align: center;
+  font-size: var(--heading-med);
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+.register-startup .container-1 form {
+  font-family: var(--font-sec);
+  font-weight: bold;
+  background: linear-gradient(111.9deg, var(--accent-pr) 26.31%, var(--accent-sec) 87.23%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.432);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.432);
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-startup .container-1 form label {
+  font-size: var(--span);
+  margin: 1rem 0;
+}
+
+.register-startup .container-1 form .input-field {
+  padding: 1rem;
+  font-size: var(--span);
+  color: white;
+  background-color: var(--comp-sec);
+  font-family: var(--font-pr);
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.432);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.432);
+}
+
+.register-startup .container-1 form .input-field:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.register-startup .container-1 form .button-otp {
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-sec);
+  border: none;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.register-startup .container-1 form .button-otp:hover {
+  background-color: var(--accent-pr);
+}
+
+.register-startup .container-1 form .verify {
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  font-family: var(--font-pr);
+  font-size: var(--button);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.register-startup .container-1 form .verify:hover {
+  background-color: #dadada;
+}
+
+.register-startup .container-1 .next-btn {
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: var(--font-pr);
+  font-size: var(--button);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.register-startup .container-1 .next-btn:hover {
+  background-color: #dadada;
+}
+
+.register-startup .container-2 {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.register-startup .container-2 .heading {
+  font-size: var(--heading-main);
+  color: var(--text-pr);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+.register-startup .container-2 .sub-head {
+  text-align: center;
+  color: var(--text-pr);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.432);
+  font-size: var(--heading-med);
+}
+
+.register-startup .container-2 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--font-pr);
+  font-size: var(--span);
+  padding: 1rem;
+}
+
+.register-startup .container-2 form .input-field {
+  padding: 0.5rem;
+  font-size: var(--span);
+  border: none;
+  font-family: var(--font-sec);
+  border-bottom: 2px solid black;
+  outline: none;
+  margin: 1rem 0;
+  font-weight: bold;
+  background-color: transparent;
+  width: 50%;
+}
+
+.register-startup .container-2 form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem 0;
+}
+
+.register-startup .container-2 form form .label {
+  margin-right: 2rem;
+}
+
+.register-startup .container-2 form form input {
+  margin-left: 0.5rem;
+  margin-right: 3rem;
+}
+
+.register-startup .container-2 form .verify {
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  font-family: var(--font-pr);
+  font-size: var(--button);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.register-startup .container-2 form .verify:hover {
+  background-color: #dadada;
+}
+
+.hidden {
+  width: 0;
+  visibility: hidden;
+}
+/*# sourceMappingURL=registerStartup.css.map */

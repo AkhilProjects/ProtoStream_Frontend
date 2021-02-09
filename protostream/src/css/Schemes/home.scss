@@ -9,7 +9,7 @@
     justify-content: center;
 
     .left{
-        color: var(--text-color);
+        color: var(--text-pr);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -20,6 +20,7 @@
             font-family: var(--font-pr);
             font-weight: bold;
             font-size: 3rem;
+            
         }
 
         .para{

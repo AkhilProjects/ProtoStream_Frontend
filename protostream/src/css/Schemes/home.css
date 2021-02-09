@@ -16,7 +16,7 @@
 }
 
 .schemes .left {
-  color: var(--text-color);
+  color: var(--text-pr);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
