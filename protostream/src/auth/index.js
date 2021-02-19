@@ -32,7 +32,7 @@ export const allHackathons = () => {
 };
 
 export const signin = (user) => {
-  console.log("inside signin route");
+  console.log("inside signin route" , API);
 
   return fetch(`${API}/login`, {
     method: "POST",
