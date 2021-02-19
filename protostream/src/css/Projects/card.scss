@@ -6,9 +6,10 @@
     height: 70vh;
     margin: 3% 0;
     border-radius: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-pr);
     text-align: center;
-    background-color: #3a3a3a;
+    background-color: var(--comp-pr);
+    box-shadow: 0 4px 10px  rgba(0, 0, 0, 0.226);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,15 +18,15 @@
 
     .details-sec {
       .main-head {
-        font-size: 2rem;
+        font-size: var(--heading-med);
         color: var(--accent-sec);
         margin-bottom: 5%;
       }
 
       .para {
-        color: var(--text-color);
+        color: var(--text-pr);
         width: 70%;
-        font-size: 1rem;
+        font-size: var(--para);
         margin: auto;
       }
     }
@@ -39,15 +40,15 @@
      .add{
        text-decoration: none;
         .add-project {
-        color: var(--text-color);
-        font-size: 1.1rem;
+        color: var(--text-pr);
+        font-size: var(--span);
         background-color: transparent;
         border: none;
         display: flex;
         cursor: pointer;
         align-items: center;
         font-weight: bold;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-sec);
 
         img {
           width: 30px;
@@ -57,18 +58,18 @@
      }
 
       .card-name {
-        background-color: #3a3a3a;
+        background-color: var(--comp-sec);
         border: none;
         padding: 0.3rem 1rem;
         border-radius: 10px;
         box-shadow: 0 2px 4px #00000063;
-        color: var(--text-color);
-        font-size: 1.1rem;
+        color: var(--text-pr);
+        font-size: var(--button);
         display: flex;
         cursor: pointer;
         align-items: center;
         font-weight: bold;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-sec);
 
         img {
           width: 20px;
@@ -84,12 +85,12 @@
 
   .hovering {
     background-color: var(--accent-pr);
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.2s ease;
 
     .details-sec {
       .main-head {
-        color: var(--text-color);
+        color: var(--text-pr);
       }
     }
   }

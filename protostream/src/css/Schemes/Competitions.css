@@ -1,0 +1,47 @@
+.schemes-comp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem 5rem;
+  font-family: var(--font-pr);
+}
+
+.schemes-comp .heading {
+  font-family: var(--font-pr);
+  color: var(--text-pr);
+  font-size: var(--heading-med);
+}
+
+.schemes-comp .menu {
+  background-color: var(--comp-pr);
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+}
+
+.schemes-comp .menu .item {
+  margin: 0 1rem;
+  color: var(--accent-sec);
+  font-weight: bold;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: var(--heading-small);
+}
+
+.schemes-comp .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+/*# sourceMappingURL=Competitions.css.map */

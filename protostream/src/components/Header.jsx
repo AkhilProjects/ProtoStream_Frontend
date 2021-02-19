@@ -70,11 +70,11 @@ const Header = () => {
         ) : (
           <li className="nav-item">
             <NavLink
-              to="/about"
+              to="/startups"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              About
+              Startups
             </NavLink>
           </li>
         )}

@@ -8,9 +8,9 @@
     margin: 2%;
 
     .heading {
-      font-family: "Poppins", sans-serif;
+      font-family: var(--font-pr);
       margin: 1% 5%;
-      color: var(--text-color);
+      color: var(--text-pr);
     }
 
     .main-container {
@@ -18,7 +18,7 @@
       margin: auto;
       border-radius: 10px;
       padding: 2rem;
-      background: #1d1d1d;
+      background: var(--comp-pr);
       height: 90%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);

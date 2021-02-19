@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,YAAY;EAC7B,MAAM,EAAE,IAAI;CAUf;;AAdD,AAMI,YANQ,CAMR,KAAK,CAAA;EAED,eAAe,EAAE,IAAI;EAErB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CAC1B",
+    "sources": [
+        "startups.scss"
+    ],
+    "names": [],
+    "file": "startups.css"
+}

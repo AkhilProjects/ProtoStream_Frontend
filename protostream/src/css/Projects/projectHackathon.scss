@@ -7,9 +7,9 @@
     margin: 2%;
 
     .heading {
-      font-family: "Poppins", sans-serif;
+      font-family: var(--font-pr);
       margin: 1% 5%;
-      color: var(--text-color);
+      color: var(--text-pr);
     }
 
     .main-container {
@@ -44,7 +44,7 @@
               font-size: 2rem;
               border: none;
               font-weight: bolder;
-              font-family: "Montserrat";
+              font-family: var(--font-sec);
               cursor: pointer;
               background-color: transparent;
             }
@@ -52,12 +52,12 @@
         }
         input {
           padding: 0.5rem;
-          font-size: 1.2rem;
+          font-size: var(--span);
           font-weight: bold;
           border: none;
           border-radius: 5px;
           background-color: var(--bg-sec);
-          color: var(--text-color);
+          color: var(--text-pr);
           outline: none;
           transition: all 0.2s ease;
         }

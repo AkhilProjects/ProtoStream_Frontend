@@ -1,0 +1,79 @@
+.card-startups {
+    width: 60%;
+    background-color: var(--comp-pr);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.555);
+    height: 80vh;
+    color: var(--text-pr);
+    font-family: var(--font-sec);
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in-out;
+
+    .head{
+        font-size: var(--heading-main);
+        font-family: var(--font-pr);
+    }
+
+    .sub-head {
+        font-size: var(--heading-med);
+        // visibility: hidden;
+        opacity: 0;
+        font-family: var(--font-pr);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .para{
+        font-size: var(--span);
+        width: 300px;
+        margin: 1px auto ;
+    }
+
+    .btn{
+        max-width: 60%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0.5rem 1rem;
+        font-size: var(--button);
+        background-color: transparent;
+        border: none;
+        color: var(--text-pr);
+        font-weight: bold;
+        font-family: var(--font-sec);
+        align-self: flex-end;
+
+        span{
+            border-radius: 50%;
+            color: var(--accent-sec);
+            background-color: #FFF;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-pr);
+            font-size: 30px;
+            height: 30px;
+        }
+    }
+
+
+}
+
+.card-startups:hover {
+    // width: 45%;
+    // transform: scaleX(1.3);
+    transform: scale(1.3);
+    height: 65vh;
+    cursor: pointer;
+    // background: linear-gradient(111.9deg, var(--accent-pr) 26.31%, var(--accent-sec)  87.23%);
+    background-color: var(--accent-sec);
+
+    .sub-head{
+        opacity: 1;
+    }
+}

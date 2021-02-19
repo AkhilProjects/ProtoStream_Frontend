@@ -8,14 +8,38 @@ function Finalyear() {
       <div className="container">
         <h1 className="heading">Final Year Projects</h1>
         <div className="main-container">
-          <Card name="CSE" />
-          <Card name="IT" />
-          <Card name="ME" />
-          <Card name="EE" />
-          <Card name="CIVIL" />
-          <Card name="ECE" />
-          <Card name="EN" />
-          <Card name="PHARMA" />
+          <Card
+            name="CSE"
+            src="http://www.africau.edu/images/default/sample.pdf"
+          />
+          <Card
+            name="IT"
+            src="http://www.africau.edu/images/default/sample.pdf"
+          />
+          <Card
+            name="ME"
+            src="http://www.africau.edu/images/default/sample.pdf"
+          />
+          <Card
+            name="EE"
+            src="http://www.africau.edu/images/default/sample.pdf"
+          />
+          <Card
+            name="CIVIL"
+            src="http://www.africau.edu/images/default/sample.pdf"
+          />
+          <Card
+            name="ECE"
+            src="http://www.africau.edu/images/default/sample.pdf"
+          />
+          <Card
+            name="EN"
+            src="http://www.africau.edu/images/default/sample.pdf"
+          />
+          <Card
+            name="PHARMA"
+            src="http://www.africau.edu/images/default/sample.pdf"
+          />
         </div>
       </div>
     </div>

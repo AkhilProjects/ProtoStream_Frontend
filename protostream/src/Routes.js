@@ -2,7 +2,11 @@ import Home from "./Home";
 import Signup from "./components/Signup";
 import Internships from "./Internships";
 import Projects from "./Projects";
+import Startups from "./Startups";
+import RegisterStartup from './components/Startups/RegisterStartup';
 import Schemes from "./Schemes";
+import Competitions from './components/Schemes/Competitions'
+import SchemeForm from "./components/Schemes/SchemeForm";
 import DashBoard from "./DashBoard";
 import About from "./components/About";
 import Footer from "./components/Footer";
@@ -28,12 +32,14 @@ const Routes = () => {
           <Route path="/" exact component={Home} />
           <PrivateRoute path="/internships" exact component={Internships} />
           <PrivateRoute path="/projects" exact component={Projects} />
+          <PrivateRoute path="/Startups" exact component={Startups} />
+          <PrivateRoute path="/Startups/register" exact component={RegisterStartup} />
           <PrivateRoute path="/user/dashboard" exact component={DashBoard} />
-            <PrivateRoute
-              path="/projects/hackathons"
-              exact
-              component={ProjectHackathon}
-            />
+          <PrivateRoute
+            path="/projects/hackathons"
+            exact
+            component={ProjectHackathon}
+          />
           <PrivateRoute
             path="/projects/finalyear"
             exact
@@ -41,6 +47,16 @@ const Routes = () => {
           />
           <PrivateRoute path="/projects/addform" exact component={Form} />
           <PrivateRoute path="/schemes" exact component={Schemes} />
+          <PrivateRoute
+            path="/schemes/competitions"
+            exact
+            component={Competitions}
+          />
+          <PrivateRoute
+            path="/schemes/addscheme"
+            exact
+            component={SchemeForm}
+          />
           <Route path="/about" exact component={About} />
           <PrivateRoute path="/errorpage" exact component={ErrorPage} />
           <Route path="/signup" exact component={Signup} />

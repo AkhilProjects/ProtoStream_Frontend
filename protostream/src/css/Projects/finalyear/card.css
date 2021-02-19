@@ -26,8 +26,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Poppins", sans-serif;
-  color: var(--text-color);
+  font-family: var(--font-pr);
+  color: var(--text-pr);
   cursor: pointer;
   -webkit-box-shadow: 0 4px 10px #000000ad;
           box-shadow: 0 4px 10px #000000ad;
@@ -40,5 +40,89 @@
           transform: scale(1.05);
   -webkit-box-shadow: 0 2px 10px #000000ad;
           box-shadow: 0 2px 10px #000000ad;
+}
+
+.branch-card .pdf-container {
+  background: linear-gradient(124.21deg, #fbd11b 28.71%, #ffb606 82.09%);
+  width: 80%;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.242);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.242);
+}
+
+.branch-card .pdf-container .close {
+  position: relative;
+  font-size: 4rem;
+  float: right;
+  right: 1%;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.226);
+  outline: none;
+  background: none;
+  border: none;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: var(--text-pr);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.branch-card .pdf-container .close:hover {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.branch-card .pdf-container .heading {
+  text-align: center;
+  font-size: var(--heading-main);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.226);
+}
+
+.branch-card .pdf-container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.branch-card .pdf-container .header .years {
+  list-style: none;
+}
+
+.branch-card .pdf-container .header .years li {
+  font-size: var(--heading-med);
+  font-weight: bold;
+  border-bottom: 5px solid black;
+}
+
+.branch-card .pdf-container .header .download {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.branch-card .pdf-container .container {
+  width: 95%;
+  margin: 1rem auto;
+  height: 65vh;
+}
+
+.branch-card .pdf-container .container iframe {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.432);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.432);
 }
 /*# sourceMappingURL=card.css.map */

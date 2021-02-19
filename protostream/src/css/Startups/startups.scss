@@ -1,0 +1,15 @@
+.startup-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem;
+
+    .link{
+        // width: 100%;
+        text-decoration: none;
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

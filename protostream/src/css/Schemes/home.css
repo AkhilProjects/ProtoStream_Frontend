@@ -16,7 +16,7 @@
 }
 
 .schemes .left {
-  color: var(--text-color);
+  color: var(--text-pr);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,12 @@
   width: 80%;
 }
 
-.schemes .left button {
+.schemes .left .add {
+  text-decoration: none;
+  color: var(--text-pr);
+}
+
+.schemes .left .add button {
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,13 +65,13 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: var(--text-color);
+  color: var(--text-pr);
   font-weight: bold;
   font-size: 1.5rem;
   outline: none;
 }
 
-.schemes .left button img {
+.schemes .left .add button img {
   font-size: 16px;
   margin-right: 0;
 }
@@ -86,14 +91,24 @@
   padding: 1rem;
 }
 
-.schemes .right button {
+.schemes .right .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: var(--text-pr);
+  text-decoration: none;
+}
+
+.schemes .right .button button {
   background-color: #3a3a3a;
   border: none;
   padding: 0.3rem 1rem;
   border-radius: 10px;
   -webkit-box-shadow: 0 2px 4px #00000063;
           box-shadow: 0 2px 4px #00000063;
-  color: var(--text-color);
+  color: var(--text-pr);
   font-size: 1.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,15 +118,10 @@
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   font-family: "Montserrat", sans-serif;
 }
 
-.schemes .right button img {
+.schemes .right .button button img {
   width: 20px;
   margin: 5px;
 }

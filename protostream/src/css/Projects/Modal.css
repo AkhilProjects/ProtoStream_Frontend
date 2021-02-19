@@ -39,17 +39,17 @@
 
 .modal .title {
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-pr);
   color: var(--accent-sec);
-  font-size: 3rem;
+  font-size: var(--heading-main);
 }
 
 .modal .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
-  font-family: "Poppins", sans-serif;
+  font-size: var(--span);
+  font-family: var(--font-pr);
 }
 
 .modal .details .left,

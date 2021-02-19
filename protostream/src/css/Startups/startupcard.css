@@ -1,0 +1,98 @@
+.card-startups {
+  width: 60%;
+  background-color: var(--comp-pr);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.555);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.555);
+  height: 80vh;
+  color: var(--text-pr);
+  font-family: var(--font-sec);
+  text-align: center;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-startups .head {
+  font-size: var(--heading-main);
+  font-family: var(--font-pr);
+}
+
+.card-startups .sub-head {
+  font-size: var(--heading-med);
+  opacity: 0;
+  font-family: var(--font-pr);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-startups .para {
+  font-size: var(--span);
+  width: 300px;
+  margin: 1px auto;
+}
+
+.card-startups .btn {
+  max-width: 60%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0.5rem 1rem;
+  font-size: var(--button);
+  background-color: transparent;
+  border: none;
+  color: var(--text-pr);
+  font-weight: bold;
+  font-family: var(--font-sec);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.card-startups .btn span {
+  border-radius: 50%;
+  color: var(--accent-sec);
+  background-color: #FFF;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: var(--font-pr);
+  font-size: 30px;
+  height: 30px;
+}
+
+.card-startups:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  height: 65vh;
+  cursor: pointer;
+  background-color: var(--accent-sec);
+}
+
+.card-startups:hover .sub-head {
+  opacity: 1;
+}
+/*# sourceMappingURL=startupcard.css.map */

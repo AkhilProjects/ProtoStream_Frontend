@@ -9,7 +9,7 @@
     justify-content: center;
 
     .left{
-        color: var(--text-color);
+        color: var(--text-pr);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -20,6 +20,7 @@
             font-family: var(--font-pr);
             font-weight: bold;
             font-size: 3rem;
+            
         }
 
         .para{
@@ -29,22 +30,26 @@
             width: 80%;
         }
 
-        button{
-            background-color: transparent;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 0.5rem;
-            border: none;
-            cursor: pointer;
-            width: fit-content;
-            color: var(--text-color);
-            font-weight: bold;
-            font-size: 1.5rem;
-            outline: none;
-            img{
-                font-size: 16px;
-                margin-right: 0;
+        .add{
+            text-decoration: none;
+            color: var(--text-pr);
+            button{
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 0.5rem;
+                border: none;
+                cursor: pointer;
+                width: fit-content;
+                color: var(--text-pr);
+                font-weight: bold;
+                font-size: 1.5rem;
+                outline: none;
+                img{
+                    font-size: 16px;
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -56,25 +61,29 @@
         height: 100%;
         padding: 1rem;        
 
-        button{
-            background-color: #3a3a3a;
-            border: none;
-            padding: 0.3rem 1rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px #00000063;
-            color: var(--text-color);
-            font-size: 1.1rem;
-            display: flex;
-            cursor: pointer;
-            align-items: center;
-            font-weight: bold;
+        .button{
             width: fit-content;
             align-self: flex-end;
-            font-family: "Montserrat", sans-serif;
+            color: var(--text-pr);
+            text-decoration: none;
+            button{
+                background-color: #3a3a3a;
+                border: none;
+                padding: 0.3rem 1rem;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px #00000063;
+                color: var(--text-pr);
+                font-size: 1.1rem;
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                font-weight: bold;
+                font-family: "Montserrat", sans-serif;
 
-            img {
-            width: 20px;
-            margin: 5px;
+                img {
+                width: 20px;
+                margin: 5px;
+                }
             }
         }
     }
