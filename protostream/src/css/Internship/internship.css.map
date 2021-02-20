@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;CAaf;;AAfD,AAII,YAJQ,CAIR,KAAK,CAAA;EACD,KAAK,EAAE,cAAc;EACrB,WAAW,EAAE,cAAc;EAC3B,SAAS,EAAE,mBAAmB;CACjC;;AARL,AAUI,YAVQ,CAUR,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,IAAI;CAEjB",
+    "sources": [
+        "internship.scss"
+    ],
+    "names": [],
+    "file": "internship.css"
+}

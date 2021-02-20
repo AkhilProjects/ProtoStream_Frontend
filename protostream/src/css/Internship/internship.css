@@ -1,0 +1,17 @@
+.internships {
+  width: 90%;
+  margin: auto;
+}
+
+.internships .head {
+  color: var(--text-pr);
+  font-family: var(--font-pr);
+  font-size: var(--heading-main);
+}
+
+.internships .cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+}
+/*# sourceMappingURL=internship.css.map */

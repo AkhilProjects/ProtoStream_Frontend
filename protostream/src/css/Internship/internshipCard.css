@@ -1,0 +1,121 @@
+.card-internship {
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: var(--comp-sec);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.card-internship header {
+  background-color: var(--comp-pr);
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  font-family: var(--font-pr);
+  color: var(--text-pr);
+  font-size: var(--heading-small);
+}
+
+.card-internship header .close {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  font-family: 'Poppins', sans-serif;
+  color: var(--accent-sec);
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.card-internship .details {
+  list-style: none;
+  font-family: var(--font-pr);
+  color: var(--text-pr);
+  font-size: var(--span);
+  text-align: center;
+  margin: 1rem;
+}
+
+.card-internship .details span {
+  color: var(--accent-sec);
+}
+
+.card-internship .summary {
+  margin: 2rem;
+  color: var(--text-sec);
+  font-family: var(--font-sec);
+  font-size: var(--span);
+  font-weight: bold;
+  display: none;
+}
+
+.card-internship .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-internship .buttons .register, .card-internship .buttons .arrow {
+  font-size: var(--button);
+  color: var(--text-pr);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-internship .buttons .register {
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-sec);
+}
+
+.card-internship .buttons .arrow {
+  background-color: transparent;
+  outline: none;
+  font-family: var(--font-pr);
+  color: var(--accent-sec);
+  font-size: 50px;
+  font-weight: bold;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.activated {
+  width: 50%;
+}
+
+.activated header {
+  color: var(--accent-sec);
+}
+
+.activated header .close {
+  visibility: visible;
+}
+
+.activated .summary {
+  display: block;
+}
+
+.activated .buttons .arrow {
+  opacity: 0;
+}
+/*# sourceMappingURL=internshipCard.css.map */

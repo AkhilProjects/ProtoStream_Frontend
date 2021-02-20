@@ -1,0 +1,16 @@
+.internships {
+    width: 90%;
+    margin: auto;
+
+    .head{
+        color: var(--text-pr);
+        font-family: var(--font-pr);
+        font-size: var(--heading-main);
+    }
+
+    .cards {
+        display: grid;
+        grid-gap: 1rem;
+        // grid-template-columns: repeat(auto-fit, );
+    }
+}
