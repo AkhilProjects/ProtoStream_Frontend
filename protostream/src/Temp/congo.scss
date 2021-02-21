@@ -1,0 +1,46 @@
+.congo{
+    width: 90%;
+    padding: 2rem;
+    height: 80vh;
+    margin: auto;
+    background: linear-gradient(111.9deg, var(--accent-pr) 26.31%, var(--accent-sec) 87.23%);
+    border-radius: 10px;
+    font-family: var(--font-pr);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+
+    .head{
+        font-size: var(--heading-main);
+        color: var(--text-pr);
+        font-weight: bold;
+        text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    img {
+        height: 70%;
+    }
+
+    .sub-head{
+        font-size: var(--heading-small);
+        color: var(--text-pr);
+        text-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .done {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.2);
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+        padding: 0.5rem 1rem;
+        align-self: center;
+        font-size: var(--button);
+    }
+}

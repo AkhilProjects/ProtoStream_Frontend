@@ -23,6 +23,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Finalyear from "./components/Projects/finalyear/Finalyear";
 import PrivateRoute from "./auth/helper/privateRoutes";
 
+// temp ======================================
+
+import Congo from './Temp/Congo'
+import DownNDA from "./Temp/DownNDA";
+import UploadNDA from "./Temp/UploadNDA";
+
+// temp ========================================
+
+
 const Routes = () => {
   return (
     <Router>
@@ -33,7 +42,11 @@ const Routes = () => {
           <PrivateRoute path="/internships" exact component={Internships} />
           <PrivateRoute path="/projects" exact component={Projects} />
           <PrivateRoute path="/Startups" exact component={Startups} />
-          <PrivateRoute path="/Startups/register" exact component={RegisterStartup} />
+          <PrivateRoute
+            path="/Startups/register"
+            exact
+            component={RegisterStartup}
+          />
           <PrivateRoute path="/user/dashboard" exact component={DashBoard} />
           <PrivateRoute
             path="/projects/hackathons"
@@ -57,6 +70,15 @@ const Routes = () => {
             exact
             component={SchemeForm}
           />
+
+          {/* temp ===================== */}
+
+          <PrivateRoute path="/temp/dnda" exact component={DownNDA} />
+          <PrivateRoute path="/temp/unda" exact component={UploadNDA} />
+          <PrivateRoute path="/temp/congo" exact component={Congo} />
+
+          {/* temp======================= */}
+
           <Route path="/about" exact component={About} />
           <PrivateRoute path="/errorpage" exact component={ErrorPage} />
           <Route path="/signup" exact component={Signup} />

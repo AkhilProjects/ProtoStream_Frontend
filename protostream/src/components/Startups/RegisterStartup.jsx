@@ -66,7 +66,7 @@ function RegisterStartup() {
             </form>
 
             <form>
-              <label className="label">My startup is: </label>
+              <label className="label">Startup Type: </label>
               <label htmlFor="idea">Service based</label>
               <input type="radio" name="idea" id="radio1" value="idea" />
               <label htmlFor="prototype">Product based</label>
@@ -79,6 +79,27 @@ function RegisterStartup() {
               <label htmlFor="product">else</label>
               <input type="radio" name="product" id="radio3" value="product" />
             </form>
+
+            <label htmlFor="domain">Founder's Name:</label>
+            <input type="text" name="domain" className="input-field" />
+
+            <label htmlFor="domain">Founder's E-mail:</label>
+            <input type="email" name="domain" className="input-field" />
+
+            <label htmlFor="domain">AADHAR ID number:</label>
+            <input type="number" name="domain" className="input-field" />
+
+            <label htmlFor="domain">Startup Breif:</label>
+            <textarea type="text" name="domain" className="input-field" word-limit="true" max-words="1000" min-words="300"/>
+
+            <label htmlFor="domain">Cofounder's Name:</label>
+            <input type="text" name="domain" className="input-field" />
+
+            <label htmlFor="domain">Cofounder's E-mail:</label>
+            <input type="email" name="domain" className="input-field" />
+
+            <label htmlFor="domain">Cofounder's Mobile:</label>
+            <input type="number" name="domain" className="input-field" />
 
             <button type="submit" className="verify">
               Submit

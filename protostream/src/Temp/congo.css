@@ -1,0 +1,61 @@
+.congo {
+  width: 90%;
+  padding: 2rem;
+  height: 80vh;
+  margin: auto;
+  background: linear-gradient(111.9deg, var(--accent-pr) 26.31%, var(--accent-sec) 87.23%);
+  border-radius: 10px;
+  font-family: var(--font-pr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.congo .head {
+  font-size: var(--heading-main);
+  color: var(--text-pr);
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.congo img {
+  height: 70%;
+}
+
+.congo .sub-head {
+  font-size: var(--heading-small);
+  color: var(--text-pr);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.congo .done {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: var(--button);
+}
+/*# sourceMappingURL=congo.css.map */
