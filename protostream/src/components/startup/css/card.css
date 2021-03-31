@@ -1,0 +1,110 @@
+.card {
+  min-width: 500px;
+  max-width: 500px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--comp-sec);
+  margin: 1rem;
+  font-family: var(--font-pr);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: var(--text-pr);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.card .head-section {
+  width: 100%;
+  background-color: var(--bg-sec);
+}
+
+.card .details-sec {
+  padding: 1rem;
+  font-size: var(--span);
+}
+
+.card .details-sec p span {
+  color: var(--accent-sec);
+  font-weight: bold;
+}
+
+.card .details-sec .hide {
+  display: none;
+}
+
+.card .buttons-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.card .buttons-section .arrow-btn {
+  color: var(--accent-sec);
+  font-weight: bolder;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.card .buttons-section .btn {
+  color: var(--text-pr);
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-sec);
+  font-size: var(--button);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.card .buttons-section .btn:hover {
+  background-color: var(--accent-pr);
+}
+
+.maxed {
+  width: 600px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.maxed .details-sec .hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+}
+
+.maxed .buttons-section .arrow-btn {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+/*# sourceMappingURL=card.css.map */

@@ -1,0 +1,78 @@
+.dnNDA{
+   .main-head {
+       margin: 1rem 8rem;
+    //    position: absolute;
+    //    left: 20%;
+       color: var(--text-pr);
+       font-family: var(--font-pr);
+   }
+    .container{
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        margin-bottom: 2rem;
+        position: relative;
+        top: 50%;
+        background: linear-gradient(111.9deg, var(--accent-pr) 26.31%, var(--accent-sec) 87.23%);
+        border-radius: 10px;
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: var(--font-pr);
+        color: black;
+
+        .form{
+            input{
+                margin-right: 1rem;
+            }
+            label{
+                font-size: var(--button);
+            }
+        }
+        .other-detail{
+            width: 100%;
+            margin-top: 5rem;
+
+            .subhead{
+                font-size: var(--heading-small);
+            }
+
+            .agreement{
+                margin: 1rem 0;
+                padding: 2rem;
+                font-size: var(--span);
+                background-color: var(--accent-sec);
+                border-radius: 10px;
+                display: flex;
+
+                .name{
+                    margin-right: 2rem;
+                }
+            }
+
+            .action{
+                    margin-top: 2rem;
+                }
+        }
+        .next{
+            position: absolute;
+            right: 5%;
+            bottom: 5%;
+            padding: 0.5rem 1rem;
+            font-size: var(--button);
+            color: var(--text-pr);
+            background-color: var(--comp-sec);
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.336);
+            transition: all 0.2s ease;
+        }
+
+        .next:hover{
+            background-color: var(--comp-pr);
+            cursor: pointer;
+        }
+    }
+}
