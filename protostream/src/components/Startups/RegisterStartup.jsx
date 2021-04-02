@@ -38,7 +38,7 @@ function RegisterStartup() {
         </div>
 
         <div className={next ? "container-2" : "hidden"}>
-          <h1 className="heading">Step 2</h1>
+          {/* <h1 className="heading">Step 2</h1> */}
           <h2 className="sub-head">Startup Details</h2>
           <form>
             <label htmlFor="name">Startup Name:</label>

@@ -1,4 +1,7 @@
 import React from 'react'
+import './css/unda.css'
+import upload from '../../assets/images/upload.svg'
+import arrow from "../../assets/images/arrow.svg";
 
 function UNDA() {
     return (
@@ -9,7 +12,10 @@ function UNDA() {
             <h3 className="heading">Non Disclosure Agreement</h3>
             <div className="upload">
               <p className="name">Signed NDA</p>
-              <button className="upload-btn"></button>
+              <label htmlFor="upload" className="file-input">
+                <img src={upload} alt=""/>
+              </label>
+              <input type="file" id="upload" />
             </div>
             <div className="field">
               <label htmlFor="">Project Site/Github: </label>
@@ -24,22 +30,20 @@ function UNDA() {
               <textarea
                 name=""
                 required
-                placeholder="500-800 words"
+                placeholder="300-800 words"
                 id=""
-                cols="30"
-                rows="10"
+                cols="35"
+                rows="5"
+                maxLength="800"
+                minLength="300"
               ></textarea>
             </div>
             <div className="field">
               <label htmlFor="">Presentation file: </label>
-              <input
-                type="file"
-                required
-                placeholder="*.ppt/*.pptx"
-              />
+              <input type="file" required placeholder="*.ppt/*.pptx" />
             </div>
           </form>
-          <button className="next">List Internships</button>
+          <button className="next">List Internships <img src={arrow} alt=""/></button>
         </div>
       </div>
     );

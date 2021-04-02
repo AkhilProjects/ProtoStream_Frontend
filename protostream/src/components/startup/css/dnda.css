@@ -54,10 +54,25 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .dnNDA .container .other-detail .agreement .name {
   margin-right: 2rem;
+}
+
+.dnNDA .container .other-detail .agreement .download {
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.dnNDA .container .other-detail .agreement .download:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .dnNDA .container .other-detail .action {
@@ -70,15 +85,26 @@
   bottom: 5%;
   padding: 0.5rem 1rem;
   font-size: var(--button);
+  font-family: var(--font-pr);
   color: var(--text-pr);
   background-color: var(--comp-sec);
   outline: none;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.336);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.336);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.dnNDA .container .next img {
+  margin-left: 10px;
 }
 
 .dnNDA .container .next:hover {

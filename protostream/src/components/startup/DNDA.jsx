@@ -1,5 +1,7 @@
 import React from 'react'
 import "./css/dnda.css"
+import arrow from "../../assets/images/arrow.svg";
+import upload from "../../assets/images/upload.svg";
 
 function DNDA() {
     return (
@@ -19,7 +21,7 @@ function DNDA() {
             <h4 className="subhead">Non Disclosure Agreement</h4>
             <div className="agreement">
               <p className="name">NDA.pdf</p>
-              <button className="download">Download</button>
+              <button className="download"><img src={upload} alt=""/></button>
             </div>
             <p className="action">
               *Download the file , Fill in all the details and get the idea
@@ -27,7 +29,7 @@ function DNDA() {
               next step to get your startup published on Protostream
             </p>
           </div>
-          <button className="next">Upload NDA</button>
+          <button className="next">Upload NDA <img src={arrow} alt=""/></button>
         </div>
       </div>
     );

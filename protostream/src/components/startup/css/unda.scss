@@ -1,0 +1,115 @@
+.UNDA{
+    .main-head{
+        margin: 1rem 8rem;
+        color: var(--text-pr);
+        font-family: var(--font-pr);
+    }
+
+    .container{
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        margin-bottom: 2rem;
+        position: relative;
+        top: 50%;
+        background: linear-gradient(111.9deg, var(--accent-pr) 26.31%, var(--accent-sec) 87.23%);
+        border-radius: 10px;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-pr);
+        color: black;
+
+        .form{
+            width: 60%;
+
+            .heading{
+                font-size: var(--heading-small);
+            }
+
+            .upload{
+                display: flex;
+                padding: 2rem;
+                background-color: var(--accent-sec);
+                border-radius: 10px;
+                width: 50%;
+                margin: 2rem 0;
+                align-items: center;
+
+                .name{  
+                    margin-right: 2rem;    
+                    font-size: var(--span);
+                }
+
+                // .upload-btn{
+                //     background-color: transparent;
+                //     border: none;
+                // }
+                label{
+                    cursor: pointer;
+                    transition: all 0.1s ease;
+                }
+
+                label:hover{
+                    filter: brightness(90%);
+                }
+                input{
+                    font-size: var(--span);
+                    font-family: var(--font-alt);
+                    display: none;
+                }
+            }
+
+            .field{
+                display: flex;
+                align-items: center;
+                label{
+                    font-size: var(--span);
+                }
+
+                input, textarea{
+                    border: none;
+                    padding: 0.5rem;
+                    background-color: var(--accent-sec);
+                    border-radius: 5px;
+                    margin: 1rem;
+                    font-size: var(--span);
+                    font-family: var(--font-alt);
+                    width: 100%;
+                }
+
+            }
+        }
+
+        .next{
+            position: absolute;
+            right: 5%;
+            font-family: var(--font-pr);
+            bottom: 5%;
+            padding: 0.5rem 1rem;
+            font-size: var(--button);
+            color: var(--text-pr);
+            background-color: var(--comp-sec);
+            outline: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.336);
+            transition: all 0.2s ease;
+
+            img{
+                margin-left: 10px;
+            }
+        }
+
+        .next:hover{
+            background-color: var(--comp-pr);
+            cursor: pointer;
+        }
+    }
+}
+
+button{
+    cursor: pointer;
+}

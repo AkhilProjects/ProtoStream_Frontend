@@ -28,6 +28,9 @@ import Congrats from "./components/startup/Congrats";
 import DNDA from "./components/startup/DNDA"
 import UNDA from "./components/startup/UNDA";
 import Internships from "./components/startup/Internships";
+import FormA from "./components/startup/FormA";
+import FormB from "./components/startup/FormB";
+
 
 
 
@@ -46,6 +49,8 @@ const Routes = () => {
           <PrivateRoute path="/temp2" exact component={DNDA} />
           <PrivateRoute path="/temp3" exact component={UNDA} />
           <PrivateRoute path="/temp4" exact component={Internships} />
+          <PrivateRoute path="/temp5" exact component={FormA} />
+          <PrivateRoute path="/temp6" exact component={FormB} />
 
           {/* Temp */}
 

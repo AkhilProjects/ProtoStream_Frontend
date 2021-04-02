@@ -1,10 +1,10 @@
-.UNDA .main-head {
+.form-page .main-head {
   margin: 1rem 8rem;
   color: var(--text-pr);
   font-family: var(--font-pr);
 }
 
-.UNDA .container {
+.form-page .container {
   width: 90%;
   height: 80vh;
   margin: auto;
@@ -25,64 +25,39 @@
   color: black;
 }
 
-.UNDA .container .form {
-  width: 60%;
-}
-
-.UNDA .container .form .heading {
-  font-size: var(--heading-small);
-}
-
-.UNDA .container .form .upload {
+.form-page .container .form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem;
-  background-color: var(--accent-sec);
-  border-radius: 10px;
-  width: 50%;
-  margin: 2rem 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  overflow: auto;
 }
 
-.UNDA .container .form .upload .name {
-  margin-right: 2rem;
-  font-size: var(--span);
-}
-
-.UNDA .container .form .upload label {
-  cursor: pointer;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-.UNDA .container .form .upload label:hover {
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
-}
-
-.UNDA .container .form .upload input {
-  font-size: var(--span);
-  font-family: var(--font-alt);
-  display: none;
-}
-
-.UNDA .container .form .field {
+.form-page .container .form .field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 2rem;
 }
 
-.UNDA .container .form .field label {
-  font-size: var(--span);
+.form-page .container .form .field label {
+  font-size: var(--para);
 }
 
-.UNDA .container .form .field input, .UNDA .container .form .field textarea {
+.form-page .container .form .field input, .form-page .container .form .field textarea {
   border: none;
   padding: 0.5rem;
   background-color: var(--accent-sec);
@@ -90,10 +65,10 @@
   margin: 1rem;
   font-size: var(--span);
   font-family: var(--font-alt);
-  width: 100%;
+  width: 80%;
 }
 
-.UNDA .container .next {
+.form-page .container .next {
   position: absolute;
   right: 5%;
   font-family: var(--font-pr);
@@ -117,16 +92,12 @@
   transition: all 0.2s ease;
 }
 
-.UNDA .container .next img {
+.form-page .container .next img {
   margin-left: 10px;
 }
 
-.UNDA .container .next:hover {
+.form-page .container .next:hover {
   background-color: var(--comp-pr);
   cursor: pointer;
 }
-
-button {
-  cursor: pointer;
-}
-/*# sourceMappingURL=unda.css.map */
+/*# sourceMappingURL=form.css.map */
