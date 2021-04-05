@@ -27,8 +27,20 @@
     .box {
       width: 250px;
       height: 250px;
-      background-color: #fff;
-      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+     
+      .startup-icon{
+        margin-bottom: 15px;
+      }
+
+      span{
+        font-size: var(--span);
+        font-family: var(--font-sec);
+        font-weight: bold;
+        color: var(--text-pr);
+      }
     }
   }
 }

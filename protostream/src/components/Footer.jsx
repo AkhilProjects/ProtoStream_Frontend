@@ -4,6 +4,7 @@ import instagram from "../assets/images/instagram.svg";
 import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
 import youtube from "../assets/images/youtube.svg";
+import {NavLink} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -53,22 +54,19 @@ const Footer = () => {
           <div className="head">Site link</div>
           <ul className="site-links">
             <li>
-              <a href="#">Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a href="#">About us</a>
+              <NavLink to="/about">About us</NavLink>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
             <li>
-              <a href="#">Team</a>
+              <NavLink to="/team">Team</NavLink>
             </li>
             <li>
-              <a href="#">FAQ</a>
-            </li>
-            <li>
-              <a href="#">Terms & Privacy policy</a>
+              <NavLink to="/terms">Privacy Policy</NavLink>
             </li>
           </ul>
         </div>

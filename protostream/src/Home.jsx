@@ -19,6 +19,7 @@ const Home = () => {
         btnText="Register"
         imageSrc={landing}
         classname="section"
+        link="signup"
       />
       <Asection
         imageSrc={internships}
@@ -27,6 +28,7 @@ const Home = () => {
         span="Be Whatever you desire to be."
         btnText="Internships"
         classname="section"
+        link="internships"
       />
       <Section
         heading="Prototyping to Product"
@@ -35,6 +37,7 @@ const Home = () => {
         btnText="Learn More"
         imageSrc={prototyping}
         classname="section"
+        link=''
       />
       <Section
         heading="Resource Box"
@@ -42,6 +45,7 @@ const Home = () => {
         btnText="Resources"
         imageSrc={resources}
         classname="resources section"
+        link=""
       />
       <Section
         heading="Participations just got easier"
@@ -49,6 +53,7 @@ const Home = () => {
         btnText="Hackathons"
         imageSrc={hackathon}
         classname="section"
+        link="projects/hackathons"
       />
       <Startups />
       <Footer />

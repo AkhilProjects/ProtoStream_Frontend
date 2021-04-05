@@ -1,7 +1,8 @@
 import React from "react";
 import "../../css/Homepage/section.css";
+import {NavLink} from "react-router-dom";
 
-function Section({ heading, subHeading, classname, span, btnText, imageSrc }) {
+function Section({ heading, subHeading, classname, span, btnText, imageSrc, link }) {
   return (
     <div>
       <div className={classname}>
@@ -10,7 +11,9 @@ function Section({ heading, subHeading, classname, span, btnText, imageSrc }) {
             <h1 className="heading">{heading}</h1>
             <p className="sub-head">{subHeading}</p>
             <div className="span">{span}</div>
-            <button className="btn">{btnText}</button>
+            <NavLink to={link}>
+              <button className="btn">{btnText}</button>
+            </NavLink>
           </div>
           <div className="hero-image">
             <img src={imageSrc} alt="" className="image" />

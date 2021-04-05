@@ -1,7 +1,8 @@
 import React from "react";
 import "../../css/Homepage/section.css";
+import {NavLink} from 'react-router-dom'
 
-function Asection({ heading, subHeading, span, btnText, imageSrc }) {
+function Asection({ heading, subHeading, span, btnText, imageSrc, link }) {
   return (
     <div>
       <div className="section">
@@ -13,7 +14,9 @@ function Asection({ heading, subHeading, span, btnText, imageSrc }) {
             <h1 className="heading">{heading}</h1>
             <div className="span">{span}</div>
             <p className="sub-head">{subHeading}</p>
-            <button className="btn">{btnText}</button>
+            <NavLink to={link}>
+              <button className="btn">{btnText}</button>
+            </NavLink>
           </div>
         </div>
       </div>

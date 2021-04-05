@@ -48,12 +48,11 @@ const Routes = () => {
           <PrivateRoute path="/temp1" exact component={Congrats} />
           <PrivateRoute path="/temp2" exact component={DNDA} />
           <PrivateRoute path="/temp3" exact component={UNDA} />
-          <PrivateRoute path="/temp4" exact component={Internships} />
-          <PrivateRoute path="/temp5" exact component={FormA} />
-          <PrivateRoute path="/temp6" exact component={FormB} />
+          <PrivateRoute path="/temp4" exact component={FormA} />
+          <PrivateRoute path="/temp5" exact component={FormB} />
 
           {/* Temp */}
-
+          <PrivateRoute path="/internships" exact component={Internships} />
           <PrivateRoute path="/projects" exact component={Projects} />
           <PrivateRoute path="/Startups" exact component={Startups} />
           <PrivateRoute
