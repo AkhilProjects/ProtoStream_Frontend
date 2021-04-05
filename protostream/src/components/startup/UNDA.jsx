@@ -2,6 +2,7 @@ import React from 'react'
 import './css/unda.css'
 import upload from '../../assets/images/upload.svg'
 import arrow from "../../assets/images/arrow.svg";
+import { NavLink } from "react-router-dom";
 
 function UNDA() {
     return (
@@ -43,7 +44,9 @@ function UNDA() {
               <input type="file" required placeholder="*.ppt/*.pptx" />
             </div>
           </form>
-          <button className="next">List Internships <img src={arrow} alt=""/></button>
+          <NavLink to="/list-internships">
+            <button className="next">List Internships <img src={arrow} alt=""/></button>
+          </NavLink>
         </div>
       </div>
     );

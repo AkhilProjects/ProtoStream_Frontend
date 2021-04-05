@@ -1,6 +1,6 @@
 .card{
-    min-width: 500px;
-    max-width: 500px;
+    min-width: 450px;
+    max-width: 450px;
     // max-height: 250px;
     height: fit-content;
     background-color: var(--comp-sec);
@@ -18,6 +18,17 @@
     .head-section{
         width: 100%;
         background-color: var(--bg-sec);
+        position: relative;
+
+        .close{
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            font-size: 40px;
+            color: var(--accent-sec);
+            display: none;
+        }
     }
 
     .details-sec{
@@ -81,6 +92,13 @@
         .hide{
             display: flex;
             margin: 2rem;
+        }
+    }
+
+    .head-section{
+        .close{
+            display: block;
+            cursor: pointer;
         }
     }
 

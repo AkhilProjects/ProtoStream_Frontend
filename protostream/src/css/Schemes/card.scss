@@ -4,7 +4,10 @@
     font-family: var(--font-pr);
     position: relative;
     background-color: red;
-    width: 95%;
+    // width: 95%;
+    margin: 1rem;
+    min-width: 500px;
+    max-width: 500px;
     margin-right: 1rem;
     margin-bottom: 2rem;
     border-radius: 10px;

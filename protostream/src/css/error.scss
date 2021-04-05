@@ -21,16 +21,19 @@
       font-family: var(--font-pr);
 
       .main-head{
-        font-size: 8rem;
+        font-size: 5rem;
       }
 
       .sub-head{
         font-size: 4rem;
+        margin-top: 2rem;
       }
 
       .para{
         font-size: 1.5rem;
         margin: 20px 0;
+        font-weight: bold;
+        font-family: var(--font-alt);
       }
 
       .btn{

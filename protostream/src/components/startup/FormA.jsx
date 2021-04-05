@@ -1,11 +1,12 @@
 import React from 'react'
 import "./css/form.css";
 import arrow from "../../assets/images/arrow.svg";
+import { NavLink } from "react-router-dom";
 
 function FormA() {
     return (
       <div className="form-page">
-          <h1 className="main-head">Startup Details</h1>
+        <h1 className="main-head">Startup Details</h1>
         <div className="container">
           <form className="form">
             <div className="field">
@@ -30,7 +31,13 @@ function FormA() {
             </div>
             <div className="field">
               <label htmlFor="breif">Startup Breif</label>
-              <textarea id="breif" cols="35" rows="5" minLength="300" placeholder="300-500 words"></textarea>
+              <textarea
+                id="breif"
+                cols="35"
+                rows="5"
+                minLength="300"
+                placeholder="300-500 words"
+              ></textarea>
             </div>
             <div className="field">
               <label htmlFor="cname">Co-Founder Name</label>
@@ -45,7 +52,11 @@ function FormA() {
               <input type="number" minLength="10" maxLength="10" id="cmob" />
             </div>
           </form>
-          <button className="next">Next Step <img src={arrow} alt=""/></button>
+          <NavLink to="/download-NDA">
+            <button className="next">
+              Next Step <img src={arrow} alt="" />
+            </button>
+          </NavLink>
         </div>
       </div>
     );

@@ -10,7 +10,10 @@ function Card({startup_name, title, pos, reward, details, }) {
     return (
       <div className={classname ? "card" : "card maxed"}>
         <div className="head-section">
-          <h1 className="title" onClick={min}>{startup_name}</h1>
+          <span className="close" onClick={min}>
+            +
+          </span>
+          <h1 className="title">{startup_name}</h1>
         </div>
         <div className="details-sec">
           <p>
@@ -25,7 +28,9 @@ function Card({startup_name, title, pos, reward, details, }) {
           <p className="hide">{details}</p>
         </div>
         <div className="buttons-section">
-          <button className="arrow-btn" onClick={max}><img src={arrow} alt=""/></button>
+          <button className="arrow-btn" onClick={max}>
+            <img src={arrow} alt="" />
+          </button>
           <button className="btn">Register</button>
         </div>
       </div>

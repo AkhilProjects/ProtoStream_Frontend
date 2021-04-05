@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import mobile from '../../assets/images/Mobile.svg';
 import '../../css/Startups/registerStartup.css';
+import {NavLink} from "react-router-dom"
 
 function RegisterStartup() {
     const [next, setNext] = useState(false);
@@ -32,13 +33,12 @@ function RegisterStartup() {
               Verify
             </button>
           </form>
-          <button className="next-btn" onClick={nextcontainer}>
-            Next Step
-          </button>
+          <NavLink to="/startup-details">
+            <button className="next-btn">Next Step</button>
+          </NavLink>
         </div>
 
-        <div className={next ? "container-2" : "hidden"}>
-          {/* <h1 className="heading">Step 2</h1> */}
+        {/* <div className={next ? "container-2" : "hidden"}>
           <h2 className="sub-head">Startup Details</h2>
           <form>
             <label htmlFor="name">Startup Name:</label>
@@ -88,7 +88,7 @@ function RegisterStartup() {
           <button className="next-btn" onClick={prevcontainer}>
             Previous
           </button>
-        </div>
+        </div> */}
       </div>
     );
 }

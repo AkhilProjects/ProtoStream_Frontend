@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/form.css";
 import arrow from "../../assets/images/arrow.svg";
+import { NavLink } from "react-router-dom";
 
 function FormB() {
   return (
@@ -77,9 +78,11 @@ function FormB() {
             <input type="link" id="gform" />
           </div>
         </form>
-        <button className="next">
-          Next Step <img src={arrow} alt="" />
-        </button>
+        <NavLink to="/registered-startup">
+          <button className="next">
+            Next Step <img src={arrow} alt="" />
+          </button>
+        </NavLink>
       </div>
     </div>
   );

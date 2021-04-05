@@ -29,16 +29,19 @@
 }
 
 .errorpage .box .details .main-head {
-  font-size: 8rem;
+  font-size: 5rem;
 }
 
 .errorpage .box .details .sub-head {
   font-size: 4rem;
+  margin-top: 2rem;
 }
 
 .errorpage .box .details .para {
   font-size: 1.5rem;
   margin: 20px 0;
+  font-weight: bold;
+  font-family: var(--font-alt);
 }
 
 .errorpage .box .details .btn {

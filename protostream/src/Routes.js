@@ -11,7 +11,8 @@ import DashBoard from "./DashBoard";
 import About from "./components/footer/About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import ErrorPage from "./components/ErrorPage";
+import Error404 from "./components/Error404";
+import Error99 from "./components/Error99";
 import Contact from "./components/footer/Contact";
 import Terms from "./components/footer/Terms";
 import Team from "./components/footer/Team";
@@ -45,11 +46,11 @@ const Routes = () => {
 
           {/* Temp */}
 
-          <PrivateRoute path="/temp1" exact component={Congrats} />
-          <PrivateRoute path="/temp2" exact component={DNDA} />
-          <PrivateRoute path="/temp3" exact component={UNDA} />
-          <PrivateRoute path="/temp4" exact component={FormA} />
-          <PrivateRoute path="/temp5" exact component={FormB} />
+          <PrivateRoute path="/registered-startup" exact component={Congrats} />
+          <PrivateRoute path="/download-NDA" exact component={DNDA} />
+          <PrivateRoute path="/upload-NDA" exact component={UNDA} />
+          <PrivateRoute path="/startup-details" exact component={FormA} />
+          <PrivateRoute path="/list-internships" exact component={FormB} />
 
           {/* Temp */}
           <PrivateRoute path="/internships" exact component={Internships} />
@@ -84,7 +85,8 @@ const Routes = () => {
             component={SchemeForm}
           />
           {/* <Route path="/about" exact component={About} /> */}
-          <PrivateRoute path="/errorpage" exact component={ErrorPage} />
+          <PrivateRoute path="/error_404" exact component={Error404} />
+          <PrivateRoute path="/error_99" exact component={Error99} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/login" exact component={Signup} />
           <Route path="/contact" exact component={Contact} />
