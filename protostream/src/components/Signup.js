@@ -84,8 +84,9 @@ const Signup = () => {
               didRedirect: true,
             });
           });
-          console.log("after authentication");
-          return <Redirect to="/user/dashboard" />;
+          performRedirect();
+          // console.log("after authentication");
+          // return <Redirect to="/user/dashboard" />;
         }
       })
       .catch((data) => {
