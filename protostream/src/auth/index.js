@@ -1,7 +1,6 @@
 const { API } = require("../backend");
 
 export const signup = (user) => {
-  console.log(user);
   return fetch(`${API}/register`, {
     method: "POST",
     headers: {
@@ -14,6 +13,7 @@ export const signup = (user) => {
       return response.json();
     })
     .catch((error) => {
+      console.log("inside error");
       console.log(error);
     });
 };
@@ -64,6 +64,8 @@ export const signout = (next) => {
 };
 
 export const authenticate = (data, next) => {
+  console.log("[AUTHENTICATE..]")
+  console.log("data.......",data);
   if (typeof window !== "undefined") {
     localStorage.setItem("jwt", JSON.stringify(data));
     next();

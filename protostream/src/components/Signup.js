@@ -68,6 +68,7 @@ const Signup = () => {
     }
   };
 
+ 
   const onSubmitSignUp = (event) => {
     console.log("inside onSubmitSignUp");
     event.preventDefault();
@@ -83,6 +84,8 @@ const Signup = () => {
               didRedirect: true,
             });
           });
+          console.log("after authentication");
+          return <Redirect to="/user/dashboard" />;
         }
       })
       .catch((data) => {
