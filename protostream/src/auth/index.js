@@ -1,5 +1,18 @@
 const { API } = require("../backend");
 
+export const schemeSubmit = (scheme, userId) => {
+  return fetch(`${API}/schemes/createScheme/${userId}`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/type",
+    },
+    body: JSON.stringify(scheme),
+  })
+    .then((response) => response.json())
+    .catch((error) => error);
+};
+
 export const signup = (user) => {
   return fetch(`${API}/register`, {
     method: "POST",
@@ -64,8 +77,8 @@ export const signout = (next) => {
 };
 
 export const authenticate = (data, next) => {
-  console.log("[AUTHENTICATE..]")
-  console.log("data.......",data);
+  console.log("[AUTHENTICATE..]");
+  console.log("data.......", data);
   if (typeof window !== "undefined") {
     localStorage.setItem("jwt", JSON.stringify(data));
     next();
