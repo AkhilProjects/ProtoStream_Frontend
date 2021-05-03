@@ -31,6 +31,7 @@ import UNDA from "./components/startup/UNDA";
 import Internships from "./components/startup/Internships";
 import FormA from "./components/startup/FormA";
 import FormB from "./components/startup/FormB";
+import Resources from "./components/Resources/Resources";
 
 
 
@@ -93,6 +94,7 @@ const Routes = () => {
           <Route path="/terms" exact component={Terms} />
           <Route path="/team" exact component={Team} />
           <Route path="/about" exact component={About} />
+          <Route path="/resources" exact component={Resources} />
         </Switch>
         {/* <Footer /> */}
       </div>

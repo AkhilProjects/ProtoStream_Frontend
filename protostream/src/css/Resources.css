@@ -1,0 +1,42 @@
+.resources-section {
+  width: 90%;
+  margin: 2rem auto;
+  color: var(--text-pr);
+  font-family: var(--font-sec);
+}
+
+.resources-section .main-heading {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  -webkit-text-decoration-color: var(--accent-sec);
+          text-decoration-color: var(--accent-sec);
+  font-size: var(--heading-main);
+  margin-bottom: 1rem;
+}
+
+.resources-section .sub {
+  font-size: var(--heading-med);
+  color: var(--accent-sec);
+  margin: 1rem 0;
+}
+
+.resources-section .sec .head {
+  font-size: var(--heading-small);
+  margin: 2rem 0;
+}
+
+.resources-section .sec .comp .subhead {
+  color: var(--accent-sec);
+  margin: 1rem 0;
+}
+
+.resources-section .sec .comp p {
+  color: var(--text-pr);
+  font-family: var(--font-alt);
+  font-size: var(--span);
+  line-height: 30px;
+  word-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+}
+/*# sourceMappingURL=Resources.css.map */
