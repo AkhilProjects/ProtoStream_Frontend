@@ -1,5 +1,5 @@
 .resources-section{
-    width: 90%;
+    width: 80%;
     margin: 2rem auto;
     color: var(--text-pr);
     font-family: var(--font-sec);
@@ -25,18 +25,32 @@
             margin: 2rem 0;
         }
 
-        .comp{
-            .subhead{
-                color: var(--accent-sec);
-                margin: 1rem 0;
-            }
-            p{
+        p{
                 color: var(--text-pr);
                 font-family: var(--font-alt);
                 font-size: var(--span);
                 line-height: 30px;
                 word-spacing: 0.1rem;
                 letter-spacing: 0.1rem;
+                margin: 1rem 0;
+            }
+        .comp{
+            .subhead{
+                color: var(--accent-sec);
+                margin: 1rem 0;
+            }
+            
+            ul{
+                margin: 1rem;
+                li{
+                    color: var(--text-pr);
+                    font-family: var(--font-alt);
+                    font-weight: 600;
+                    font-size: var(--span);
+                    line-height: 30px;
+                    word-spacing: 0.1rem;
+                    letter-spacing: 0.1rem;
+                }
             }
         }
     }
