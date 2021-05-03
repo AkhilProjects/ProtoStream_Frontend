@@ -54,19 +54,23 @@ const Footer = () => {
           <div className="head">Site link</div>
           <ul className="site-links">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <a href="/">Home</a>
             </li>
             <li>
-              <NavLink to="/about">About us</NavLink>
+              {/* <NavLink to="/about">About us</NavLink> */}
+              <a href="/about">About us</a>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              {/* <NavLink to="/contact">Contact</NavLink> */}
+              <a href="/contact">Contact</a>
             </li>
             <li>
-              <NavLink to="/team">Team</NavLink>
+              {/* <NavLink to="/team">Team</NavLink> */}
+              <a href="/team">Team</a>
             </li>
             <li>
-              <NavLink to="/terms">Privacy Policy</NavLink>
+              {/* <NavLink to="/terms">Privacy Policy</NavLink> */}
+              <a href="/terms">Privacy Policy</a>
             </li>
           </ul>
         </div>

@@ -43,13 +43,12 @@ const Dashboard = () => {
               onClick={onClickMyProjects}
             />
             {/* <NavLink to="/resources" className="navlink"> */}
-              <Box
-                heading="Resource Box"
-                para="Your curated list of tools and business courses to help you along
+            <Box
+              heading="Resource Box"
+              para="Your curated list of tools and business courses to help you along
               the journey"
-              />
-            {/* </NavLink> */}
-
+            />
+            
             <Box
               heading="Learn Entrepreneurship"
               para="Enroll into Entrepreneurship courses at MIT OCW"
