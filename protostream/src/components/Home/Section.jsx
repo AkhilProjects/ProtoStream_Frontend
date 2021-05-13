@@ -11,9 +11,11 @@ function Section({ heading, subHeading, classname, span, btnText, imageSrc, link
             <h1 className="heading">{heading}</h1>
             <p className="sub-head">{subHeading}</p>
             <div className="span">{span}</div>
-            <NavLink to={link}>
+            {/* <NavLink to={link}> */}
+            <a href={link}>
               <button className="btn">{btnText}</button>
-            </NavLink>
+            </a>
+            {/* </NavLink> */}
           </div>
           <div className="hero-image">
             <img src={imageSrc} alt="" className="image" />

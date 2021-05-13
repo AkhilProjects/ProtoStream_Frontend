@@ -37,7 +37,7 @@ const Home = () => {
         btnText="Learn More"
         imageSrc={prototyping}
         classname="section"
-        link=''
+        link=""
       />
       <Section
         heading="Resource Box"
@@ -45,7 +45,7 @@ const Home = () => {
         btnText="Resources"
         imageSrc={resources}
         classname="resources section"
-        link=""
+        link="resources"
       />
       <Section
         heading="Participations just got easier"
