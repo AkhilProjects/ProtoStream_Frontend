@@ -1,6 +1,21 @@
 const { API } = require("../backend");
 
-export const schemeSubmit = (scheme, userId) => {
+export const hackathonSubmit = (hackathon, userId) => {
+  return fetch(`${API}/hackathon/createHackathon/${userId}`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/type",
+    },
+    body: JSON.stringify(hackathon),
+  })
+    .then((response) => response.json())
+    .catch((error) => error);
+};
+
+export const schemeSubmit = (scheme) => {
+  console.log("scheme", scheme);
+  const userId = scheme.user.user._id;
   return fetch(`${API}/schemes/createScheme/${userId}`, {
     method: "POST",
     headers: {
@@ -46,6 +61,7 @@ export const allHackathons = () => {
 
 export const signin = (user) => {
   console.log("inside signin route");
+  console.log("[USER SIGNIN]", user);
 
   return fetch(`${API}/login`, {
     method: "POST",

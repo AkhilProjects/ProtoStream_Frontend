@@ -5,7 +5,7 @@ import { allHackathons } from "../../auth/index";
 
 function ProjectHackathon() {
   const [hackathons, setHackathons] = useState([]);
-      var AllHackathons = [];
+      
 
   const getResponse = async () => {
     const response = await allHackathons()
