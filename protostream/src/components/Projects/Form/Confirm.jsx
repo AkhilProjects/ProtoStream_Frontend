@@ -4,70 +4,19 @@ import "../../../css/Projects/Form/form.css";
 import check from "../../../assets/images/check.svg";
 import arrow from "../../../assets/images/arrow.svg";
 
-// function ConfirmTeam({ formData, navigation }) {
-//     const {                                  
-//       MemberName,
-//       MemberBranch,
-//       MemberRollNo,
-//       MemberEmail,
-//       MemberName1,
-//       MemberBranch1,
-//       MemberRollNo1,
-//       MemberEmail1,
-//       MemberName2,
-//       MemberBranch2,
-//       MemberRollNo2,
-//       MemberEmail2,
-//     } = formData;
-
-//   return (
-//     <div className="addform">
-//       <div className="container">
-//         <h1 className="heading">Confirm Team</h1>
-//         <div className="main-container">
-//           <div className="details">
-//             <h1>Your team</h1>
-//             <div className="cards">
-//               <CardTeam
-//                 name={MemberName}
-//                 rno={MemberRollNo}
-//                 branch={MemberBranch}
-//                 email={MemberEmail}
-//               />
-//               <CardTeam
-//                 name={MemberName1}
-//                 rno={MemberRollNo1}
-//                 branch={MemberBranch1}
-//                 email={MemberEmail1}
-//               />
-//               <CardTeam
-//                 name={MemberName2}
-//                 rno={MemberRollNo2}
-//                 branch={MemberBranch2}
-//                 email={MemberEmail2}
-//               />
-//             </div>
-//             <button className="nextpage" onClick={() => navigation.next()}>
-//               Confirm <img src={check} alt="" />
-//             </button>
-//             <button className="nextpage prev" onClick={() => navigation.previous()}>
-//               Edit
-//               <img src={check} alt="" />
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default ConfirmTeam
-
-
 import React, { Component } from "react";
 import CardTeam from "./CardTeam";
+import { hackathonSubmit, isAuthenticated } from "../../../auth";
 
 export default class Confirm extends Component {
+  onSubmitHandler = (event) => {
+    const { user } = isAuthenticated();
+    event.preventDefault();
+    hackathonSubmit(this.props.values, user._id)
+      .then((response) => console.log(response))
+      .catch((err) => console.log("[ERROR]", err));
+  };
+
   continue = (e) => {
     e.preventDefault();
     this.props.nextStep();
@@ -129,7 +78,7 @@ export default class Confirm extends Component {
                   <span className="ans">{AddDescription}</span>
                 </div>
               </div>
-              <h1 className='team'>Your team</h1>
+              <h1 className="team">Your team</h1>
               <div className="cards">
                 <CardTeam
                   name={MemberName}
@@ -150,13 +99,12 @@ export default class Confirm extends Component {
                   email={MemberEmail2}
                 />
               </div>
-              <button className="nextpage" onClick={this.continue}>
+              <button className="nextpage" onClick={this.onSubmitHandler}>
                 Confirm
                 <img src={check} alt="" />
               </button>
               <button className="nextpage prev" onClick={this.back}>
                 Edit
-                {/* <img src={arrow} alt="" /> */}
               </button>
             </div>
           </div>
@@ -165,4 +113,3 @@ export default class Confirm extends Component {
     );
   }
 }
-

@@ -73,8 +73,6 @@
 
 // export default MultiStepForm;
 
-
-
 import React, { Component } from "react";
 import AddFrom from "./Addform";
 import Member1 from "./Member1";
@@ -211,6 +209,8 @@ export class Form extends Component {
           />
         );
       case 6:
+        return <Submit />;
+      default:
         return <Submit />;
     }
   }

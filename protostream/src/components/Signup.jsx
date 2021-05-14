@@ -26,16 +26,13 @@ const Signup = () => {
     setValues({...values,error:false,loading:true});
      signin({email,password}).then((data) =>{
       if (data.error){
-        console.log("in error");
         setValues({...values,error:data.error,loading:false})
       }else{
         authenticate(data,() =>{
-          console.log("inside authenticate");
           setValues({
             ...values,didRedirect:true,
           })
           performRedirect();
-          console.log(values);
         })
       }
     })
