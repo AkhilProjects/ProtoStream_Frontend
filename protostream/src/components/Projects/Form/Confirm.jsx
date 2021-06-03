@@ -10,9 +10,10 @@ import { hackathonSubmit, isAuthenticated } from "../../../auth";
 
 export default class Confirm extends Component {
   onSubmitHandler = (event) => {
-    const { user } = isAuthenticated();
     event.preventDefault();
-    hackathonSubmit(this.props.values, user._id)
+    const { user } = isAuthenticated();
+    const hackathon = this.props.values;
+    hackathonSubmit(hackathon, user._id)
       .then((response) => console.log(response))
       .catch((err) => console.log("[ERROR]", err));
   };
