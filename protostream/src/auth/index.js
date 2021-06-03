@@ -13,16 +13,13 @@ export const hackathonSubmit = (hackathon, userId) => {
     .catch((error) => error);
 };
 
-export const schemeSubmit = (scheme) => {
-  console.log("scheme", scheme);
-  const userId = scheme.user.user._id;
+export const schemeSubmit = (userId, scheme) => {
   return fetch(`${API}/schemes/createScheme/${userId}`, {
     method: "POST",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/type",
     },
-    body: JSON.stringify(scheme),
+    body: scheme,
   })
     .then((response) => response.json())
     .catch((error) => error);

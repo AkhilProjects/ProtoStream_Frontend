@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "../../css/Projects/Form/form.css";
 import check from "../../assets/images/check.svg";
@@ -7,25 +7,40 @@ import { Redirect } from "react-router";
 
 const SchemeForm = () => {
   const [values, setValues] = useState({
-    ctitle: "",
-    org: "",
-    regdead: "",
-    strdate: "",
-    enddate: "",
-    regpagelink: "",
-    himg: "",
-    dfile: "",
+    compTitle: "",
+    organizer: "",
+    deadline: "",
+    starting: "",
+    ending: "",
+    registrationLink: "",
+    details: "",
+    image: "",
+    formData: "",
     error: false,
     loading: false,
   });
 
-  const scheme = values;
+  const { formData } = values;
+
 
   const user = isAuthenticated();
 
+  const preload = () => {
+    setValues({ ...values, formData: new FormData() });
+  };
+
+  useEffect(() => {
+    preload();
+  }, []);
+
   const handleChange = (name) => (event) => {
-    console.log("inside handlechange");
-    setValues({ ...values, error: false, [name]: event.target.value });
+    let value;
+    if (name === "image") value = event.target.files[0];
+    else if (name === "details") value = event.target.files[0];
+    else value = event.target.value;
+    formData.set(name, value);
+
+    setValues({ ...values, error: false, [name]: value });
   };
 
   const errorMessage = (error) => {
@@ -36,11 +51,11 @@ const SchemeForm = () => {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
+
     setValues({ ...values, error: false, loading: true });
-    schemeSubmit({ scheme,user })
+    schemeSubmit(user.user._id, formData)
       .then()
-      .catch((err) =>{
-        console.log("inside error ");
+      .catch((err) => {
         errorMessage(err)();
       });
   };
@@ -53,75 +68,77 @@ const SchemeForm = () => {
           <div className="main-container">
             <form>
               <div className="field">
-                <label htmlFor="ctitle">Competition title:</label>
+                <label htmlFor="compTitle">Competition title:</label>
                 <input
                   type="text"
-                  name="ctitle"
+                  name="compTitle"
                   className="input"
-                  onChange={handleChange("ctitle")}
+                  onChange={handleChange("compTitle")}
                 />
               </div>
               <div className="field">
-                <label htmlFor="org">Organizer:</label>
+                <label htmlFor="organizer">Organizer:</label>
                 <input
                   type="text"
-                  name="org"
+                  name="organizer"
                   className="input"
-                  onChange={handleChange("org")}
+                  onChange={handleChange("organizer")}
                 />
               </div>
               <div className="field">
-                <label htmlFor="regdead">Registration Deadline:</label>
+                <label htmlFor="deadline">Registration Deadline:</label>
                 <input
                   type="date"
-                  name="regdead"
+                  name="deadline"
                   className="input"
-                  onChange={handleChange("regdead")}
+                  onChange={handleChange("deadline")}
                 />
               </div>
               <div className="field">
-                <label htmlFor="strdate">Starting date:</label>
+                <label htmlFor="starting">Starting date:</label>
                 <input
                   type="date"
-                  name="strdate"
+                  name="starting"
                   className="input"
-                  onChange={handleChange("strdate")}
+                  onChange={handleChange("starting")}
                 />
               </div>
               <div className="field">
-                <label htmlFor="enddate">End Date:</label>
+                <label htmlFor="ending">End Date:</label>
                 <input
                   type="date"
-                  name="enddate"
+                  name="ending"
                   className="input"
-                  onChange={handleChange("enddate")}
+                  onChange={handleChange("ending")}
                 />
               </div>
               <div className="field">
-                <label htmlFor="regpagelink">Registration Page Link:</label>
+                <label htmlFor="registrationLink">
+                  Registration Page Link:
+                </label>
                 <input
                   type="text"
-                  name="regpagelink"
+                  name="registrationLink"
                   className="input"
-                  onChange={handleChange("regpagelink")}
+                  onChange={handleChange("registrationLink")}
                 />
               </div>
               <div className="field">
-                <label htmlFor="himg">Attach Header Image:</label>
+                <label htmlFor="image">Attach Header Image:</label>
                 <input
                   type="file"
-                  name="himg"
+                  name="image"
                   className="file"
-                  onChange={handleChange("himg")}
+                  onChange={handleChange("image")}
                 />
               </div>
               <div className="field">
-                <label htmlFor="dfile">Attach Details file:</label>
+                <label htmlFor="details">Attach Details file:</label>
                 <input
                   type="file"
-                  name="dfile"
+                  name="details"
                   className="file"
-                  onChange={handleChange("dfile")}
+                  onChange={handleChange("details")}
                 />
               </div>
               <button className="nextpage" onClick={onSubmitHandler}>
