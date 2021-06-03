@@ -17,6 +17,7 @@ import Contact from "./components/footer/Contact";
 import Terms from "./components/footer/Terms";
 import Team from "./components/footer/Team";
 import ProjectHackathon from "./components/Projects/ProjectHackathon";
+import ProjectInnotech from "./components/Projects/ProjectInnotech";
 import Addform from "./components/Projects/Form/Addform";
 import Form from "./components/Projects/Form/Form";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -33,6 +34,9 @@ import FormA from "./components/startup/FormA";
 import FormB from "./components/startup/FormB";
 import Resources from "./components/Resources/Resources";
 
+
+import Signin from './components/Authentication/Signin'
+import Signup2 from './components/Authentication/Signup'
 
 
 
@@ -69,6 +73,11 @@ const Routes = () => {
             component={ProjectHackathon}
           />
           <PrivateRoute
+            path="/projects/innotech"
+            exact
+            component={ProjectInnotech}
+          />
+          <PrivateRoute
             path="/projects/finalyear"
             exact
             component={Finalyear}
@@ -89,6 +98,8 @@ const Routes = () => {
           <PrivateRoute path="/error_404" exact component={Error404} />
           <PrivateRoute path="/error_99" exact component={Error99} />
           <Route path="/signup" exact component={Signup} />
+          <Route path="/signin" exact component={Signin} />
+          <Route path="/signup2" exact component={Signup2} />
           <Route path="/login" exact component={Signup} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/terms" exact component={Terms} />
