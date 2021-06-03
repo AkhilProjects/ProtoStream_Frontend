@@ -1,16 +1,25 @@
 const { API } = require("../backend");
 
 export const hackathonSubmit = (hackathon, userId) => {
+  console.log("inside hackathon submit", hackathon);
   return fetch(`${API}/hackathon/createHackathon/${userId}`, {
     method: "POST",
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/type",
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(hackathon),
   })
     .then((response) => response.json())
     .catch((error) => error);
+};
+
+export const schemeFetch = () => {
+  return fetch(`${API}/schemes/allSchemes/`, {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .catch((err) => console.log(err));
 };
 
 export const schemeSubmit = (userId, scheme) => {
