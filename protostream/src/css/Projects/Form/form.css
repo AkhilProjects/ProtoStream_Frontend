@@ -267,4 +267,59 @@
 .submit-container .submit .btn button:hover {
   background-color: #383838;
 }
+
+.submit {
+  width: 95%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(111.9deg, var(--accent-pr), var(--accent-sec));
+  height: 90%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.submit .btn {
+  width: 15%;
+}
+
+.submit .btn button {
+  padding: 1rem 2rem;
+  margin-top: 5%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.61);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.61);
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-family: "Montserrat";
+  outline: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 100%;
+  background-color: #4d4d4d;
+  color: var(--text-pr);
+  padding: 1rem;
+}
+
+.submit .btn button:hover {
+  background-color: #383838;
+}
 /*# sourceMappingURL=form.css.map */

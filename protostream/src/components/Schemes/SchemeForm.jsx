@@ -4,6 +4,7 @@ import "../../css/Projects/Form/form.css";
 import check from "../../assets/images/check.svg";
 import { isAuthenticated, schemeSubmit } from "../../auth";
 import { Redirect } from "react-router";
+import {NavLink} from 'react-router-dom'
 
 const SchemeForm = () => {
   const [values, setValues] = useState({
@@ -21,8 +22,7 @@ const SchemeForm = () => {
   });
 
   const { formData } = values;
-
-
+  const [isClicked, setIsClicked] = useState(false)
   const user = isAuthenticated();
 
   const preload = () => {
@@ -58,6 +58,7 @@ const SchemeForm = () => {
       .catch((err) => {
         errorMessage(err)();
       });
+      setIsClicked(true)
   };
 
   const schemeFormMain = () => {
@@ -66,86 +67,95 @@ const SchemeForm = () => {
         <div className="container">
           <h1 className="heading">Create new Schemes/Competition</h1>
           <div className="main-container">
-            <form>
-              <div className="field">
-                <label htmlFor="compTitle">Competition title:</label>
-                <input
-                  type="text"
-                  name="compTitle"
-                  className="input"
-                  onChange={handleChange("compTitle")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="organizer">Organizer:</label>
-                <input
-                  type="text"
-                  name="organizer"
-                  className="input"
-                  onChange={handleChange("organizer")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="deadline">Registration Deadline:</label>
-                <input
-                  type="date"
-                  name="deadline"
-                  className="input"
-                  onChange={handleChange("deadline")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="starting">Starting date:</label>
-                <input
-                  type="date"
-                  name="starting"
-                  className="input"
-                  onChange={handleChange("starting")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="ending">End Date:</label>
-                <input
-                  type="date"
-                  name="ending"
-                  className="input"
-                  onChange={handleChange("ending")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="registrationLink">
-                  Registration Page Link:
-                </label>
-                <input
-                  type="text"
-                  name="registrationLink"
-                  className="input"
-                  onChange={handleChange("registrationLink")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="image">Attach Header Image:</label>
-                <input
-                  type="file"
-                  name="image"
-                  className="file"
-                  onChange={handleChange("image")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="details">Attach Details file:</label>
-                <input
-                  type="file"
-                  name="details"
-                  className="file"
-                  onChange={handleChange("details")}
-                />
-              </div>
-              <button className="nextpage" onClick={onSubmitHandler}>
-                Create Competition
-                <img src={check} alt="" />
-              </button>
-            </form>
+            {!isClicked ? (
+              <form>
+                <div className="field">
+                  <label htmlFor="compTitle">Competition title:</label>
+                  <input
+                    type="text"
+                    name="compTitle"
+                    className="input"
+                    onChange={handleChange("compTitle")}
+                  />
+                </div>
+                <div className="field">
+                  <label htmlFor="organizer">Organizer:</label>
+                  <input
+                    type="text"
+                    name="organizer"
+                    className="input"
+                    onChange={handleChange("organizer")}
+                  />
+                </div>
+                <div className="field">
+                  <label htmlFor="deadline">Registration Deadline:</label>
+                  <input
+                    type="date"
+                    name="deadline"
+                    className="input"
+                    onChange={handleChange("deadline")}
+                  />
+                </div>
+                <div className="field">
+                  <label htmlFor="starting">Starting date:</label>
+                  <input
+                    type="date"
+                    name="starting"
+                    className="input"
+                    onChange={handleChange("starting")}
+                  />
+                </div>
+                <div className="field">
+                  <label htmlFor="ending">End Date:</label>
+                  <input
+                    type="date"
+                    name="ending"
+                    className="input"
+                    onChange={handleChange("ending")}
+                  />
+                </div>
+                <div className="field">
+                  <label htmlFor="registrationLink">
+                    Registration Page Link:
+                  </label>
+                  <input
+                    type="text"
+                    name="registrationLink"
+                    className="input"
+                    onChange={handleChange("registrationLink")}
+                  />
+                </div>
+                <div className="field">
+                  <label htmlFor="image">Attach Header Image:</label>
+                  <input
+                    type="file"
+                    name="image"
+                    className="file"
+                    onChange={handleChange("image")}
+                  />
+                </div>
+                <div className="field">
+                  <label htmlFor="details">Attach Details file:</label>
+                  <input
+                    type="file"
+                    name="details"
+                    className="file"
+                    onChange={handleChange("details")}
+                  />
+                </div>
+                <button className="nextpage" onClick={onSubmitHandler}>
+                  Create Competition
+                  <img src={check} alt="" />
+                </button>
+              </form>
+            ) : (
+                <div className="submit">
+                  <h1>Your Scheme has been Successfully Added.</h1>
+                  <NavLink to="/schemes/competitions" className="btn">
+                    <button>Go to Schemes</button>
+                  </NavLink>
+                </div>
+            )}
           </div>
         </div>
       </div>
