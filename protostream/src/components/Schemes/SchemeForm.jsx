@@ -13,7 +13,7 @@ const SchemeForm = () => {
     starting: "",
     ending: "",
     registrationLink: "",
-    details: "",
+    files: "",
     image: "",
     formData: "",
     error: false,
@@ -36,7 +36,7 @@ const SchemeForm = () => {
   const handleChange = (name) => (event) => {
     let value;
     if (name === "image") value = event.target.files[0];
-    else if (name === "details") value = event.target.files[0];
+    else if (name === "files") value = event.target.files[0];
     else value = event.target.value;
     formData.set(name, value);
 
@@ -133,12 +133,12 @@ const SchemeForm = () => {
                 />
               </div>
               <div className="field">
-                <label htmlFor="details">Attach Details file:</label>
+                <label htmlFor="files">Attach Details file:</label>
                 <input
                   type="file"
-                  name="details"
+                  name="files"
                   className="file"
-                  onChange={handleChange("details")}
+                  onChange={handleChange("files")}
                 />
               </div>
               <button className="nextpage" onClick={onSubmitHandler}>
