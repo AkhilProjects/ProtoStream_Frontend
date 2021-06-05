@@ -104,8 +104,7 @@
             // background-color:;
             padding: 1rem;
           }
-          .file::before{
-          }
+     
           .file::-webkit-file-upload-button{
             padding: 0.5rem 1rem;
             border: none;
@@ -233,5 +232,54 @@
   }
 
    
+  }
+}
+
+
+.submit{
+     width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(
+      111.9deg,
+      var(--accent-pr),
+      var(--accent-sec)
+    );
+    height: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .btn{
+      width: 15%;
+     button{
+      padding: 1rem 2rem;
+      margin-top: 5%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.61);
+      font-size: 1rem;
+      // width: 25%;
+      border-radius: 10px;
+      border: none;
+      font-weight: bold;
+      font-family: "Montserrat";
+      outline: none;
+      // display: flex;
+      // align-items: center;
+      justify-content: space-around;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      width: 100%;
+      background-color: #4d4d4d;
+      color: var(--text-pr);
+      padding: 1rem;
+    }
+    button:hover{
+      background-color: #383838;
+    }
   }
 }

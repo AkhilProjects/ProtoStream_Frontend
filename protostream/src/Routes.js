@@ -3,6 +3,7 @@ import Signup from "./components/Signup";
 // import Internships from "./Internships";
 import Projects from "./Projects";
 import Startups from "./Startups";
+import AllStartups from './components/Startups/Startups'
 import RegisterStartup from './components/Startups/RegisterStartup';
 import Schemes from "./Schemes";
 import Competitions from './components/Schemes/Competitions'
@@ -23,6 +24,9 @@ import Form from "./components/Projects/Form/Form";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Finalyear from "./components/Projects/finalyear/Finalyear";
 import PrivateRoute from "./auth/helper/privateRoutes";
+
+
+import StartupDetails from './components/Startups/StartupDetails'
 
 //Temp
 
@@ -61,6 +65,8 @@ const Routes = () => {
           <PrivateRoute path="/internships" exact component={Internships} />
           <PrivateRoute path="/projects" exact component={Projects} />
           <PrivateRoute path="/Startups" exact component={Startups} />
+          <PrivateRoute path="/Startups/allstartups" exact component={AllStartups} />
+          <PrivateRoute path="/Startups/startupdetails" exact component={StartupDetails} />
           <PrivateRoute
             path="/Startups/register"
             exact

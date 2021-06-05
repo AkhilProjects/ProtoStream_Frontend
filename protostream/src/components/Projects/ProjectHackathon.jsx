@@ -12,29 +12,8 @@ function ProjectHackathon() {
     response.map((items) => {
       console.log("Year", items.createdAt.split("-")[0]);
     });
-    // if (response.MemberName2 === "") {
-    //   setHackathons({ ...hackathons, members: 2 });
-    // } else if (response.MemberName1 === "") {
-    //   setHackathons({ ...response, members: 1 });
-    // }
     setHackathons(response);
   };
-
-  // const count_years = () => {
-  //   var count = [];
-  //   var year = 0;
-  //   AllHackathons.map(item => {
-  //     year = item.createdAt.split("-")[0];
-  //     console.log("count Year", item.createdAt.split("-")[0]);
-  //     for(let i = 0; i < count.length; i++){
-  //       if(count[i] != year)
-  //         count.push(year);
-  //     }
-  //   });
-
-  //   console.log("count",count, year);
-  // }
-
   useEffect(() => {
     getResponse();
   }, []);

@@ -7,6 +7,7 @@ import arrow from "../../../assets/images/arrow.svg";
 import React, { Component } from "react";
 import CardTeam from "./CardTeam";
 import { hackathonSubmit, isAuthenticated } from "../../../auth";
+import { NavLink } from "react-router-dom";
 
 export default class Confirm extends Component {
   onSubmitHandler = (event) => {
@@ -100,7 +101,11 @@ export default class Confirm extends Component {
                   email={MemberEmail2}
                 />
               </div>
-              <button className="nextpage" onClick={this.onSubmitHandler}>
+        
+              <button className="nextpage" onClick={(e)=>{
+                this.onSubmitHandler(e);
+                this.continue(e)
+              }}>
                 Confirm
                 <img src={check} alt="" />
               </button>
