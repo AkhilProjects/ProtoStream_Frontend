@@ -1,5 +1,6 @@
 .box-container .box {
   width: 100%;
+  min-width: 400px;
   height: 100%;
   background-color: var(--comp-sec);
   border-radius: 10px;

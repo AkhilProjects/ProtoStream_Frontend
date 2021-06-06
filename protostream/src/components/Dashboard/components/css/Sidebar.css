@@ -1,0 +1,88 @@
+.side-bar {
+  border-radius: 10px;
+  background: var(--comp-pr);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  margin: 2rem;
+  margin-right: 0;
+  text-align: center;
+  position: relative;
+}
+
+.side-bar .student-img {
+  border-radius: 100%;
+  height: 175px;
+  width: 175px;
+}
+
+.side-bar .name {
+  font-family: var(--font-pr);
+  font-size: var(--heading-small);
+  color: var(--accent-sec);
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.side-bar .student {
+  font-size: var(--heading-small);
+  font-family: var(--font-pr);
+  color: var(--text-pr);
+  margin: 0.5rem;
+}
+
+.side-bar .startup-badge {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.side-bar .startup-badge img {
+  width: 80%;
+}
+
+.side-bar .startup-badge .num {
+  font-weight: bold;
+  margin: 1rem;
+  color: var(--accent-sec);
+  font-family: var(--font-sec);
+  font-size: var(--span);
+}
+
+.side-bar .startup-name {
+  width: 100%;
+  background-color: var(--accent-sec);
+  font-family: var(--font-pr);
+  padding: 0.5rem;
+  color: var(--text-pr);
+  font-size: var(--button);
+  border-radius: 5px;
+}
+
+.side-bar .log-out {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--comp-sec);
+  font-family: var(--font-pr);
+  font-size: var(--button);
+  color: var(--text-pr);
+  position: absolute;
+  bottom: 2rem;
+}
+
+.side-bar .log-out:hover {
+  background-color: var(--comp-sec-hover);
+}
+/*# sourceMappingURL=Sidebar.css.map */

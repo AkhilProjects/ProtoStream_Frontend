@@ -8,7 +8,9 @@ import RegisterStartup from './components/Startups/RegisterStartup';
 import Schemes from "./Schemes";
 import Competitions from './components/Schemes/Competitions'
 import SchemeForm from "./components/Schemes/SchemeForm";
-import DashBoard from "./DashBoard";
+import StudentDashboard from "./components/Dashboard/StudentDashboard";
+import StartupDashboard from "./components/Dashboard/StartupDashboard";
+import TBIDashboard from "./components/Dashboard/TBIDashboard";
 import About from "./components/footer/About";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -52,27 +54,46 @@ const Routes = () => {
         <Switch>
           <Route path="/" exact component={Home} />
           {/* <PrivateRoute path="/internships" exact component={Internships} /> */}
-
           {/* Temp */}
-
           <PrivateRoute path="/registered-startup" exact component={Congrats} />
           <PrivateRoute path="/download-NDA" exact component={DNDA} />
           <PrivateRoute path="/upload-NDA" exact component={UNDA} />
           <PrivateRoute path="/startup-details" exact component={FormA} />
           <PrivateRoute path="/list-internships" exact component={FormB} />
-
           {/* Temp */}
           <PrivateRoute path="/internships" exact component={Internships} />
           <PrivateRoute path="/projects" exact component={Projects} />
           <PrivateRoute path="/Startups" exact component={Startups} />
-          <PrivateRoute path="/Startups/allstartups" exact component={AllStartups} />
-          <PrivateRoute path="/Startups/startupdetails" exact component={StartupDetails} />
+          <PrivateRoute
+            path="/Startups/allstartups"
+            exact
+            component={AllStartups}
+          />
+          <PrivateRoute
+            path="/Startups/startupdetails"
+            exact
+            component={StartupDetails}
+          />
           <PrivateRoute
             path="/Startups/register"
             exact
             component={RegisterStartup}
           />
-          <PrivateRoute path="/user/dashboard" exact component={DashBoard} />
+          <PrivateRoute
+            path="/user/dashboard"
+            exact
+            component={StudentDashboard}
+          />
+          <PrivateRoute
+            path="/user/startup_dashboard"
+            exact
+            component={StartupDashboard}
+          />{" "}
+          <PrivateRoute
+            path="/user/TBI-dashboard"
+            exact
+            component={TBIDashboard}
+          />
           <PrivateRoute
             path="/projects/hackathons"
             exact

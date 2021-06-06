@@ -1,0 +1,95 @@
+.content {
+      border-radius: 10px;
+      background-color: brown;
+      padding: 3rem;
+      background-color: var(--comp-pr);
+      margin: 2rem;
+      width: 75%;
+      font-family: var(--font-pr);
+      overflow: auto;
+
+      .navlink{
+        // background-color: red;
+        text-decoration: none;
+      }
+
+      .btns{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .dashboard-name{
+        text-align: center;
+
+        .name{
+          font-size: var(--span);
+          font-weight: bold;
+          color: var(--accent-sec);
+        }
+      }
+
+      .yellow-container{
+        color: var(--text-pr);
+        font-family: var(--font-pr);
+        width: 90%;
+        margin: 2rem auto;
+        background: linear-gradient(155.83deg, var(--accent-pr), var(--accent-sec));
+        padding: 2rem;
+        border-radius: 10px;
+
+        .heading, .sub-head{
+          text-align: center;
+        }
+
+        .preview{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: linear-gradient(109.8deg, var(--accent-sec),var(--accent-pr));
+          width: 97%;
+          border-radius: 10px;
+          padding: 1rem;
+          margin: 1rem auto;
+          cursor: pointer;
+
+          .name{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+
+            p{
+              font-size: var(--heading-med);
+              font-weight: bold;
+              margin-left: 1rem;
+            }
+          }
+          button{
+            // padding: 1rem;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+          }
+          button:hover{
+          box-shadow: 0px 01px 10px rgba(56, 56, 56, 0.342);
+
+          }
+        }
+        .preview:hover{
+          box-shadow: 0px 01px 10px rgba(56, 56, 56, 0.342);
+        }
+
+        .cards{
+          display: grid;
+          text-align: center;
+          grid-template-columns: repeat(2, 1fr);
+          justify-items: center;
+        }
+      }
+    }

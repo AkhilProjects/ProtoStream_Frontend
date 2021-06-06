@@ -1,10 +1,10 @@
 import React from "react";
-import "../../css/DashBoard/box.css";
+import "../../../css/DashBoard/box.css";
 
 function Box({ heading, para }) {
   const onClickProject = () =>{
     
-
+ 
   }
   return (
     <div className="box-container" onClick={onClickProject}>
