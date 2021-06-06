@@ -66,8 +66,6 @@ export const allHackathons = () => {
 };
 
 export const signin = (user) => {
-  console.log("inside signin route");
-  console.log("[USER SIGNIN]", user);
 
   return fetch(`${API}/login`, {
     method: "POST",
@@ -78,7 +76,6 @@ export const signin = (user) => {
     body: JSON.stringify(user),
   })
     .then((response) => {
-      console.log(response);
       return response.json();
     })
     .catch((error) => {

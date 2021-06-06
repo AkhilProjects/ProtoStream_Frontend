@@ -14,7 +14,7 @@ const SchemeForm = () => {
     starting: "",
     ending: "",
     registrationLink: "",
-    details: "",
+    files: "",
     image: "",
     formData: "",
     error: false,
@@ -36,7 +36,7 @@ const SchemeForm = () => {
   const handleChange = (name) => (event) => {
     let value;
     if (name === "image") value = event.target.files[0];
-    else if (name === "details") value = event.target.files[0];
+    else if (name === "files") value = event.target.files[0];
     else value = event.target.value;
     formData.set(name, value);
 
@@ -67,6 +67,88 @@ const SchemeForm = () => {
         <div className="container">
           <h1 className="heading">Create new Schemes/Competition</h1>
           <div className="main-container">
+<<<<<<< HEAD
+            <form>
+              <div className="field">
+                <label htmlFor="compTitle">Competition title:</label>
+                <input
+                  type="text"
+                  name="compTitle"
+                  className="input"
+                  onChange={handleChange("compTitle")}
+                />
+              </div>
+              <div className="field">
+                <label htmlFor="organizer">Organizer:</label>
+                <input
+                  type="text"
+                  name="organizer"
+                  className="input"
+                  onChange={handleChange("organizer")}
+                />
+              </div>
+              <div className="field">
+                <label htmlFor="deadline">Registration Deadline:</label>
+                <input
+                  type="date"
+                  name="deadline"
+                  className="input"
+                  onChange={handleChange("deadline")}
+                />
+              </div>
+              <div className="field">
+                <label htmlFor="starting">Starting date:</label>
+                <input
+                  type="date"
+                  name="starting"
+                  className="input"
+                  onChange={handleChange("starting")}
+                />
+              </div>
+              <div className="field">
+                <label htmlFor="ending">End Date:</label>
+                <input
+                  type="date"
+                  name="ending"
+                  className="input"
+                  onChange={handleChange("ending")}
+                />
+              </div>
+              <div className="field">
+                <label htmlFor="registrationLink">
+                  Registration Page Link:
+                </label>
+                <input
+                  type="text"
+                  name="registrationLink"
+                  className="input"
+                  onChange={handleChange("registrationLink")}
+                />
+              </div>
+              <div className="field">
+                <label htmlFor="image">Attach Header Image:</label>
+                <input
+                  type="file"
+                  name="image"
+                  className="file"
+                  onChange={handleChange("image")}
+                />
+              </div>
+              <div className="field">
+                <label htmlFor="files">Attach Details file:</label>
+                <input
+                  type="file"
+                  name="files"
+                  className="file"
+                  onChange={handleChange("files")}
+                />
+              </div>
+              <button className="nextpage" onClick={onSubmitHandler}>
+                Create Competition
+                <img src={check} alt="" />
+              </button>
+            </form>
+=======
             {!isClicked ? (
               <form>
                 <div className="field">
@@ -156,6 +238,7 @@ const SchemeForm = () => {
                   </NavLink>
                 </div>
             )}
+>>>>>>> 27b69fd5810f23b98a4a86ba27ea3c114273e9e6
           </div>
         </div>
       </div>
