@@ -4,7 +4,7 @@ import "../../css/Projects/Form/form.css";
 import check from "../../assets/images/check.svg";
 import { isAuthenticated, schemeSubmit } from "../../auth";
 import { Redirect } from "react-router";
-import {NavLink} from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 const SchemeForm = () => {
   const [values, setValues] = useState({
@@ -22,7 +22,7 @@ const SchemeForm = () => {
   });
 
   const { formData } = values;
-  const [isClicked, setIsClicked] = useState(false)
+  const [isClicked, setIsClicked] = useState(false);
   const user = isAuthenticated();
 
   const preload = () => {
@@ -58,7 +58,7 @@ const SchemeForm = () => {
       .catch((err) => {
         errorMessage(err)();
       });
-      setIsClicked(true)
+    setIsClicked(true);
   };
 
   const schemeFormMain = () => {
@@ -67,7 +67,6 @@ const SchemeForm = () => {
         <div className="container">
           <h1 className="heading">Create new Schemes/Competition</h1>
           <div className="main-container">
-<<<<<<< HEAD
             <form>
               <div className="field">
                 <label htmlFor="compTitle">Competition title:</label>
@@ -148,7 +147,7 @@ const SchemeForm = () => {
                 <img src={check} alt="" />
               </button>
             </form>
-=======
+
             {!isClicked ? (
               <form>
                 <div className="field">
@@ -231,14 +230,13 @@ const SchemeForm = () => {
                 </button>
               </form>
             ) : (
-                <div className="submit">
-                  <h1>Your Scheme has been Successfully Added.</h1>
-                  <NavLink to="/schemes/competitions" className="btn">
-                    <button>Go to Schemes</button>
-                  </NavLink>
-                </div>
+              <div className="submit">
+                <h1>Your Scheme has been Successfully Added.</h1>
+                <NavLink to="/schemes/competitions" className="btn">
+                  <button>Go to Schemes</button>
+                </NavLink>
+              </div>
             )}
->>>>>>> 27b69fd5810f23b98a4a86ba27ea3c114273e9e6
           </div>
         </div>
       </div>
