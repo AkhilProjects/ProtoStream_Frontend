@@ -1,5 +1,7 @@
 import React from 'react'
 import './css/static.css'
+import Row from './Row'
+import Candidates from './Candidates.json'
 
 function NidhiEir() {
     return (
@@ -173,61 +175,36 @@ function NidhiEir() {
           </h1>
           <div className="table">
             <div className="main-row">
-              <div className="column serial">
+              <div className="main-column serial">
                 <p>Sr. No.</p>
               </div>
-              <div className="column name">
+              <div className="main-column name">
                 <p>Name of NIDHI-EIR Aspirants </p>
               </div>
-              <div className="column enterprise">
+              <div className="main-column enterprise">
                 <p>Enterprise Name </p>
               </div>
-              <div className="column project-name">
+              <div className="main-column project-name">
                 <p>Name Of Project </p>
               </div>
-              <div className="column fellowship">
+              <div className="main-column fellowship">
                 <p>Fellowship Amount per Month (in Rs.)</p>
               </div>
             </div>
-            <div className="row">
-              <div className="column">
-                <p className="para serial ">1</p>
-              </div>
-              <div className="column">
-                <div className="name">
-                  <img
-                    src="http://www.tbi-kiet.in/assets/nidhi-eir/tushargoel.jpg"
-                    alt=""
-                    className="img"
-                  />
-                  <a href="">
-                    <p className="para">Mr. Tushar Goel</p>
-                  </a>
-                  <p className="para">9810698924</p>
-                  <p className="para">tushargoel171995@gmail.com </p>
-                </div>
-              </div>
-              <div className="column">
-                <a href="#" className="enterprise ">
-                  <p className="para">TOTEM Solutions LLP</p>
-                </a>
-              </div>
-              <div className="column">
-                <div className="project-name ">
-                  <p className="para">
-                    Rental of Console Games (Physical/Streaming) Online
-                    streaming rental
-                  </p>
-                  <br />
-                  <p className="para">Patent File Number: N/A </p>
-                </div>
-              </div>
-              <div className="column">
-                <p className="para fellowship column">
-                  20000.00 x 12 = 240000 annually
-                </p>
-              </div>
-            </div>
+
+            {/* Row  */}
+            {Candidates.Candidates.map((candidate) => (
+              <Row
+                sr={candidate.id}
+                image={candidate.image}
+                candidateName={candidate.Candidate_name}
+                number={candidate.Candidate_number}
+                email={candidate.Candidate_email}
+                enterprise={candidate.Enterprise}
+                project_name={candidate.Project_name}
+                fellowship={candidate.Fellowship}
+              />
+            ))}
           </div>
         </div>
       </div>

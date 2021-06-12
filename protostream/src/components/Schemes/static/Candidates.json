@@ -1,0 +1,148 @@
+{
+    "Candidates": [
+        {
+            "id": 1,
+            "image": "http://www.tbi-kiet.in/assets/nidhi-eir/tushargoel.jpg",
+            "Candidate_name": "Mr. Tushar Goel",
+            "Candidate_number": "9810698924",
+            "Candidate_email": "tushargoel171995@gmail.com",
+            "Enterprise": "TOTEM Solutions LLP",
+            "Project_name": "Rental of Console Games (Physical/Streaming) Online streaming rental",
+            "Fellowship": "20000.00 x 12 = 240000 annually",
+            "name_link": "#",
+            "enterprise_link": "#"
+        },
+        {
+          "id": 2,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/sandeepsoni.jpg",
+          "Candidate_name": "Mr. Sandeep Soni",
+          "Candidate_number": "8477922297",
+          "Candidate_email": "soni28398@gmail.com",
+          "Enterprise": "Soni Brothers Ecom Pvt. Ltd.",
+          "Project_name": "Apni Care – E-commerce, ALHS, Social Network",
+          "Fellowship": "25000.00 x 12 = 300000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 3,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/nasar.jpg",
+          "Candidate_name": "Mr. Nasar Ahemad",
+          "Candidate_number": "9936611449",
+          "Candidate_email": "nasarahmad.best@gmail.com",
+          "Enterprise": "Coeus Steelix LLP",
+          "Project_name": "IoT based Solar Power Plant Monitoring",
+          "Fellowship": "30000.00 x 12 = 360000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 4,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/abhishek-kumar.jpg",
+          "Candidate_name": "Mr. Abhishek Kumar",
+          "Candidate_number": "8009127791",
+          "Candidate_email": "aku.kiet@gmail.com",
+          "Enterprise": "Vishnumist LLP",
+          "Project_name": "Go-Glass",
+          "Fellowship": "25000.00 x 12 = 300000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 5,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/abhishek-singh-rathore.jpg",
+          "Candidate_name": "Mr. Abhishek Singh Rathore",
+          "Candidate_number": "9455559781",
+          "Candidate_email": "arathore18@gmail.",
+          "Enterprise": "Autlya Motors ",
+          "Project_name": "BEP-Motorcycle: Designing & development of energy efficient, hoburt & economic battery electric powered motorcycle for India roads.",
+          "Fellowship": "25000.00 x 12 = 300000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 6,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/alok-yadav.jpg",
+          "Candidate_name": "Mr. Alok Yadav",
+          "Candidate_number": "9084181009",
+          "Candidate_email": "alokkumaryadav29@gmail.com",
+          "Enterprise": "Adamy Motors LLP",
+          "Project_name": "Hybrid-Electric Bicycle",
+          "Fellowship": "25000.00 x 12 = 300000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 7,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/raju-kumar-singh.jpg",
+          "Candidate_name": "Mr. Raju Kumar Singh",
+          "Candidate_number": "8860013912",
+          "Candidate_email": "genrotechnology@gmail.com",
+          "Enterprise": "Mahip-Tech Solutions",
+          "Project_name": "Smart Waste Management System",
+          "Fellowship": "25000.00 x 12 = 300000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 8,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/rishab-bhardwaj.jpg",
+          "Candidate_name": "Mr. Rishabh Bhardwaj",
+          "Candidate_number": "9999597387",
+          "Candidate_email": "rishabh.bhardwaj04@gmail.com",
+          "Enterprise": "Enray Solutions LLP",
+          "Project_name": "Automatic Solar Panel Cleaner",
+          "Fellowship": "30000.00 x 12 = 360000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 9,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/neeraj-kumar.jpg",
+          "Candidate_name": "Mr. Neeraj Kumar",
+          "Candidate_number": "9899912343",
+          "Candidate_email": "say2neeraj@gmail.com",
+          "Enterprise": "Ai Magnifi Technologies Pvt. Ltd.",
+          "Project_name": "Artificial intelligence & Computer Vision(Retail, healthcare, Govt. defence).",
+          "Fellowship": "20000.00 x 12 = 240000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 10,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/devarshi-mishra.jpg",
+          "Candidate_name": "Mr. Devarshi Mishra",
+          "Candidate_number": "8802773494",
+          "Candidate_email": "mishradevarshi@gmail.com",
+          "Enterprise": "Yet to registered",
+          "Project_name": "Core service to everyone technology artificial intelligence & computer vision, CCTV Surveillance.",
+          "Fellowship": "25000.00 x 12 = 300000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 11,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/swapnil-narhari-gaul.jpg",
+          "Candidate_name": "Mr. Swapnil Narhari Gaul",
+          "Candidate_number": "8956135797",
+          "Candidate_email": "gaulswapnil@hotmail.com",
+          "Enterprise": "Numeregion OPC Pvt. Ltd.",
+          "Project_name": "Computer Simulation Software to provide simulation driven solution to various aspects of engineering.",
+          "Fellowship": "30000.00 x 12 = 360000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        },
+        {
+          "id": 12,
+          "image": "http://www.tbi-kiet.in/assets/nidhi-eir/alok-gupta.jpg",
+          "Candidate_name": "Mr. Alok Gupta",
+          "Candidate_number": "9927266343",
+          "Candidate_email": "alokgupta5055@gmail.com",
+          "Enterprise": "Yet to registered",
+          "Project_name": "Smart Helmet",
+          "Fellowship": "20000.00 x 12 = 240000 annually",
+          "name_link": "#",
+          "enterprise_link": "#"
+        }
+    ]
+}
