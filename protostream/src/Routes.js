@@ -31,6 +31,9 @@ import PrivateRoute from "./auth/helper/privateRoutes";
 import StartupDetails from './components/Startups/StartupDetails'
 
 import TRLpage from './components/TRL/TRLpage'
+import Result1 from './components/TRL/Results1'
+import Result2 from './components/TRL/Results2'
+import Result3 from './components/TRL/Results3'
 
 import NidhiEir from './components/Schemes/static/NidhiEir'
 import NidhiPrayas from "./components/Schemes/static/NidhiPrayas";
@@ -49,6 +52,7 @@ import Resources from "./components/Resources/Resources";
 
 import Signin from './components/Authentication/Signin'
 import Signup2 from './components/Authentication/Signup'
+
 
 
 
@@ -144,6 +148,10 @@ const Routes = () => {
           <Route path="/schemes/NidhiEir" exact component={NidhiEir} />
           <Route path="/schemes/NidhiPrayas" exact component={NidhiPrayas} />
           <Route path="/schemes/it_policy" exact component={ITPolicy} />
+
+          <Route path="/result1" exact component={Result1} />
+          <Route path="/result2" exact component={Result2} />
+          <Route path="/result3" exact component={Result3} />
         </Switch>
         {/* <Footer /> */}
       </div>
