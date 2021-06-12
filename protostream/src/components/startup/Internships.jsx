@@ -5,6 +5,8 @@ import "./css/internship.css";
 function Internships() {
   return (
     <div className="internship">
+
+      <div className="heading">Internships</div>
       <div className="container">
         <Card
           startup_name="Roxet"

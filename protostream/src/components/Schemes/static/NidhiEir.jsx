@@ -166,7 +166,10 @@ function NidhiEir() {
               </p>
             </li>
           </ol>
-          <a href="#" className="Link">
+          <a
+            href="http://www.tbi-kiet.in/uploads/NIDHI%20EIR%20apply.pdf"
+            className="Link"
+          >
             <button>CLICK HERE FOR APPLICATION FORM</button>
           </a>
           <h1 className="head">

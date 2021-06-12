@@ -249,9 +249,12 @@ function NidhiPrayas() {
               <p className="para">Expression of interest from manufactures.</p>
             </li>
           </ul>
-            <a href="#" className="Link">
-              <button>CLICK HERE FOR APPLICATION FORM</button>
-            </a>
+          <a
+            href="http://www.tbi-kiet.in/uploads/nidhi_pryas_application.pdf"
+            className="Link"
+          >
+            <button>CLICK HERE FOR APPLICATION FORM</button>
+          </a>
         </div>
       </div>
     );
