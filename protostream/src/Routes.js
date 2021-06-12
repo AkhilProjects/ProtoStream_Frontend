@@ -140,10 +140,10 @@ const Routes = () => {
           <Route path="/about" exact component={About} />
           <Route path="/resources" exact component={Resources} />
           <Route path="/trl" exact component={TRLpage} />
-          
-          <Route path="/NidhiEir" exact component={NidhiEir} />
-          <Route path="/NidhiPrayas" exact component={NidhiPrayas} />
-          <Route path="/it_policy" exact component={ITPolicy} />
+
+          <Route path="/schemes/NidhiEir" exact component={NidhiEir} />
+          <Route path="/schemes/NidhiPrayas" exact component={NidhiPrayas} />
+          <Route path="/schemes/it_policy" exact component={ITPolicy} />
         </Switch>
         {/* <Footer /> */}
       </div>

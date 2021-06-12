@@ -33,6 +33,51 @@ function Competitions() {
         <li className="item">Previous</li>
       </ul>
       <div className="container">
+        <a href="/schemes/NidhiEir" className="schemes-link" target="blank">
+          <div className="new-scheme">
+            <img
+              src="http://www.tbi-kiet.in/assets/images/nidhi-banner.jpg"
+              alt=""
+              className="scheme-poster"
+            />
+            <p className="para">NIDHI-EIR</p>
+          </div>
+        </a>
+        <a href="/schemes/NidhiPrayas" className="schemes-link" target="blank">
+          <div className="new-scheme">
+            <img
+              src="http://www.tbi-kiet.in/assets/images/prayas-banner.jpg"
+              alt=""
+              className="scheme-poster"
+            />
+            <p className="para">NIDHI-PRAYAS</p>
+          </div>
+        </a>
+        <a href="/schemes/it_policy" className="schemes-link" target="blank">
+          <div className="new-scheme">
+            <img
+              src="http://www.tbi-kiet.in/assets/images/image.jpg"
+              alt=""
+              className="scheme-poster"
+            />
+            <p className="para">IT & Security Policy</p>
+          </div>
+        </a>
+        <a
+          href="http://www.tbi-kiet.in/uploads/tide2.pdf"
+          className="schemes-link"
+          target="blank"
+        >
+          <div className="new-scheme">
+            <img
+              src="http://www.tbi-kiet.in/assets/images/MeitYtbi2.jpg"
+              alt=""
+              className="scheme-poster"
+            />
+            <p className="para">IT & Security Policy</p>
+          </div>
+        </a>
+
         {schemes.map((scheme, index) => {
           return (
             <Card

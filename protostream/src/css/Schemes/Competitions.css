@@ -51,4 +51,25 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.schemes-comp .container .schemes-link {
+  width: 20%;
+  margin: 1rem;
+  text-align: center;
+  background-color: var(--comp-pr);
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.schemes-comp .container .schemes-link .new-scheme .scheme-poster {
+  width: 80%;
+  height: 150px;
+}
+
+.schemes-comp .container .schemes-link:hover {
+  background-color: var(--comp-sec);
+}
 /*# sourceMappingURL=Competitions.css.map */
