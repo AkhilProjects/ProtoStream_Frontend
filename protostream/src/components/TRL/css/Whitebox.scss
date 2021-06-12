@@ -1,0 +1,46 @@
+.Whitebox{
+    width: 1100px;
+    min-width: 800px;
+    text-align: center;
+    height: 800px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-pr);
+    // position: relative;
+    position: absolute;
+    transition: all 0.2s ease;
+
+    .main-container{
+        width: 100%;
+        height: 100%;
+        // background-color: red;
+
+
+        .question{
+            color: var(--accent-sec);
+            margin: 2rem;
+
+            .Question{
+                font-size: var(--heading-main);
+            }
+            .sub-head{
+                font-size: var(--span);
+            }
+        }
+        
+        .Answers-section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between ;
+            position: absolute;
+            // background-color: green;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10%;
+        }
+    }
+}

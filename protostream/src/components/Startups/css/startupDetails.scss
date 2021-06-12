@@ -2,8 +2,9 @@
     width: 100%;
 
     .main{
-        width: 90%;
-        margin: 1rem auto;
+        width: 60%;
+        margin: 4rem ;
+        float: right;
         padding: 1rem;
         border-radius: 10px;
         background-color: var(--comp-pr);
@@ -105,11 +106,12 @@
     font-family: var(--font-pr);
     font-size: var(--heading-main);
     color: var(--text-pr);
+    font-weight: bold;
 }
 
 .para{
     color: var(--text-pr);
-    font-family: var(--font-alt);
+    font-family: var(--font-sec);
     font-size: var(--span);
     line-height: 30px;
     margin: 1rem;

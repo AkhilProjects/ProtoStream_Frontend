@@ -67,6 +67,7 @@ const SchemeForm = () => {
         <div className="container">
           <h1 className="heading">Create new Schemes/Competition</h1>
           <div className="main-container">
+<<<<<<< HEAD
             <form>
               <div className="field">
                 <label htmlFor="compTitle">Competition title:</label>
@@ -148,6 +149,8 @@ const SchemeForm = () => {
               </button>
             </form>
 
+=======
+>>>>>>> 90d808a52e4767a2e93d580c83e025731ab8fed7
             {!isClicked ? (
               <form>
                 <div className="field">
@@ -229,6 +232,7 @@ const SchemeForm = () => {
                   <img src={check} alt="" />
                 </button>
               </form>
+<<<<<<< HEAD
             ) : (
               <div className="submit">
                 <h1>Your Scheme has been Successfully Added.</h1>
@@ -236,6 +240,17 @@ const SchemeForm = () => {
                   <button>Go to Schemes</button>
                 </NavLink>
               </div>
+=======
+              
+            ) 
+            : (
+                <div className="submit">
+                  <h1>Your Scheme has been Successfully Added.</h1>
+                  <NavLink to="/schemes/competitions" className="btn">
+                    <button>Go to Schemes</button>
+                  </NavLink>
+                </div>
+>>>>>>> 90d808a52e4767a2e93d580c83e025731ab8fed7
             )}
           </div>
         </div>

@@ -1,4 +1,39 @@
 .modal {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.modal .close {
+  position: fixed;
+  font-size: 3rem;
+  top: 20px;
+  right: 0px;
+  outline: none;
+  font-family: "Rubik";
+  background: none;
+  border: none;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: var(--text-sec);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.modal .close:hover {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.modal .modal-container {
   width: 80%;
   height: 70%;
   background-color: #fff;
@@ -13,38 +48,14 @@
           box-shadow: 0 5px 20px rgba(59, 59, 59, 0.589);
 }
 
-.modal .close {
-  position: relative;
-  font-size: 3rem;
-  top: -30px;
-  right: -10px;
-  float: right;
-  outline: none;
-  font-family: "Montserrat";
-  background: none;
-  border: none;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  color: var(--accent-sec);
-  font-weight: bolder;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.modal .close:hover {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.modal .title {
+.modal .modal-container .title {
   text-align: center;
   font-family: var(--font-pr);
   color: var(--accent-sec);
   font-size: var(--heading-main);
 }
 
-.modal .details {
+.modal .modal-container .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,43 +63,43 @@
   font-family: var(--font-pr);
 }
 
-.modal .details .left,
-.modal .details .right {
+.modal .modal-container .details .left,
+.modal .modal-container .details .right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin: 2%;
 }
 
-.modal .details .left .details-sec,
-.modal .details .right .details-sec {
+.modal .modal-container .details .left .details-sec,
+.modal .modal-container .details .right .details-sec {
   margin: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.modal .details .left .details-sec .head,
-.modal .details .right .details-sec .head {
+.modal .modal-container .details .left .details-sec .head,
+.modal .modal-container .details .right .details-sec .head {
   font-weight: bolder;
   margin-right: 5%;
 }
 
-.modal .details .left .column,
-.modal .details .right .column {
+.modal .modal-container .details .left .column,
+.modal .modal-container .details .right .column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.modal .details .left .column .ans,
-.modal .details .right .column .ans {
+.modal .modal-container .details .left .column .ans,
+.modal .modal-container .details .right .column .ans {
   margin: 2%;
 }
 
-.modal .details .left .column ul,
-.modal .details .right .column ul {
+.modal .modal-container .details .left .column ul,
+.modal .modal-container .details .right .column ul {
   list-style: none;
   margin: 2%;
 }

@@ -30,6 +30,12 @@ import PrivateRoute from "./auth/helper/privateRoutes";
 
 import StartupDetails from './components/Startups/StartupDetails'
 
+import TRLpage from './components/TRL/TRLpage'
+
+import NidhiEir from './components/Schemes/static/NidhiEir'
+import NidhiPrayas from "./components/Schemes/static/NidhiPrayas";
+import ITPolicy from './components/Schemes/static/ITPolicy'
+
 //Temp
 
 import Congrats from "./components/startup/Congrats";
@@ -133,6 +139,11 @@ const Routes = () => {
           <Route path="/team" exact component={Team} />
           <Route path="/about" exact component={About} />
           <Route path="/resources" exact component={Resources} />
+          <Route path="/trl" exact component={TRLpage} />
+
+          <Route path="/schemes/NidhiEir" exact component={NidhiEir} />
+          <Route path="/schemes/NidhiPrayas" exact component={NidhiPrayas} />
+          <Route path="/schemes/it_policy" exact component={ITPolicy} />
         </Switch>
         {/* <Footer /> */}
       </div>

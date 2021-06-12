@@ -1,0 +1,58 @@
+.Whitebox {
+  width: 1100px;
+  min-width: 800px;
+  text-align: center;
+  height: 800px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: var(--font-pr);
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.Whitebox .main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.Whitebox .main-container .question {
+  color: var(--accent-sec);
+  margin: 2rem;
+}
+
+.Whitebox .main-container .question .Question {
+  font-size: var(--heading-main);
+}
+
+.Whitebox .main-container .question .sub-head {
+  font-size: var(--span);
+}
+
+.Whitebox .main-container .Answers-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 10%;
+}
+/*# sourceMappingURL=Whitebox.css.map */

@@ -34,5 +34,29 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
+        .schemes-link{
+            width: 20%;
+            margin: 1rem;
+            // background-color: red;
+            text-align: center;
+            background-color: var(--comp-pr);
+            border-radius: 10px;
+            padding: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+
+            .new-scheme{
+
+                .scheme-poster{
+                    width: 80%;
+                    height: 150px;
+                }
+            }
+        }
+
+        .schemes-link:hover{
+            background-color: var(--comp-sec);
+        }
     }
 }
