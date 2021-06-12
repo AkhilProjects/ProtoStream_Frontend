@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <NavLink to="/" className="navbar-logo">
+      <NavLink to={isAuthenticated() ? "/" : "/"} className="navbar-logo">
         <img src={logo} alt="" className="logo" />
       </NavLink>
       <div className="menu-icon" onClick={handleClick}>

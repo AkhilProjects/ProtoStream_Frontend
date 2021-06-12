@@ -1,0 +1,48 @@
+.trl-page{
+    width: 90%;
+    height: 90vh;
+    background-color: var(--comp-pr);
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+
+    .thermometer{
+        width: 30%;
+        // background-color: red;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+
+        .heading{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+        }
+
+        .line{
+            width: 37px;
+            height: 100px;
+            max-height: 435px;
+            border-radius: 15px;
+            position: absolute;
+            left: 52.19%;
+            transition: all 0.2s ease;
+            // top: 54%;
+            bottom: 35%;
+            transform: translateX(-50%);
+            background-color: var(--accent-sec);
+            // background-color: red;
+        }
+    }
+
+    .questions{
+        width: 70%;
+        // background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

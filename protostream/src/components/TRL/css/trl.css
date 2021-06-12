@@ -1,0 +1,61 @@
+.trl-page {
+  width: 90%;
+  height: 90vh;
+  background-color: var(--comp-pr);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.trl-page .thermometer {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.trl-page .thermometer .heading {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+.trl-page .thermometer .line {
+  width: 37px;
+  height: 100px;
+  max-height: 435px;
+  border-radius: 15px;
+  position: absolute;
+  left: 52.19%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  bottom: 35%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: var(--accent-sec);
+}
+
+.trl-page .questions {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=trl.css.map */

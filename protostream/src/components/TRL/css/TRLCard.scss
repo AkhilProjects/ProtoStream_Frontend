@@ -1,0 +1,15 @@
+.Trl-Card{
+    border-radius: 10px;
+    width: 300px;
+    min-height: 300px;
+    padding: 2rem;
+    color: var(--text-pr);
+    margin: 1rem;
+    cursor: pointer;
+    background: linear-gradient(180deg, var(--accent-pr), var(--accent-sec));
+    transition: all 0.2s ease;
+}
+
+.Trl-Card:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+}
