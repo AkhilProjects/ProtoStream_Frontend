@@ -19,6 +19,38 @@
   position: relative;
 }
 
+.side-bar .buttons {
+  margin: 1rem 0;
+}
+
+.side-bar .buttons .sections {
+  border-radius: 5px;
+  background-color: var(--comp-pr);
+  color: var(--text-pr);
+  width: 100%;
+  font-size: var(--button);
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-family: var(--font-pr);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.side-bar .buttons .sections:hover {
+  background-color: var(--comp-sec);
+}
+
+.side-bar .buttons .active {
+  background-color: var(--accent-sec);
+}
+
+.side-bar .buttons .active:hover {
+  background-color: var(--accent-pr);
+}
+
 .side-bar .student-img {
   border-radius: 100%;
   height: 175px;
@@ -42,7 +74,7 @@
 
 .side-bar .startup-badge {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);

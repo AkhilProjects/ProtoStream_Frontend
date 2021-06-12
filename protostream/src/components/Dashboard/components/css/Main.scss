@@ -7,7 +7,7 @@
       width: 75%;
       font-family: var(--font-pr);
       overflow: auto;
-
+      transition: all 0.2s ease;
       .navlink{
         // background-color: red;
         text-decoration: none;
@@ -49,7 +49,7 @@
           align-items: center;
           justify-content: space-between;
           background: linear-gradient(109.8deg, var(--accent-sec),var(--accent-pr));
-          width: 97%;
+          width: 90%;
           border-radius: 10px;
           padding: 1rem;
           margin: 1rem auto;

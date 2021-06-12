@@ -25,7 +25,7 @@
 }
 
 .otp_container .main_container {
-  background: linear-gradient(111.9deg, #FBD11B 26.31%, #F2A31A 87.23%);
+  background: linear-gradient(111.9deg, var(--accnt-pr), var(--accent-sec));
   width: 100%;
   border-radius: 0  10px 10px 0;
   display: -webkit-box;
@@ -44,13 +44,13 @@
 }
 
 .otp_container .main_container .head {
-  font-family: Poppins;
+  font-family: var(--font-pr);
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 60px;
   margin-bottom: 2rem;
-  color: #FFFFFF;
+  color: var(--text-pr);
 }
 
 .otp_container .main_container .form_container {
@@ -61,7 +61,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: linear-gradient(131.91deg, #FBD11B 20.43%, #FFB606 85.35%);
+  background: linear-gradient(111.9deg, var(--accnt-pr), var(--accent-sec));
   -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -71,13 +71,13 @@
 }
 
 .otp_container .main_container .form_container .form_head {
-  font-family: Montserrat;
+  font-family: var(--font-sec);
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 0.5rem;
-  color: #FFFFFF;
+  color: var(--text-pr);
 }
 
 .otp_container .main_container .form_container input {
