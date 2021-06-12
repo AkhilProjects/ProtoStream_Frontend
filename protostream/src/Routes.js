@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Signup from "./components/Signup";
+// import Signup from "./components/Signup";
 // import Internships from "./Internships";
 import Projects from "./Projects";
 import Startups from "./Startups";
@@ -130,10 +130,10 @@ const Routes = () => {
           {/* <Route path="/about" exact component={About} /> */}
           <PrivateRoute path="/error_404" exact component={Error404} />
           <PrivateRoute path="/error_99" exact component={Error99} />
-          <Route path="/signup" exact component={Signup} />
+          {/* <Route path="/signup" exact component={Signup} /> */}
           <Route path="/signin" exact component={Signin} />
-          <Route path="/signup2" exact component={Signup2} />
-          <Route path="/login" exact component={Signup} />
+          <Route path="/signup" exact component={Signup2} />
+          <Route path="/login" exact component={Signup2} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/terms" exact component={Terms} />
           <Route path="/team" exact component={Team} />

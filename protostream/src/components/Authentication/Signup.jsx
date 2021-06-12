@@ -13,6 +13,7 @@ function Signup2() {
                 <div className="sub-head">Sign up and start your Entrepreneurial Journey</div>
                 <form action="" className="form">
                     <input type="email" placeholder="E-mail" className="inp-box" />
+                    <input type="number" max="10" min="10" placeholder="Mob No." className="inp-box" />
                     <input type="password" placeholder="Password" className="inp-box" />
                     <input type="password" placeholder="Confirm Password" className="inp-box" />
                     {/* <div className="remember">
