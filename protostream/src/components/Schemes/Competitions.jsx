@@ -74,7 +74,7 @@ function Competitions() {
               alt=""
               className="scheme-poster"
             />
-            <p className="para">IT & Security Policy</p>
+            <p className="para">MEITY STARTUP</p>
           </div>
         </a>
 
