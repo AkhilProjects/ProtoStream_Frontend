@@ -12,6 +12,7 @@
 }
 
 .content .navlink {
+  width: 50%;
   text-decoration: none;
 }
 
@@ -19,7 +20,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 92%;
   margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

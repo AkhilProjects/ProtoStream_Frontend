@@ -8,14 +8,15 @@
       font-family: var(--font-pr);
       overflow: auto;
       transition: all 0.2s ease;
+      
       .navlink{
-        // background-color: red;
+        width: 50%;
         text-decoration: none;
       }
 
       .btns{
         display: flex;
-        width: 80%;
+        width: 92%;
         margin: auto;
         justify-content: space-between;
         align-items: center;
