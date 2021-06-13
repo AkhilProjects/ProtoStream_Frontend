@@ -15,12 +15,14 @@
 
 .Result-trl .container {
   width: 1100px;
-  height: 700px;
+  height: 800px;
+  min-width: 800px;
   padding: 2rem;
   border-radius: 10px;
   position: relative;
   background-color: #fff;
   text-align: center;
+  margin-left: 15rem;
   font-family: var(--font-pr);
 }
 
@@ -30,6 +32,8 @@
   top: 50%;
   -webkit-transform: translate(30%, -50%);
           transform: translate(30%, -50%);
+  width: 60%;
+  height: 90%;
 }
 
 .Result-trl .container .btn {
@@ -47,6 +51,21 @@
   font-family: var(--font-sec);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Result-trl .container .btn img {
+  background-color: ghostwhite;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+  width: 40px;
+  height: 40px;
+  margin: 0 1rem;
 }
 
 .Result-trl .container .btn:hover {

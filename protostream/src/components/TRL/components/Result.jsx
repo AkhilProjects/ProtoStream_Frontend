@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/Result.css'
+import arrow from '../../../assets/images/arrow.svg'
 
 function Result({heading, quote, image, suggestion, btn, link}) {
     return (
@@ -12,7 +13,7 @@ function Result({heading, quote, image, suggestion, btn, link}) {
             <h4 className="suggestion">{suggestion}</h4>
           </div>
           <a href={link}>
-            <button className="btn">{btn}</button>
+            <button className="btn">{btn} <img src={arrow} alt="" /></button>
           </a>
         </div>
       </div>
