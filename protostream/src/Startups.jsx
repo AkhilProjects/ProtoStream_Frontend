@@ -15,7 +15,7 @@ function Startups() {
             link="register"
           />
         </NavLink>
-        <NavLink to="" className="link">
+        <NavLink to="/trl" className="link">
           <StartupCard
             heading="Evaluate"
             para="Evaluate your startup potential and check the viability of you product by using the TRL Test created by NASA to assess the potential and state of a startup idea or prototype "

@@ -1,12 +1,11 @@
 import React from 'react'
 import '../../css/footer/Member.css'
-import PP from "../../assets/images/pp.svg"
 
-function Member({name, session, work}) {
+function Member({name, session, work, image}) {
     return (
       <div className="member">
-        <img className="PP" src={PP} alt="" />
-        <div className="content">
+        <img className="PP" src={image} alt="" />
+        <div className="content-item">
           <h4 className="name">{name}</h4>
           <p className="session">{session}</p>
           <p className="work"> {work}</p>

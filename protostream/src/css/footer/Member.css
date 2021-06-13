@@ -5,13 +5,14 @@
 .member .PP {
   width: 8em;
   margin-bottom: 1rem;
+  border-radius: 50%;
 }
 
-.member .content {
+.member .content-item {
   text-align: center;
 }
 
-.member .content .name {
+.member .content-item .name {
   font-family: var(--font-sec);
   font-size: var(--button);
   padding-bottom: 0.2em;
@@ -19,14 +20,14 @@
   margin-bottom: 0.5rem;
 }
 
-.member .content .session {
+.member .content-item .session {
   font-family: var(--font-pr);
   font-size: var(--para);
   padding-bottom: 0.2em;
   color: var(--text-sec);
 }
 
-.member .content .work {
+.member .content-item .work {
   font-family: var(--font-sec);
   font-weight: bold;
   font-size: var(--para);
