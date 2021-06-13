@@ -2,7 +2,7 @@ import React from 'react'
 import '../../css/footer/Team.css'
 import Member from './Member'
 import Footer from "../Footer";
-import PP from "../../assets/images/pp.svg";
+import Siddhant from "../../assets/images/Siddhant.jpeg";
 
 function Team() {
     return (
@@ -15,7 +15,7 @@ function Team() {
               name="Siddhant  Siwach "
               session="CSE 2017-2021"
               work="Ideation and  Design"
-              image={PP}
+              image={Siddhant}
             />
           </div>
           <div className="container">
