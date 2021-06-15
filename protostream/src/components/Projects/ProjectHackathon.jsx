@@ -12,6 +12,7 @@ function ProjectHackathon() {
     response.map((items) => {
       console.log("Year", items.createdAt.split("-")[0]);
     });
+    console.log(response)
     setHackathons(response);
   };
   useEffect(() => {
@@ -43,9 +44,17 @@ function ProjectHackathon() {
                 id={hackathon._id}
                 branch={hackathon.Branch}
                 date={hackathon.createdAt}
-                lmobile={hackathon.leaderMobile}
-                lmail={hackathon.leaderMailId}
-                lname={hackathon.leaderName}
+                Member1name={hackathon.MemberName}
+                Member1roll={hackathon.MemberRollNo}
+                Member1branch={hackathon.MemberBranch}
+                Member2name={hackathon.MemberName1}
+                Member2roll={hackathon.MemberRollNo1}
+                Member2branch={hackathon.MemberBranch1}
+                Member3name={hackathon.MemberName2}
+                Member3roll={hackathon.MemberRollNo2}
+                Member3branch={hackathon.MemberBranch2}
+                lmail={hackathon.Email}
+                lname={hackathon.TeamLeader}
                 lrno={hackathon.RollNo}
               />
             ))}

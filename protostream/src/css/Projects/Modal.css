@@ -93,6 +93,13 @@
           flex-direction: column;
 }
 
+.modal .modal-container .details .left .column .members-section,
+.modal .modal-container .details .right .column .members-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .modal .modal-container .details .left .column .ans,
 .modal .modal-container .details .right .column .ans {
   margin: 2%;

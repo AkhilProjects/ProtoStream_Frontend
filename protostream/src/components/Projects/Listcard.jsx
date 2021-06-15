@@ -2,14 +2,32 @@ import React, {useContext, useState} from "react";
 import "../../css/Projects/listcard.css";
 import {  } from "../../css/Projects/Modal.css";
 
-function Listcard({ project_name, description, branch, members, id, date, lmobile, lmail, lname, lrno }) {
-  const [active, setActive] = useState(false)
+function Listcard({
+  project_name,
+  description,
+  branch,
+  members,
+  id,
+  date,
+  lname,
+  lrno,
+  Member1name,
+  Member1roll,
+  Member1branch,
+  Member2name,
+  Member2roll,
+  Member2branch,
+  Member3name,
+  Member3roll,
+  Member3branch,
+}) {
+  const [active, setActive] = useState(false);
   const showModal = () => {
     setActive(true);
-  }
+  };
   const hideModal = () => {
     setActive(false);
-  }
+  };
   return (
     <div className="listcard">
       <h1 className="project-name">{project_name}</h1>
@@ -45,11 +63,23 @@ function Listcard({ project_name, description, branch, members, id, date, lmobil
             <div className="right">
               <div className="details-sec column">
                 <p className="head">Team Members Details: </p>
-                <ul>
-                  <li>Akshay 170234749 Me</li>
-                  <li>Akshay 170234749 Me</li>
-                  <li>Akshay 170234749 Me</li>
-                </ul>
+                <div className="members-section">
+                  <ul className="member-details">
+                    <li>{Member1name}</li>
+                    <li>{Member2name}</li>
+                    <li>{Member3name}</li>
+                  </ul>
+                  <ul className="member-details">
+                    <li>{Member1roll}</li>
+                    <li>{Member2roll}</li>
+                    <li>{Member3roll}</li>
+                  </ul>
+                  <ul className="member-details">
+                    <li>{Member1branch}</li>
+                    <li>{Member2branch}</li>
+                    <li>{Member3branch}</li>
+                  </ul>
+                </div>
               </div>
               <div className="details-sec">
                 <p className="head">Submission Date: </p>
