@@ -10,6 +10,13 @@ const Header = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+
+  // const dashboard = ()=>{
+  //   return (
+
+  //   )
+  // }
+
   return (
     <header className="header">
       <NavLink to={isAuthenticated() ? "/" : "/"} className="navbar-logo">
