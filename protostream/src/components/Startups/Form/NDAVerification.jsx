@@ -1,6 +1,10 @@
 import React, {useState} from 'react'
 import "../css/Ndaverify.css";
 import {NavLink} from 'react-router-dom' 
+import fly from '../../../assets/images/fly.svg'
+import clock from '../../../assets/images/clock.svg'
+import hourglass from '../../../assets/images/hourglass.svg'
+import complete from '../../../assets/images/complete.svg'
 
 function NDAVerification() {
     const [aprooved, setAprooved] = useState(true);
@@ -27,7 +31,7 @@ function Startup({name, isApproved}) {
     return (
       <div className="startup-card">
         <div className="sec">
-          <img src="" alt="" className="status-icon" />
+          <img src={isApproved ? complete : hourglass} alt="" className="status-icon" />
           <p className="startup-name">{name}</p>
         </div>
         <p className="status">
@@ -38,12 +42,12 @@ function Startup({name, isApproved}) {
         {isApproved ? (
           <NavLink to="/Startups/Startup-form" className="navlink">
             <button className="btn">
-              Go for Startup <img src="" alt="" />
+              Go for Startup <img src={fly} alt="" />
             </button>
           </NavLink>
         ) : (
           <button className="btn">
-            Request Again <img src="" alt="" />
+            Request Again <img src={clock} alt="" />
           </button>
         )}
       </div>
