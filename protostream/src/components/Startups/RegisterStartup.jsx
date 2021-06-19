@@ -21,12 +21,7 @@ function RegisterStartup() {
           <h1 className="heading">Step 1</h1>
           <h2 className="sub-head">Verify Mobile</h2>
           <form>
-            <label htmlFor="mob">Mobile Number:</label>
-            <input type="number" name="mob" className="input-field" />
-            <label htmlFor="btn">Request OTP</label>
-            <button name="btn" className="button-otp">
-              <img src={mobile} alt="mob" />
-            </button>
+            <p className="info">Enter the OTP sent to +91 *******678</p>
             <label htmlFor="otp">Enter OTP:</label>
             <input type="number" name="otp" className="input-field" />
             <button type="submit" className="verify">
