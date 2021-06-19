@@ -91,7 +91,7 @@ function RegistrationForm() {
             </div>
             <div className="field-container">
               <label htmlFor="">*Startup Breif:</label>
-              <textarea name="" id="" cols="50" rows="50" required></textarea>
+              <textarea name="" id="" cols="50" rows="10" required></textarea>
             </div>
             <div className="field-container">
               <label htmlFor="">*Presentation File:</label>

@@ -19,6 +19,10 @@
   position: relative;
 }
 
+.RegistrationForm .container .form {
+  position: relative;
+}
+
 .RegistrationForm .container .form .field-container {
   margin: 1rem 0;
   display: -webkit-box;
@@ -35,6 +39,7 @@
   padding: 0.5rem;
   border: none;
   border-radius: 5px;
+  font-family: var(--font-pr);
   background-color: var(--accent-sec);
 }
 
@@ -71,5 +76,13 @@
 
 .RegistrationForm .container .form .submit-btn {
   position: absolute;
+  bottom: 0;
+  padding: 0.5rem 1rem;
+  font-size: var(--button);
+  border-radius: 5px;
+  border: none;
+  background-color: var(--comp-sec);
+  color: var(--text-pr);
+  right: 50px;
 }
 /*# sourceMappingURL=RegisterForm.css.map */
