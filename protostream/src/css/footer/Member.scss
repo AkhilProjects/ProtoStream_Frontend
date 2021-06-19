@@ -5,9 +5,10 @@
     .PP{
         width: 8em;
         margin-bottom: 1rem;
+        border-radius: 50%;
     }
 
-    .content {
+    .content-item  {
         text-align: center;
         .name{
             font-family: var(--font-sec);

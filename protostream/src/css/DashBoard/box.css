@@ -1,3 +1,8 @@
+.box-container {
+  padding: 1rem;
+  width: 100%;
+}
+
 .box-container .box {
   width: 100%;
   min-width: 400px;

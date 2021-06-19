@@ -1,0 +1,139 @@
+.container {
+  background-color: #2D2D2D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+}
+
+.container .img_container {
+  padding: 3rem;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .verify_img {
+  height: 80%;
+}
+
+.container .main_container {
+  background: linear-gradient(111.9deg, #FBD11B 26.31%, #F2A31A 87.23%);
+  width: 100%;
+  border-radius: 0  10px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main_container .head {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  margin-bottom: 2rem;
+  color: #FFFFFF;
+}
+
+.container .main_container .form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(131.91deg, #FBD11B 20.43%, #FFB606 85.35%);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 60%;
+  height: 50%;
+  padding: 2rem;
+}
+
+.container .main_container .form_container .form_head {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+}
+
+.container .main_container .form_container input {
+  height: 2rem;
+  margin-bottom: 1rem;
+  background: transparent;
+  border: none;
+  font-weight: bolder;
+  padding: 1rem;
+  color: #FFFFFF;
+  background: #4D4D4D;
+  -webkit-box-shadow: 0px 4px 4px rgba(62, 37, 37, 0.25);
+          box-shadow: 0px 4px 4px rgba(62, 37, 37, 0.25);
+  border-radius: 10px;
+  outline: none;
+}
+
+.container .main_container .form_container input[type=number]::-webkit-inner-spin-button,
+.container .main_container .form_container input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container .main_container .form_container .error {
+  color: red;
+  font-weight: bolder;
+}
+
+.container .main_container .form_container .para {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.container .main_container .form_container .btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: #FFB606;
+  padding: 0.5rem;
+}
+
+.container .main_container .form_container .btn .arrow {
+  height: 0.8rem;
+}
+/*# sourceMappingURL=Verify.css.map */

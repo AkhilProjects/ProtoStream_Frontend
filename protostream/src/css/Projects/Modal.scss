@@ -50,6 +50,7 @@
       font-size: var(--span);
       font-family: var(--font-pr);
 
+
       .left,
       .right {
         flex: 1;
@@ -64,10 +65,15 @@
             font-weight: bolder;
             margin-right: 5%;
           }
+          
         }
 
         .column {
           flex-direction: column;
+
+          .members-section{
+            display: flex;
+          }
 
           .ans {
             margin: 2%;

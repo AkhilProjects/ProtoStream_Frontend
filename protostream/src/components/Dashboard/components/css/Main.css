@@ -7,9 +7,12 @@
   width: 75%;
   font-family: var(--font-pr);
   overflow: auto;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .content .navlink {
+  width: 50%;
   text-decoration: none;
 }
 
@@ -17,7 +20,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 92%;
   margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -62,7 +65,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: linear-gradient(109.8deg, var(--accent-sec), var(--accent-pr));
-  width: 97%;
+  width: 90%;
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem auto;

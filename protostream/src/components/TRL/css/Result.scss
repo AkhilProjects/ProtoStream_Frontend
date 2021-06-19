@@ -1,0 +1,86 @@
+.Result-trl{
+    width: 90%;
+    margin: auto;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        width: 1100px;
+        height: 800px;
+        min-width: 800px;
+        padding: 2rem;
+        border-radius: 10px;
+        position: relative;
+        background-color: #fff;
+        text-align: center;
+        margin-left: 15rem;
+        font-family: var(--font-pr);
+       
+        .image{
+            position: absolute;
+            left: -50%;
+            top: 50%;
+            transform: translate(30%, -50%);
+            width: 60%;
+            height: 90%;
+        }
+
+        .btn{
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            padding: 0.5rem 1rem;
+            font-size: var(--button);
+            background-color: var(--accent-sec);
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            color: var(--text-pr);
+            font-weight: bold;
+            font-family: var(--font-sec);
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+
+            img{
+                background-color: ghostwhite;
+                border-radius: 50%;
+                padding: 0.3rem 0.6rem;
+                width: 40px;
+                height: 40px;
+                margin: 0 1rem;
+            }
+        }
+
+        .btn:hover{
+            background-color: var(--accent-pr);
+        }
+
+        .text-area{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 70%;
+            height: fit-content;
+            
+            .heading{
+                color: var(--accent-sec);
+                font-size: var(--heading-med);
+            }
+
+            .quote{
+                font-size: 60px;
+                width: 50%;
+                margin: auto;
+            }
+
+            .suggestion{
+                color: var(--accent-sec);
+                font-size: var(--span);
+            }
+        }
+    }
+}

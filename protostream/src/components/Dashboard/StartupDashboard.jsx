@@ -4,7 +4,7 @@ import Badge from "../../assets/images/startup-badge.svg";
 import arrow from "../../assets/images/arrow.svg";
 import file from "../../assets/images/file.svg";
 import plus from "../../assets/images/plus.svg";
-import cloud from "../../assets/images/clouddownload.svg";
+import cloudupload from "../../assets/images/cloudupload.svg";
 import checklist from "../../assets/images/checklist.svg";
 import presentation from "../../assets/images/presentation.svg";
 import Startup from "../../assets/images/Startup-icon.svg";
@@ -62,7 +62,7 @@ function StartupDashboard() {
             <div className="cards">
               <Card icon={plus} head="Add  Update/Milestone" text="add a new update or achievement
  about your project "/>
-              <Card icon={cloud} head="Upload NDA" text="Got the Idea Approved ?
+              <Card icon={cloudupload} head="Upload NDA" text="Got the Idea Approved ?
 Complete the Startup Registration Process"/>
               <Card icon={checklist} head="List /Edit Internship" text="List,Edit or Delete an internship posting
 by Your Startup"/>

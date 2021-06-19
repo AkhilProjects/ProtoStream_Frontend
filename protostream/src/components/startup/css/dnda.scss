@@ -29,13 +29,31 @@
             label{
                 font-size: var(--button);
             }
-        }
         .other-detail{
             width: 100%;
             margin-top: 5rem;
 
             .subhead{
                 font-size: var(--heading-small);
+            }
+
+            .startup-name{
+                // background-color: red;
+                padding: 2rem;
+                background-color: var(--accent-sec);
+                border-radius: 10px;
+
+                input{
+                    padding: 1rem;
+                    font-size: var(--span);
+                    // border-radius: 5px;
+                    // background-color: var(--accent-pr);
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    margin-top: 1rem;
+                    color: black;
+                }
             }
 
             .agreement{
@@ -93,4 +111,6 @@
             cursor: pointer;
         }
     }
+}
+
 }

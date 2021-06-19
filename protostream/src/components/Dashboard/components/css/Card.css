@@ -1,5 +1,5 @@
 .dashboard-card {
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   height: 250px;
   margin: 1rem;
@@ -19,6 +19,7 @@
 
 .dashboard-card .items .sub-head {
   font-size: var(--heading-med);
+  font-weight: bold;
 }
 
 .dashboard-card .items .text {

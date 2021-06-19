@@ -43,7 +43,12 @@ const Dashboard = () => {
                   para="Check the resources here"
                 />
               </NavLink>
-              <Box heading="Register a Startup" para="Register for a startup" />
+              <NavLink to="/resources" className="navlink">
+                <Box
+                  heading="Register a Startup"
+                  para="Register for a startup"
+                />
+              </NavLink>
             </div>
             <div className="yellow-container">
               <div className="heading">My Projects</div>
@@ -51,6 +56,9 @@ const Dashboard = () => {
                 List of your enrolled projects/startups
               </div>
               <div className="projects-container">
+                <ListCard />
+                <ListCard />
+                <ListCard />
                 <ListCard />
               </div>
             </div>

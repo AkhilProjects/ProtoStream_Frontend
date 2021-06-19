@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Signup from "./components/Signup";
+// import Signup from "./components/Signup";
 // import Internships from "./Internships";
 import Projects from "./Projects";
 import Startups from "./Startups";
@@ -32,6 +32,7 @@ import StartupDetails from './components/Startups/StartupDetails'
 
 import TRLpage from './components/TRL/TRLpage'
 
+
 import NidhiEir from './components/Schemes/static/NidhiEir'
 import NidhiPrayas from "./components/Schemes/static/NidhiPrayas";
 import ITPolicy from './components/Schemes/static/ITPolicy'
@@ -49,6 +50,7 @@ import Resources from "./components/Resources/Resources";
 
 import Signin from './components/Authentication/Signin'
 import Signup2 from './components/Authentication/Signup'
+
 
 
 
@@ -71,7 +73,7 @@ const Routes = () => {
           <PrivateRoute path="/projects" exact component={Projects} />
           <PrivateRoute path="/Startups" exact component={Startups} />
           <PrivateRoute
-            path="/Startups/allstartups"
+            path="/Startups/allstartups" 
             exact
             component={AllStartups}
           />
@@ -130,10 +132,10 @@ const Routes = () => {
           {/* <Route path="/about" exact component={About} /> */}
           <PrivateRoute path="/error_404" exact component={Error404} />
           <PrivateRoute path="/error_99" exact component={Error99} />
-          <Route path="/signup" exact component={Signup} />
+          {/* <Route path="/signup" exact component={Signup} /> */}
           <Route path="/signin" exact component={Signin} />
-          <Route path="/signup2" exact component={Signup2} />
-          <Route path="/login" exact component={Signup} />
+          <Route path="/signup" exact component={Signup2} />
+          <Route path="/login" exact component={Signup2} />
           <Route path="/contact" exact component={Contact} />
           <Route path="/terms" exact component={Terms} />
           <Route path="/team" exact component={Team} />
