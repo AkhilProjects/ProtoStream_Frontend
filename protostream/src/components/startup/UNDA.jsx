@@ -29,9 +29,9 @@ function UNDA() {
                 <input type="text" name="" id="" required/>
               </div>
             </div>
-            <NavLink to="/upload-NDA">
+            <NavLink to="/user/dashboard">
               <button type="submit" className="next">
-                Upload NDA <img src={arrow} alt="" />
+                Submit and go to Dashboard<img src={arrow} alt="" />
               </button>
             </NavLink>
           </form>

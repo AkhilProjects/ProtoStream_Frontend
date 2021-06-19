@@ -2,17 +2,23 @@ import React from 'react'
 import StartupCard from './components/Startups/StartupCard'
 import './css/Startups/startups.css';
 import {NavLink} from 'react-router-dom'
+import {isAuthenticated} from './auth/index.js'
 
 function Startups() {
+  const onClickHandler = () => {
+    const user = isAuthenticated();
+    console.log(user.user._id);
+
+  }
     return (
       <div className="startup-app">
-        <NavLink to="/startups/allstartups" className="link">
+        <NavLink to="/startups/allstartups" className="link" onClick={onClickHandler} >
           <StartupCard
             heading="Startup"
             para="Start your journey and build something valueable that brings changes and drives the world to a better future."
             subhead=" “Innovation distinguishes between a leader and a follower.” "
             btntext="Register Startup"
-            link="register"
+            link="Steps"
           />
         </NavLink>
         <NavLink to="/trl" className="link">

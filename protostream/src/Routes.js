@@ -4,7 +4,7 @@ import Home from "./Home";
 import Projects from "./Projects";
 import Startups from "./Startups";
 import AllStartups from './components/Startups/Startups'
-import RegisterStartup from './components/Startups/RegisterStartup';
+import Verify from './components/Startups/RegisterStartup';
 import Schemes from "./Schemes";
 import Competitions from './components/Schemes/Competitions'
 import SchemeForm from "./components/Schemes/SchemeForm";
@@ -12,7 +12,6 @@ import StudentDashboard from "./components/Dashboard/StudentDashboard";
 import StartupDashboard from "./components/Dashboard/StartupDashboard";
 import TBIDashboard from "./components/Dashboard/TBIDashboard";
 import About from "./components/footer/About";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Error404 from "./components/Error404";
 import Error99 from "./components/Error99";
@@ -21,7 +20,6 @@ import Terms from "./components/footer/Terms";
 import Team from "./components/footer/Team";
 import ProjectHackathon from "./components/Projects/ProjectHackathon";
 import ProjectInnotech from "./components/Projects/ProjectInnotech";
-import Addform from "./components/Projects/Form/Addform";
 import Form from "./components/Projects/Form/Form";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Finalyear from "./components/Projects/finalyear/Finalyear";
@@ -47,6 +45,8 @@ import FormA from "./components/startup/FormA";
 import FormB from "./components/startup/FormB";
 import Resources from "./components/Resources/Resources";
 
+import Steps from "./components/Startups/Steps"
+
 
 import Signin from './components/Authentication/Signin'
 import Signup2 from './components/Authentication/Signup'
@@ -64,14 +64,18 @@ const Routes = () => {
           {/* <PrivateRoute path="/internships" exact component={Internships} /> */}
           {/* Temp */}
           <PrivateRoute path="/registered-startup" exact component={Congrats} />
-          <PrivateRoute path="/download-NDA" exact component={DNDA} />
-          <PrivateRoute path="/upload-NDA" exact component={UNDA} />
+          {/* <PrivateRoute path="/download-NDA" exact component={DNDA} />
+          <PrivateRoute path="/upload-NDA" exact component={UNDA} /> */}
           <PrivateRoute path="/startup-details" exact component={FormA} />
           <PrivateRoute path="/list-internships" exact component={FormB} />
           {/* Temp */}
           <PrivateRoute path="/internships" exact component={Internships} />
           <PrivateRoute path="/projects" exact component={Projects} />
           <PrivateRoute path="/Startups" exact component={Startups} />
+          <PrivateRoute path="/Startups/steps" exact component={Steps} />
+          <PrivateRoute path="/Startups/verify" exact component={Verify} />
+          <PrivateRoute path="/Startups/download-NDA" exact component={DNDA} />
+          <PrivateRoute path="/Startups/upload-NDA" exact component={UNDA} />
           <PrivateRoute
             path="/Startups/allstartups" 
             exact
@@ -82,11 +86,11 @@ const Routes = () => {
             exact
             component={StartupDetails}
           />
-          <PrivateRoute
+          {/* <PrivateRoute
             path="/Startups/register"
             exact
             component={RegisterStartup}
-          />
+          /> */}
           <PrivateRoute
             path="/user/dashboard"
             exact

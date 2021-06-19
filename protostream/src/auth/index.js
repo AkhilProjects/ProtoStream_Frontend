@@ -74,6 +74,7 @@ export const isAuthenticated = () => {
 };
 
 
+<<<<<<< HEAD
 export const schemeFetch = (token) => {
   return fetch(`${API}/schemes/allSchemes/`, {
     method: "GET",
@@ -122,3 +123,15 @@ export const allHackathons = () => {
       console.log(err);
     });
 };
+=======
+
+// Startups..
+
+export const otp = (userId) => {
+  return fetch(`${API}/startup/register/${userId}`, {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .catch((err) => console.log(err));
+}
+>>>>>>> c787a3765a5079d4ac15ea8f4a144d0c55c7c213

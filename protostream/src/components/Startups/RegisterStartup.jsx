@@ -33,7 +33,7 @@ function RegisterStartup() {
               Verify
             </button>
           </form>
-          <NavLink to="/download-NDA">
+          <NavLink to="/startups/download-NDA">
             <button className="next-btn">Next Step</button>
           </NavLink>
         </div>
