@@ -117,3 +117,15 @@ export const isAuthenticated = () => {
     return false;
   }
 };
+
+
+
+// Startups..
+
+export const otp = (userId) => {
+  return fetch(`${API}/startup/register/${userId}`, {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .catch((err) => console.log(err));
+}

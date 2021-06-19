@@ -17,9 +17,9 @@ function DNDA() {
               copyrights,patents or pitch and I accept the guidelines and
               framework provided by ProtoStream and TBI KIET.{" "}
             </label>
-            <NavLink to="/upload-NDA">
+            <NavLink to="/startups/upload-NDA">
               <input type="submit" className="next" />
-              Upload NDA <img src={arrow} alt="" />
+            
               {/* </input> */}
             </NavLink>
             <div className="other-detail">

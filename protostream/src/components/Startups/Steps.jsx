@@ -1,0 +1,33 @@
+import React from 'react'
+import Step from "./Step"
+import './css/Steps.css'
+import Badge from'../../assets/images/Badge.svg'
+import Download from '../../assets/images/clouddownload.svg'
+import Upload from '../../assets/images/cloudupload.svg'
+
+function Steps() {
+    return (
+      <div className="Steps">
+        <Step
+          head="Step 1"
+          subHead="Register Mobile Number and download NDA"
+          icon={Badge}
+          link="verify"
+        />
+        <Step
+          head="Step 2"
+          subHead="Download NDA, get it verify by TBI "
+          icon={Download}
+          link="download-NDA"
+        />
+        <Step
+          head="Step 3"
+          subHead="Upload NDA and Startup Name"
+          icon={Upload}
+          link="upload-NDA"
+        />
+      </div>
+    );
+}
+
+export default Steps

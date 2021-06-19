@@ -1,0 +1,53 @@
+.step-link {
+  width: 500px;
+  height: 800px;
+  background-color: var(--comp-pr);
+  padding: 2rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+}
+
+.step-link .step {
+  color: var(--text-pr);
+  font-family: var(--font-pr);
+}
+
+.step-link .step .heading {
+  font-size: var(--heading-main);
+  margin-bottom: 4rem;
+  color: var(--accent-sec);
+}
+
+.step-link .step .sub-head {
+  font-size: var(--span);
+  width: 70%;
+  margin: auto;
+}
+
+.step-link .step .icon {
+  position: absolute;
+  bottom: 50px;
+  width: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.step-link:hover {
+  color: var(--text-pr);
+}
+/*# sourceMappingURL=Step.css.map */
