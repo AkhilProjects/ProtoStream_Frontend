@@ -43,7 +43,7 @@ const Dashboard = () => {
                   para="Check the resources here"
                 />
               </NavLink>
-              <NavLink to="/resources" className="navlink">
+              <NavLink to="/Startups/Registration_steps" className="navlink">
                 <Box
                   heading="Register a Startup"
                   para="Register for a startup"

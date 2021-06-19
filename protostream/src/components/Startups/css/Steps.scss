@@ -5,4 +5,26 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    .instructions{
+        width: 500px;
+        height: 800px;
+        padding: 2rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .heading{
+            color: var(--accent-sec);
+            margin: 1rem;
+        }
+
+        .inst{
+            margin: 1rem;
+            font-size: var(--button);
+            font-family: var(--font-pr);
+            color: var(--text-pr);
+        }
+    }
 }
