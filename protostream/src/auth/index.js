@@ -1,39 +1,6 @@
 const { API } = require("../backend");
 
-export const hackathonSubmit = (hackathon, userId) => {
-  console.log("inside hackathon submit", hackathon);
-  return fetch(`${API}/hackathon/createHackathon/${userId}`, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(hackathon),
-  })
-    .then((response) => response.json())
-    .catch((error) => error);
-};
 
-export const schemeFetch = (token) => {
-  return fetch(`${API}/schemes/allSchemes/`, {
-    method: "GET",
-    Authorization: `Bearer ${token}`,
-  })
-    .then((response) => response.json())
-    .catch((err) => console.log(err));
-};
-
-export const schemeSubmit = (userId, scheme) => {
-  return fetch(`${API}/schemes/createScheme/${userId}`, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-    },
-    body: scheme,
-  })
-    .then((response) => response.json())
-    .catch((error) => error);
-};
 
 export const signup = (user) => {
   return fetch(`${API}/register`, {
@@ -53,18 +20,6 @@ export const signup = (user) => {
     });
 };
 
-export const allHackathons = () => {
-  console.log("api:", API);
-  return fetch(`${API}/hackathon/allHackathons`, {
-    method: "GET",
-  })
-    .then((response) => {
-      return response.json();
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-};
 
 export const signin = (user) => {
   return fetch(`${API}/login`, {
@@ -116,4 +71,54 @@ export const isAuthenticated = () => {
     console.log("inside false error!!");
     return false;
   }
+};
+
+
+export const schemeFetch = (token) => {
+  return fetch(`${API}/schemes/allSchemes/`, {
+    method: "GET",
+    Authorization: `Bearer ${token}`,
+  })
+    .then((response) => response.json())
+    .catch((err) => console.log(err));
+};
+
+export const schemeSubmit = (userId, scheme) => {
+  return fetch(`${API}/schemes/createScheme/${userId}`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+    },
+    body: scheme,
+  })
+    .then((response) => response.json())
+    .catch((error) => error);
+};
+
+
+export const hackathonSubmit = (hackathon, userId) => {
+  console.log("inside hackathon submit", hackathon);
+  return fetch(`${API}/hackathon/createHackathon/${userId}`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(hackathon),
+  })
+    .then((response) => response.json())
+    .catch((error) => error);
+};
+
+export const allHackathons = () => {
+  console.log("api:", API);
+  return fetch(`${API}/hackathon/allHackathons`, {
+    method: "GET",
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 };
