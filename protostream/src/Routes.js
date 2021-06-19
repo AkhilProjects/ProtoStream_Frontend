@@ -69,6 +69,7 @@ const Routes = () => {
           <PrivateRoute path="/registered-startup" exact component={Congrats} />
           {/* <PrivateRoute path="/download-NDA" exact component={DNDA} />
           <PrivateRoute path="/upload-NDA" exact component={UNDA} /> */}
+          
           <PrivateRoute path="/startup-details" exact component={FormA} />
           <PrivateRoute path="/list-internships" exact component={FormB} />
           {/* Temp */}

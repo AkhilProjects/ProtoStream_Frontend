@@ -12,19 +12,20 @@ import { isAuthenticated, signout } from "../../auth";
 import { NavLink, useHistory } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
-import Card from './components/Card'
+import Card from "./components/Card";
 
 function StartupDashboard() {
-   const { user } = isAuthenticated();
-   const { Profilename, ProfileBranch, ProfileYear } = user.profiledata;
+  const { user } = isAuthenticated();
+  const { Profilename, ProfileBranch, ProfileYear } = user.profiledata;
+  let history = useHistory();
+  const onClickLogout = () => {
+    signout(() => {
+      history.push("/login");
+    });
+  };
 
-   let history = useHistory();
-   const onClickLogout = () => {
-     signout(() => {
-       history.push("/login");
-     });
-   };
-   const onClickMyProjects = () => {};
+  // const onClickMyProjects = () => {};
+  
 
   return (
     <div className="dashboard">
@@ -57,17 +58,32 @@ function StartupDashboard() {
                 <img src={file} alt="" />
                 <p>Preview</p>
               </div>
-              <button><img src={arrow} alt="" /></button>
+              <button>
+                <img src={arrow} alt="" />
+              </button>
             </div>
             <div className="cards">
-              <Card icon={plus} head="Add  Update/Milestone" text="add a new update or achievement
- about your project "/>
-              <Card icon={cloudupload} head="Upload NDA" text="Got the Idea Approved ?
-Complete the Startup Registration Process"/>
-              <Card icon={checklist} head="List /Edit Internship" text="List,Edit or Delete an internship posting
-by Your Startup"/>
-              <Card icon={presentation} head="Add/Edit Files" text="Add/Edit Startup Related Files to be
-submitted to the TBI "/>
+              <Card
+                icon={plus}
+                head="Add  Update/Milestone"
+                text="add a new update or achievement about your project "
+              />
+              <Card
+                icon={cloudupload}
+                head="Upload NDA"
+                text="Got the Idea Approved ? Complete the Startup Registration Process"
+              />
+              <Card
+                icon={checklist}
+                head="List /Edit Internship"
+                text="List,Edit or Delete an internship posting by Your Startup"
+              />
+              <Card
+                icon={presentation}
+                head="Add/Edit Files"
+                text="Add/Edit Startup Related Files to be
+submitted to the TBI "
+              />
             </div>
           </div>
         </Main>
