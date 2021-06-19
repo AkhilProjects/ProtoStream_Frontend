@@ -1,39 +1,60 @@
-import React, { useState } from 'react'
-import mobile from '../../assets/images/Mobile.svg';
-import '../../css/Startups/registerStartup.css';
-import {NavLink} from "react-router-dom"
+import React, { useState } from "react";
+import mobile from "../../assets/images/Mobile.svg";
+import "../../css/Startups/registerStartup.css";
+import { NavLink } from "react-router-dom";
+import { isAuthenticated, optVerify } from "../../auth";
 
 function RegisterStartup() {
-    const [next, setNext] = useState(false);
-    const [prev, setPrev] = useState();
+  const [next, setNext] = useState(false);
+  const [prev, setPrev] = useState();
+  const [code, setCode] = useState();
 
-    const nextcontainer = () => {
-        setNext(true);
-    }
+  const nextcontainer = () => {
+    setNext(true);
+  };
 
-    const prevcontainer = () => {
-        setNext(false);
-    }
+  const prevcontainer = () => {
+    setNext(false);
+  };
 
-    return (
-      <div className="register-startup">
-        <div className={!next ? "container-1" : "hidden"}>
-          <h1 className="heading">Step 1</h1>
-          <h2 className="sub-head">Verify Mobile</h2>
-          <form>
-            <p className="info">Enter the OTP sent to +91 *******678</p>
-            <label htmlFor="otp">Enter OTP:</label>
-            <input type="number" name="otp" className="input-field" />
-            <button type="submit" className="verify">
-              Verify
-            </button>
-          </form>
-          <NavLink to="/startups/download-NDA">
-            <button className="next-btn">Next Step</button>
-          </NavLink>
-        </div>
+  const handleChange = (name) => (event) => {
+    // console.log("inside handlechange");
+    console.log(event.target.value);
+    setCode({ [name]: event.target.value });
+  };
+  const onSubmitHandler = (event) => {
 
-        {/* <div className={next ? "container-2" : "hidden"}>
+    event.preventDefault();
+    const userId = isAuthenticated().user._id;
+    optVerify(userId,code)
+      .then((response) => console.log(response))
+      .catch((err) => console.log(err));
+  };
+
+  return (
+    <div className="register-startup">
+      <div className={!next ? "container-1" : "hidden"}>
+        <h1 className="heading">Step 1</h1>
+        <h2 className="sub-head">Verify Mobile</h2>
+        <form>
+          <p className="info">Enter the OTP sent to +91 *******678</p>
+          <label htmlFor="otp">Enter OTP:</label>
+          <input
+            onChange={handleChange("code")}
+            type="number"
+            name="code"
+            className="input-field"
+          />
+          <button onClick={onSubmitHandler}  className="verify">
+            Verify
+          </button>
+        </form>
+        <NavLink to="/startups/download-NDA">
+          <button className="next-btn">Next Step</button>
+        </NavLink>
+      </div>
+
+      {/* <div className={next ? "container-2" : "hidden"}>
           <h2 className="sub-head">Startup Details</h2>
           <form>
             <label htmlFor="name">Startup Name:</label>
@@ -84,8 +105,8 @@ function RegisterStartup() {
             Previous
           </button>
         </div> */}
-      </div>
-    );
+    </div>
+  );
 }
 
-export default RegisterStartup
+export default RegisterStartup;

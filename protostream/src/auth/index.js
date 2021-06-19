@@ -126,9 +126,27 @@ export const allHackathons = () => {
 // Startups..
 
 export const otp = (userId) => {
+  
   return fetch(`${API}/startup/register/${userId}`, {
     method: "GET",
   })
     .then((response) => response.json())
     .catch((err) => console.log(err));
+}
+export const optVerify = (userId,otpCode) =>{
+  return fetch(`${API}/startup/verify/${userId}`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(otpCode),
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((error) => {
+      console.log("inside error");
+      console.log(error);
+    });
 }
