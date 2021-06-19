@@ -46,6 +46,8 @@ import FormB from "./components/startup/FormB";
 import Resources from "./components/Resources/Resources";
 
 import Steps from "./components/Startups/Steps"
+import MainSteps from './components/Startups/Form/MainSteps'
+import NDAVerification from "./components/Startups/Form/NDAVerification";
 
 
 import Signin from './components/Authentication/Signin'
@@ -77,7 +79,17 @@ const Routes = () => {
           <PrivateRoute path="/Startups/download-NDA" exact component={DNDA} />
           <PrivateRoute path="/Startups/upload-NDA" exact component={UNDA} />
           <PrivateRoute
-            path="/Startups/allstartups" 
+            path="/Startups/Registration_steps"
+            exact
+            component={MainSteps}
+          />
+          <PrivateRoute
+            path="/Startups/NDA-Verification"
+            exact
+            component={NDAVerification}
+          />
+          <PrivateRoute
+            path="/Startups/allstartups"
             exact
             component={AllStartups}
           />
@@ -146,7 +158,6 @@ const Routes = () => {
           <Route path="/about" exact component={About} />
           <Route path="/resources" exact component={Resources} />
           <Route path="/trl" exact component={TRLpage} />
-
           <Route path="/schemes/NidhiEir" exact component={NidhiEir} />
           <Route path="/schemes/NidhiPrayas" exact component={NidhiPrayas} />
           <Route path="/schemes/it_policy" exact component={ITPolicy} />

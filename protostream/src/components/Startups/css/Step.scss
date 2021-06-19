@@ -1,5 +1,8 @@
 .step-link{
+    max-width: 500px;
     width: 500px;
+    margin: 0 1rem;
+    min-width: 400px;
     height: 800px;
     background-color: var(--comp-pr);
     padding: 2rem;
@@ -13,6 +16,7 @@
     position: relative;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
     transition: all 0.2s ease;
+
 
     .step{
         color: var(--text-pr);
@@ -37,6 +41,8 @@
             transform: translateX(-50%);
         }
     }
+
+  
 }
 
 .step-link:hover{
@@ -66,6 +72,19 @@
     position: relative;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
     transition: all 0.2s ease;
+
+     .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-pr);
+        height: 100%;
+
+        .heading{
+            color: var(--accent-sec);
+        }
+
+    }
 
      .step{
         color: var(--text-pr);

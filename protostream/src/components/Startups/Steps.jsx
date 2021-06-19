@@ -7,7 +7,6 @@ import Upload from '../../assets/images/cloudupload.svg'
 
 function Steps() {
   const [disabled, setDisabled] = useState(false)
-
     return (
       <div className="Steps">
         <Step

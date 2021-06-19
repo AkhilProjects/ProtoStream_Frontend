@@ -11,4 +11,33 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+
+.Steps .instructions {
+  width: 500px;
+  height: 800px;
+  padding: 2rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Steps .instructions .heading {
+  color: var(--accent-sec);
+  margin: 1rem;
+}
+
+.Steps .instructions .inst {
+  margin: 1rem;
+  font-size: var(--button);
+  font-family: var(--font-pr);
+  color: var(--text-pr);
+}
 /*# sourceMappingURL=Steps.css.map */
