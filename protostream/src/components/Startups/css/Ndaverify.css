@@ -1,0 +1,60 @@
+.Nda-verify {
+  width: 100%;
+}
+
+.Nda-verify .heading {
+  margin-left: 6rem;
+}
+
+.Nda-verify .container {
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  overflow: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: var(--font-pr);
+  background: linear-gradient(111.9deg, var(--accent-pr), var(--accent-sec));
+}
+
+.Nda-verify .container .sub-head {
+  text-align: center;
+  font-family: var(--font-pr);
+  font-size: var(--heading-small);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.Nda-verify .container .startup-container {
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  height: 64vh;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.Nda-verify .container .startup-container .head {
+  font-family: var(--font-pr);
+  font-size: var(--button);
+  font-weight: bold;
+}
+
+.startup-card {
+  width: 100%;
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--accent-pr)), to(var(--accent-sec)));
+  background: linear-gradient(180deg, var(--accent-pr), var(--accent-sec));
+  border-radius: 10px;
+}
+/*# sourceMappingURL=Ndaverify.css.map */
