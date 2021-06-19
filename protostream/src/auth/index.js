@@ -14,9 +14,10 @@ export const hackathonSubmit = (hackathon, userId) => {
     .catch((error) => error);
 };
 
-export const schemeFetch = () => {
+export const schemeFetch = (token) => {
   return fetch(`${API}/schemes/allSchemes/`, {
     method: "GET",
+    Authorization: `Bearer ${token}`,
   })
     .then((response) => response.json())
     .catch((err) => console.log(err));
@@ -66,7 +67,6 @@ export const allHackathons = () => {
 };
 
 export const signin = (user) => {
-
   return fetch(`${API}/login`, {
     method: "POST",
     headers: {

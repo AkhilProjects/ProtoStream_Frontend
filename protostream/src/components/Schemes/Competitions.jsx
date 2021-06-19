@@ -2,13 +2,16 @@ import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import "../../css/Schemes/Competitions.css";
 import codechef from "../../assets/images/Codecheflogo.svg";
-import { schemeFetch } from "../../auth";
+import { isAuthenticated, schemeFetch } from "../../auth";
 
 function Competitions() {
   const [schemes, setSchemes] = useState([]);
 
   const preload = () => {
-    schemeFetch().then((data) => {
+    const user = isAuthenticated();
+    console.log(user);
+    schemeFetch(user.token).then((data) => {
+      console.log(data);
       if (data.error) {
         //redirect to error page...
       } else {

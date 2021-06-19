@@ -50,6 +50,7 @@ const SchemeForm = () => {
   };
 
   const onSubmitHandler = (event) => {
+    console.log(user);
     event.preventDefault();
 
     setValues({ ...values, error: false, loading: true });
@@ -67,90 +68,6 @@ const SchemeForm = () => {
         <div className="container">
           <h1 className="heading">Create new Schemes/Competition</h1>
           <div className="main-container">
-<<<<<<< HEAD
-            <form>
-              <div className="field">
-                <label htmlFor="compTitle">Competition title:</label>
-                <input
-                  type="text"
-                  name="compTitle"
-                  className="input"
-                  onChange={handleChange("compTitle")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="organizer">Organizer:</label>
-                <input
-                  type="text"
-                  name="organizer"
-                  className="input"
-                  onChange={handleChange("organizer")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="deadline">Registration Deadline:</label>
-                <input
-                  type="date"
-                  name="deadline"
-                  className="input"
-                  onChange={handleChange("deadline")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="starting">Starting date:</label>
-                <input
-                  type="date"
-                  name="starting"
-                  className="input"
-                  onChange={handleChange("starting")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="ending">End Date:</label>
-                <input
-                  type="date"
-                  name="ending"
-                  className="input"
-                  onChange={handleChange("ending")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="registrationLink">
-                  Registration Page Link:
-                </label>
-                <input
-                  type="text"
-                  name="registrationLink"
-                  className="input"
-                  onChange={handleChange("registrationLink")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="image">Attach Header Image:</label>
-                <input
-                  type="file"
-                  name="image"
-                  className="file"
-                  onChange={handleChange("image")}
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="files">Attach Details file:</label>
-                <input
-                  type="file"
-                  name="files"
-                  className="file"
-                  onChange={handleChange("files")}
-                />
-              </div>
-              <button className="nextpage" onClick={onSubmitHandler}>
-                Create Competition
-                <img src={check} alt="" />
-              </button>
-            </form>
-
-=======
->>>>>>> 90d808a52e4767a2e93d580c83e025731ab8fed7
             {!isClicked ? (
               <form>
                 <div className="field">
@@ -232,7 +149,6 @@ const SchemeForm = () => {
                   <img src={check} alt="" />
                 </button>
               </form>
-<<<<<<< HEAD
             ) : (
               <div className="submit">
                 <h1>Your Scheme has been Successfully Added.</h1>
@@ -240,17 +156,6 @@ const SchemeForm = () => {
                   <button>Go to Schemes</button>
                 </NavLink>
               </div>
-=======
-              
-            ) 
-            : (
-                <div className="submit">
-                  <h1>Your Scheme has been Successfully Added.</h1>
-                  <NavLink to="/schemes/competitions" className="btn">
-                    <button>Go to Schemes</button>
-                  </NavLink>
-                </div>
->>>>>>> 90d808a52e4767a2e93d580c83e025731ab8fed7
             )}
           </div>
         </div>
