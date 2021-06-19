@@ -1,3 +1,5 @@
+// inside signup...
+
 import React, { useState } from "react";
 import Overlay1 from "../../assets/images/Overlay1.svg";
 import Overlay2 from "../../assets/images/Overlay2.svg";
@@ -18,7 +20,7 @@ function Signup2() {
   const { user } = isAuthenticated();
 
   const handleChange = (name) => (event) => {
-    console.log("inside handlechange",values);
+    console.log("inside handlechange", values);
     setValues({ ...values, error: false, [name]: event.target.value });
   };
 
