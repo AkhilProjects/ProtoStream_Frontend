@@ -73,7 +73,7 @@ const Routes = () => {
           <PrivateRoute path="/projects" exact component={Projects} />
           <PrivateRoute path="/Startups" exact component={Startups} />
           <PrivateRoute
-            path="/Startups/allstartups"
+            path="/Startups/allstartups" 
             exact
             component={AllStartups}
           />

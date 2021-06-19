@@ -36,16 +36,32 @@
   font-size: var(--button);
 }
 
-.dnNDA .container .other-detail {
+.dnNDA .container .form .other-detail {
   width: 100%;
   margin-top: 5rem;
 }
 
-.dnNDA .container .other-detail .subhead {
+.dnNDA .container .form .other-detail .subhead {
   font-size: var(--heading-small);
 }
 
-.dnNDA .container .other-detail .agreement {
+.dnNDA .container .form .other-detail .startup-name {
+  padding: 2rem;
+  background-color: var(--accent-sec);
+  border-radius: 10px;
+}
+
+.dnNDA .container .form .other-detail .startup-name input {
+  padding: 1rem;
+  font-size: var(--span);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 1rem;
+  color: black;
+}
+
+.dnNDA .container .form .other-detail .agreement {
   margin: 1rem 0;
   padding: 2rem;
   font-size: var(--span);
@@ -59,27 +75,27 @@
           align-items: center;
 }
 
-.dnNDA .container .other-detail .agreement .name {
+.dnNDA .container .form .other-detail .agreement .name {
   margin-right: 2rem;
 }
 
-.dnNDA .container .other-detail .agreement .download {
+.dnNDA .container .form .other-detail .agreement .download {
   border: none;
   cursor: pointer;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 
-.dnNDA .container .other-detail .agreement .download:hover {
+.dnNDA .container .form .other-detail .agreement .download:hover {
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
 }
 
-.dnNDA .container .other-detail .action {
+.dnNDA .container .form .other-detail .action {
   margin-top: 2rem;
 }
 
-.dnNDA .container .next {
+.dnNDA .container .form .next {
   position: absolute;
   right: 5%;
   bottom: 5%;
@@ -103,11 +119,11 @@
   transition: all 0.2s ease;
 }
 
-.dnNDA .container .next img {
+.dnNDA .container .form .next img {
   margin-left: 10px;
 }
 
-.dnNDA .container .next:hover {
+.dnNDA .container .form .next:hover {
   background-color: var(--comp-pr);
   cursor: pointer;
 }
