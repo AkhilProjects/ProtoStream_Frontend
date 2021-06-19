@@ -4,7 +4,7 @@ import "../../css/Projects/Form/form.css";
 import check from "../../assets/images/check.svg";
 import { isAuthenticated, schemeSubmit } from "../../auth";
 import { Redirect } from "react-router";
-import {NavLink} from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 const SchemeForm = () => {
   const [values, setValues] = useState({
@@ -22,7 +22,7 @@ const SchemeForm = () => {
   });
 
   const { formData } = values;
-  const [isClicked, setIsClicked] = useState(false)
+  const [isClicked, setIsClicked] = useState(false);
   const user = isAuthenticated();
 
   const preload = () => {
@@ -50,6 +50,7 @@ const SchemeForm = () => {
   };
 
   const onSubmitHandler = (event) => {
+    console.log(user);
     event.preventDefault();
 
     setValues({ ...values, error: false, loading: true });
@@ -58,7 +59,7 @@ const SchemeForm = () => {
       .catch((err) => {
         errorMessage(err)();
       });
-      setIsClicked(true)
+    setIsClicked(true);
   };
 
   const schemeFormMain = () => {
@@ -148,15 +149,13 @@ const SchemeForm = () => {
                   <img src={check} alt="" />
                 </button>
               </form>
-              
-            ) 
-            : (
-                <div className="submit">
-                  <h1>Your Scheme has been Successfully Added.</h1>
-                  <NavLink to="/schemes/competitions" className="btn">
-                    <button>Go to Schemes</button>
-                  </NavLink>
-                </div>
+            ) : (
+              <div className="submit">
+                <h1>Your Scheme has been Successfully Added.</h1>
+                <NavLink to="/schemes/competitions" className="btn">
+                  <button>Go to Schemes</button>
+                </NavLink>
+              </div>
             )}
           </div>
         </div>
