@@ -39,3 +39,14 @@
         }
     }
 }
+
+.startup-card{
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, var(--accent-pr), var(--accent-sec));
+    border-radius: 10px;
+}
