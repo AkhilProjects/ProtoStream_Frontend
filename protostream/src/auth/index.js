@@ -150,3 +150,18 @@ export const optVerify = (userId,otpCode) =>{
       console.log(error);
     });
 }
+
+// nda
+
+export  const ndaUpload = (userId,formData) =>{
+ 
+  return fetch(`${API}/startup/nda/upload/${userId}`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+    },
+    body: formData,
+  })
+    .then((response) => response.json())
+    .catch((error) => error);
+}

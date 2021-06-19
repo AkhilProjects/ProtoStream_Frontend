@@ -8,6 +8,7 @@ function Signup2() {
   const [values, setValues] = useState({
     email: "",
     password: "",
+    confirmPassword: "",
     error: "",
     number: "",
     loading: false,
@@ -17,7 +18,7 @@ function Signup2() {
   const { user } = isAuthenticated();
 
   const handleChange = (name) => (event) => {
-    console.log("inside handlechange");
+    console.log("inside handlechange",values);
     setValues({ ...values, error: false, [name]: event.target.value });
   };
 
@@ -35,7 +36,8 @@ function Signup2() {
 
   const onSubmitSignUp = (event) => {
     event.preventDefault();
-    setValues({ ...values, error: false, loading: true });
+    // setValues({ ...values, error: false, loading: true });
+    console.log(values);
     signup({ email, password, number }).then((data) => {
       if (data.error) {
         // Redirect..
@@ -65,14 +67,14 @@ function Signup2() {
         </div>
         <form action="" className="form">
           <input
-            onChange={handleChange(" email")}
+            onChange={handleChange("email")}
             name="email"
             type="email"
             placeholder="E-mail"
             className="inp-box"
           />
           <input
-            onChange={handleChange("number ")}
+            onChange={handleChange("number")}
             name="number"
             type="number"
             max="10"
@@ -81,15 +83,15 @@ function Signup2() {
             className="inp-box"
           />
           <input
-            onChange={handleChange("password ")}
+            onChange={handleChange("password")}
             name="password"
             type="password"
             placeholder="Password"
             className="inp-box"
           />
           <input
-            onChange={handleChange("password ")}
-            name="password"
+            onChange={handleChange("confirmPassword")}
+            name="confirmPassword"
             type="password"
             placeholder="Confirm Password"
             className="inp-box"
