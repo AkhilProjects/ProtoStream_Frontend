@@ -1,5 +1,3 @@
-// inside signup...
-
 import React, { useState } from "react";
 import Overlay1 from "../../assets/images/Overlay1.svg";
 import Overlay2 from "../../assets/images/Overlay2.svg";

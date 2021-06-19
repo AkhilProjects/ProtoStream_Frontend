@@ -1,0 +1,75 @@
+.RegistrationForm {
+  width: 100%;
+}
+
+.RegistrationForm .heading {
+  margin-left: 6rem;
+  margin-bottom: 1rem;
+}
+
+.RegistrationForm .container {
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+  overflow: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: var(--font-pr);
+  background: linear-gradient(111.9deg, var(--accent-pr), var(--accent-sec));
+  position: relative;
+}
+
+.RegistrationForm .container .form .field-container {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.RegistrationForm .container .form .field-container input, .RegistrationForm .container .form .field-container textarea {
+  width: 70%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-sec);
+}
+
+.RegistrationForm .container .form .field-container .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+}
+
+.RegistrationForm .container .form .field-container .radio .field {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RegistrationForm .container .form .field-container .radio .field label {
+  width: 120%;
+}
+
+.RegistrationForm .container .form .field-container .radio .field input {
+  width: 15%;
+}
+
+.RegistrationForm .container .form .submit-btn {
+  position: absolute;
+}
+/*# sourceMappingURL=RegisterForm.css.map */

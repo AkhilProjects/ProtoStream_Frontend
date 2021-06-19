@@ -52,6 +52,7 @@ import NDAVerification from "./components/Startups/Form/NDAVerification";
 
 import Signin from './components/Authentication/Signin'
 import Signup2 from './components/Authentication/Signup'
+import RegistrationForm from "./components/Startups/Form/RegistrationForm";
 
 
 
@@ -87,6 +88,11 @@ const Routes = () => {
             path="/Startups/NDA-Verification"
             exact
             component={NDAVerification}
+          />
+          <PrivateRoute
+            path="/Startups/Startup-form"
+            exact
+            component={RegistrationForm}
           />
           <PrivateRoute
             path="/Startups/allstartups"
