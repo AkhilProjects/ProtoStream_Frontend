@@ -19,6 +19,8 @@
   position: relative;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .step-link .step {
@@ -30,6 +32,8 @@
   font-size: var(--heading-main);
   margin-bottom: 4rem;
   color: var(--accent-sec);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .step-link .step .sub-head {
@@ -48,6 +52,11 @@
 }
 
 .step-link:hover {
+  color: var(--text-pr);
+  background-color: var(--accent-sec);
+}
+
+.step-link:hover .heading {
   color: var(--text-pr);
 }
 /*# sourceMappingURL=Step.css.map */
