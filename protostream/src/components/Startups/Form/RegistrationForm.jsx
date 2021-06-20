@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { isAuthenticated, startupFormSubmit } from "../../../auth";
 import "../css/RegisterForm.css";
 
-function RegistrationForm() {
+const RegistrationForm = (props) => {
   const [values, setValues] = useState({
     StartupName: "",
     StartupDomain: "",
@@ -14,7 +14,7 @@ function RegistrationForm() {
     ProjectSummary: "",
     Link: "",
     StartupBreif: "",
-    presentationFile: "",
+    presentation: "",
     // CofounderName: "",
     // CofounderEmail: "",
     // CofounderNumber: "",
@@ -22,9 +22,7 @@ function RegistrationForm() {
   });
 
   const preload = () => {
-    console.log("preload working");
     setValues({ ...values, formData: new FormData() });
-    console.log(values);
   };
   useEffect(() => {
     preload();
@@ -33,25 +31,18 @@ function RegistrationForm() {
   const { formData } = values;
   const handleChange = (name) => (event) => {
     let value;
-    if (name === "presentationFile") value = event.target.files[0];
+    if (name === "presentation") value = event.target.files[0];
     else value = event.target.value;
 
     formData.set(name, value);
-    // for (var pair of formData.entries()) {
-    //   console.log(pair[0] + ", " + pair[1]);
-    // }
-    // console.log(values);
 
     setValues({ ...values, [name]: value });
   };
 
   const onSubmitHandler = () => {
-    // for (var pair of formData.entries()) {
-    //   console.log(pair[0] + ", " + pair[1]);
-    // }
-    // console.log(values);
     const userId = isAuthenticated().user._id;
-    startupFormSubmit(formData, userId)
+    const { ndaId } = props.location.state;
+    startupFormSubmit(formData, userId, ndaId)
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
   };
@@ -212,8 +203,8 @@ function RegistrationForm() {
           <div className="field-container">
             <label htmlFor="">*Presentation File:</label>
             <input
-              name="presentationFile"
-              onChange={handleChange("presentationFile")}
+              name="presentation"
+              onChange={handleChange("presentation")}
               type="file"
             />
           </div>
@@ -229,6 +220,6 @@ function RegistrationForm() {
       </div>
     </div>
   );
-}
+};
 
 export default RegistrationForm;

@@ -17,6 +17,7 @@ function Steps() {
         icon={Badge}
         link="verify"
         isdisabled={disabled}
+        isStepOne={true}
       />
       <Step
         head="Step 2"
@@ -24,8 +25,10 @@ function Steps() {
         icon={Download}
         link="download-NDA"
         isdisabled={false}
+        isStepOne={false}
       />
       <Step
+        isStepOne={false}
         head="Step 3"
         subHead="Upload NDA and Startup Name"
         icon={Upload}
