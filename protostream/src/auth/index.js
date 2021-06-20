@@ -165,3 +165,12 @@ export  const ndaUpload = (userId,formData) =>{
     .then((response) => response.json())
     .catch((error) => error);
 }
+
+export const fetchNda = (userId) =>{
+  
+  return fetch(`${API}/myndas/${userId}`, {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .catch((err) => console.log(err));
+}
