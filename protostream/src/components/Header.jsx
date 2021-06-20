@@ -6,27 +6,22 @@ import { isAuthenticated } from "../auth";
 
 const Header = () => {
   const [click, setClick] = useState(false);
-
+  // const [user, setUser] = useState(isAuthenticated());
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-
-  // const dashboard = ()=>{
-  //   return (
-
-  //   )
-  // }
+  const { user } = isAuthenticated();
 
   return (
     <header className="header">
-      <NavLink to={isAuthenticated() ? "/" : "/"} className="navbar-logo">
+      <NavLink to={user ? "/" : "/"} className="navbar-logo">
         <img src={logo} alt="" className="logo" />
       </NavLink>
       <div className="menu-icon" onClick={handleClick}>
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        {isAuthenticated() && isAuthenticated().user.role === 0 ? (
+        {user && user.role === 0 ? (
           <li className="nav-item">
             <NavLink
               to="/user/dashboard"
@@ -36,8 +31,7 @@ const Header = () => {
               Dashboard
             </NavLink>
           </li>
-        ) :
-         (
+        ) : (
           <li className="nav-item">
             <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
               Home
@@ -71,7 +65,7 @@ const Header = () => {
             Schemes
           </NavLink>
         </li>
-        {isAuthenticated() && isAuthenticated().user.role === 1 ? (
+        {user && user.role === 1 ? (
           <NavLink to="/user/startups" className="buttons">
             <button className="btn">Startups</button>
           </NavLink>
@@ -87,7 +81,7 @@ const Header = () => {
           </li>
         )}
       </ul>
-      {!isAuthenticated() ? (
+      {!user ? (
         <NavLink to="/login" className="buttons">
           <button className="btn">Login</button>
         </NavLink>

@@ -64,6 +64,7 @@ export const isAuthenticated = () => {
     console.log("jwt not found");
     return false;
   }
+  
 
   if (localStorage.getItem("jwt")) {
     return JSON.parse(localStorage.getItem("jwt"));

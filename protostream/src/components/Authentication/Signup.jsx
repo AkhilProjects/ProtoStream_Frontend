@@ -3,14 +3,16 @@ import Overlay1 from "../../assets/images/Overlay1.svg";
 import Overlay2 from "../../assets/images/Overlay2.svg";
 import { authenticate, isAuthenticated, signup } from "../../auth";
 import "../../css/Auth/Sign.css";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory, withRouter } from "react-router-dom";
 function Signup2() {
+  const history = useHistory();
+
   const [values, setValues] = useState({
-    email: "",
-    password: "",
-    confirmPassword: "",
+    email: "akhil.1923cs1028@kiet.edu",
+    password: "12345",
+    confirmPassword: "12345",
     error: "",
-    number: "",
+    number: "1234567",
     loading: false,
     didRedirect: false,
   });
@@ -29,7 +31,8 @@ function Signup2() {
       console.log(user);
       if (user && user.role === 0) {
         console.log("inside redirect    ");
-        return <Redirect to="/dashboard" />;
+        // return history.push("/user/dasboard");
+        return <Redirect to="/user/dashboard" />;
       }
     }
   };
@@ -47,7 +50,9 @@ function Signup2() {
           ...values,
           didRedirect: true,
         });
+
         performRedirect();
+        console.log(history);
       });
     });
   };

@@ -153,7 +153,7 @@ const Routes = () => {
             component={SchemeForm}
           />
           {/* <Route path="/about" exact component={About} /> */}
-          <PrivateRoute path="/error_404" exact component={Error404} />
+          <Route path="/error_404" exact component={Error404} />
           <PrivateRoute path="/error_99" exact component={Error99} />
           {/* <Route path="/signup" exact component={Signup} /> */}
           <Route path="/signin" exact component={Signin} />

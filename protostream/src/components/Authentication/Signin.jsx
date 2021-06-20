@@ -3,17 +3,19 @@ import Overlay1 from "../../assets/images/Overlay1.svg";
 import Overlay2 from "../../assets/images/Overlay2.svg";
 import { authenticate, isAuthenticated, signin } from "../../auth";
 import "../../css/Auth/Sign.css";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 
 function Signin() {
+  const history = useHistory();
   const [values, setValues] = useState({
-    email: "test.1923cs1029@kiet.edu",
-    password: "12345",
+    email: "akhil.1923cs1029@kiet.edu",
+    password: "akhilsiraswal",
     error: "",
     loading: false,
     didRedirect: false,
   });
   const { email, password, error, loading, didRedirect } = values;
+
   const { user } = isAuthenticated();
 
   const handleChange = (name) => (event) => {
@@ -27,6 +29,7 @@ function Signin() {
     signin({ email, password }).then((data) => {
       if (data.error) {
         setValues({ ...values, error: data.error, loading: false });
+        history.push("/error_404");
       } else {
         authenticate(data, () => {
           setValues({
@@ -41,11 +44,9 @@ function Signin() {
 
   const performRedirect = () => {
     console.log("inside performRedirect");
+    const { user } = isAuthenticated();
     if (didRedirect) {
-      console.log("inside did redirect");
-      console.log(user);
       if (user && user.role === 0) {
-        console.log("inside redirect    ");
         return <Redirect to="/dashboard" />;
       }
     }
