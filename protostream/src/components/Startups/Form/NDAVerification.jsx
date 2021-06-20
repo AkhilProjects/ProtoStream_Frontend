@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "../css/Ndaverify.css";
-import { NavLink } from "react-router-dom";
-import { fetchNda, isAuthenticated } from "../../../auth";
-
+import {NavLink} from 'react-router-dom' 
+import fly from '../../../assets/images/fly.svg'
+import clock from '../../../assets/images/clock.svg'
+import hourglass from '../../../assets/images/hourglass.svg'
+import complete from '../../../assets/images/complete.svg'
+import {fetchNda, isAuthenticated} from '../../../auth/index'
 function NDAVerification() {
   // const [aprooved, setAprooved] = useState(true);
   const [values, setValues] = useState({
@@ -61,29 +64,30 @@ function NDAVerification() {
   );
 }
 
-function Startup({ name, isApproved }) {
-  return (
-    <div className="startup-card">
-      <div className="sec">
-        <img src="" alt="" className="status-icon" />
-        <p className="startup-name">{name}</p>
-      </div>
-      <p className="status">
-        {isApproved
-          ? " Your NDA has been Approved by TBI"
-          : " Your NDA has been sent for Approval to the TBI"}
-      </p>
-      {isApproved ? (
-        <NavLink to="/Startups/Startup-form" className="navlink">
+function Startup({name, isApproved}) {
+    return (
+      <div className="startup-card">
+        <div className="sec">
+          <img src={isApproved ? complete : hourglass} alt="" className="status-icon" />
+          <p className="startup-name">{name}</p>
+        </div>
+        <p className="status">
+          {isApproved
+            ? " Your NDA has been Approved by TBI"
+            : " Your NDA has been sent for Approval to the TBI"}
+        </p>
+        {isApproved ? (
+          <NavLink to="/Startups/Startup-form" className="navlink">
+            <button className="btn">
+              Go for Startup <img src={fly} alt="" />
+            </button>
+          </NavLink>
+        ) : (
           <button className="btn">
-            Go for Startup <img src="" alt="" />
+            Request Again <img src={clock} alt="" />
           </button>
-        </NavLink>
-      ) : (
-        <button className="btn">
-          Request Again <img src="" alt="" />
-        </button>
-      )}
+        
+      ) }
     </div>
   );
 }
