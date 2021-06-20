@@ -16,7 +16,7 @@ function Signin() {
   });
   const { email, password, error, loading, didRedirect } = values;
 
-  const { user } = isAuthenticated();
+  // const { user } = isAuthenticated();
 
   const handleChange = (name) => (event) => {
     console.log("inside handlechange");
@@ -47,6 +47,7 @@ function Signin() {
     const { user } = isAuthenticated();
     if (didRedirect) {
       if (user && user.role === 0) {
+        return history.push("/user/dasboard");
         return <Redirect to="/dashboard" />;
       }
     }
