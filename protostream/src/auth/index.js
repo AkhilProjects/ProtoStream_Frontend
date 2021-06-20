@@ -174,3 +174,13 @@ export const fetchNda = (userId) =>{
     .then((response) => response.json())
     .catch((err) => console.log(err));
 }
+
+export const startupFormSubmit = (formData,userId) =>{
+  return fetch(`${API}/createstartup/${userId}`,{
+    method:"POST",
+    headers:{
+      Accept:"application/json",
+    },
+    body:formData
+  }).then(response => response.json()).catch(error => error)
+}

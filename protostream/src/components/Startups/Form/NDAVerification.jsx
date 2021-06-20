@@ -52,7 +52,7 @@ function NDAVerification() {
                 return (
                   <Startup
                     name={nda.StartupName}
-                    isApproved={nda.VerifiedByTbi}
+                    isApproved={nda.VerifyByTBI}
                   />
                 );
               })
