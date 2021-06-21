@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../css/DashBoard/dashboard.css";
 import profile from "../../assets/images/profile.svg";
 import ListCard from "../Startups/ListCard";
@@ -9,18 +9,29 @@ import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
 
 const Dashboard = () => {
+  // window.location.reload();
+  const [load, setLoad] = useState();
+  const preload = () => {
+    if (load === true) setLoad(false);
+  };
+  useEffect(() => {
+    preload();
+  }, []);
+
   const { user } = isAuthenticated();
   const { Profilename, ProfileBranch, ProfileYear } = user.profiledata;
 
   let history = useHistory();
   const onClickLogout = () => {
     signout(() => {
-      history.push("/login");
+      history.push("/");
+      window.location.reload();
     });
   };
   const onClickMyProjects = () => {};
 
   const dashboardForm = () => {
+    // window.location.reload();
     return (
       <div className="dashboard">
         <div className="Container">

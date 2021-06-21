@@ -3,20 +3,27 @@ import Overlay1 from "../../assets/images/Overlay1.svg";
 import Overlay2 from "../../assets/images/Overlay2.svg";
 import { authenticate, isAuthenticated, signin } from "../../auth";
 import "../../css/Auth/Sign.css";
-import { Redirect, useHistory } from "react-router-dom";
+import { Redirect, useHistory, withRouter } from "react-router-dom";
 
 function Signin() {
   const history = useHistory();
   const [values, setValues] = useState({
     email: "akhil.1923cs1029@kiet.edu",
     password: "akhilsiraswal",
+    // email:"",
+    // password:"",
     error: "",
     loading: false,
     didRedirect: false,
   });
   const { email, password, error, loading, didRedirect } = values;
 
-  // const { user } = isAuthenticated();
+
+  const signinError = () => {
+    if (error) {
+      return <Redirect to="/error_404" />;
+    }
+  };
 
   const handleChange = (name) => (event) => {
     console.log("inside handlechange");
@@ -36,24 +43,23 @@ function Signin() {
             ...values,
             didRedirect: true,
           });
-          performRedirect();
         });
       }
     });
   };
 
   const performRedirect = () => {
-    console.log("inside performRedirect");
     const { user } = isAuthenticated();
     if (didRedirect) {
-      if (user && user.role === 0) {
-        return history.push("/user/dasboard");
-        return <Redirect to="/dashboard" />;
+      console.log(user);
+      if (user && user.role === 1) {
+        history.push("/user/dashboard");
+        window.location.reload();
       }
     }
   };
 
-  return (
+  const signinForm = () => (
     <section className="auth">
       <div className="overlay1">
         <img src={Overlay1} alt="" />
@@ -96,6 +102,14 @@ function Signin() {
       </div>
     </section>
   );
+
+  return (
+    <div>
+      {performRedirect()}
+      {signinForm()}
+      {signinError()}
+    </div>
+  );
 }
 
-export default Signin;
+export default withRouter(Signin);

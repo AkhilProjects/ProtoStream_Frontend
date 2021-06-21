@@ -21,7 +21,8 @@ const Header = () => {
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        {user && user.role === 0 ? (
+        {/* Designing Dashboard According to user roless...  pending */}
+        {user && user.role === 1 ? (
           <li className="nav-item">
             <NavLink
               to="/user/dashboard"
