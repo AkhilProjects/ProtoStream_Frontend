@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import "../css/header.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 import { isAuthenticated } from "../auth";
 
 const Header = () => {
+  const history = useHistory();
   const [click, setClick] = useState(false);
   // const [user, setUser] = useState(isAuthenticated());
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const { user } = isAuthenticated();
+  const { user, error } = isAuthenticated();
+  const errorRedirect = () => {
+    if (error) {
+      history.push("/error_99");
+      window.location.reload();
+    }
+  };
 
-  return (
+  const headerElement = () => (
     <header className="header">
       <NavLink to={user ? "/" : "/"} className="navbar-logo">
         <img src={logo} alt="" className="logo" />
@@ -67,7 +74,7 @@ const Header = () => {
           </NavLink>
         </li>
         {user && user.role === 1 ? (
-          <NavLink to="/user/startups" className="buttons">
+          <NavLink to="/startups" className="buttons">
             <button className="btn">Startups</button>
           </NavLink>
         ) : (
@@ -90,6 +97,13 @@ const Header = () => {
         ""
       )}
     </header>
+  );
+
+  return (
+    <div>
+      {errorRedirect()}
+      {headerElement()}
+    </div>
   );
 };
 

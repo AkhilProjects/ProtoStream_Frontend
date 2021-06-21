@@ -186,3 +186,9 @@ export const startupFormSubmit = (formData,userId,ndaId) =>{
     body:formData
   }).then(response => response.json()).catch(error => error)
 }
+
+export const fetchStartups = () =>{
+  return fetch(`${API}/allstartups`,{
+    method:"GET",
+  }).then(response =>response.json()).catch(error => error)
+}

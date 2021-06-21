@@ -25,14 +25,10 @@ function Signup2() {
   };
 
   const performRedirect = () => {
-    console.log("inside performRedirect");
     if (didRedirect) {
-      console.log("inside did redirect");
-      console.log(user);
       if (user && user.role === 0) {
-        console.log("inside redirect    ");
-        // return history.push("/user/dasboard");
-        return <Redirect to="/user/dashboard" />;
+        history.push("/user/dasboard");
+        window.location.reload();
       }
     }
   };
@@ -40,7 +36,6 @@ function Signup2() {
   const onSubmitSignUp = (event) => {
     event.preventDefault();
     // setValues({ ...values, error: false, loading: true });
-    console.log(values);
     signup({ email, password, number }).then((data) => {
       if (data.error) {
         // Redirect..
@@ -50,14 +45,11 @@ function Signup2() {
           ...values,
           didRedirect: true,
         });
-
-        performRedirect();
-        console.log(history);
       });
     });
   };
 
-  return (
+  const signupForm = () => (
     <section className="auth">
       <div className="overlay1">
         <img src={Overlay1} alt="" />
@@ -111,6 +103,13 @@ function Signup2() {
         </form>
       </div>
     </section>
+  );
+
+  return (
+    <div>
+      {performRedirect()}
+      {signupForm()}
+    </div>
   );
 }
 
