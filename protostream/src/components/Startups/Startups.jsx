@@ -1,27 +1,22 @@
 import React, { useState, useEffect } from "react";
 import ListCard from "./ListCard";
 import "./css/AllStartups.css";
-import { fetchStartups } from "../../auth";
+import { fetchStartups, isAuthenticated } from "../../auth";
 
 function AllStartups() {
-  const [values, setValues] = useState({ value: [] });
+  const [values, setValues] = useState([]);
 
   const laodStartups = () => {
-    fetchStartups().then((response) => {
-      response.map((startup) => {
-        console.log(startup);
-        return (
-          <ListCard
-            key={startup._id}
-            name={startup.StartupName}
-            desc={startup.ProjectSummary}
-            branch="CSE"
-            founder={startup.FounderName}
-          />
-        );
-      });
+    const UserId = isAuthenticated().user._id;
+    fetchStartups(UserId).then((response) => {
+      console.log(response);
+      setValues(response);
     });
   };
+
+  useEffect(() => {
+    laodStartups();
+  }, []);
 
   return (
     <div className="all-Startups">
@@ -30,7 +25,19 @@ function AllStartups() {
         <div className="navigation">
           <input type="text" className="search" placeholder="search..." />
         </div>
-        <div className="list-container">{laodStartups()}</div>
+        <div className="list-container">
+          {values.map((startup) => {
+            return (
+              <ListCard
+                key={startup._id}
+                name={startup.StartupName}
+                desc={startup.ProjectSummary}
+                branch="CSE"
+                founder={startup.FounderName}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./css/dnda.css";
 import upload from "../../assets/images/upload.svg";
 import arrow from "../../assets/images/arrow.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { isAuthenticated, ndaUpload } from "../../auth";
 
 function UNDA() {
+  const history = useHistory();
+  const [didRedirect, setDidRedirect] = useState(false);
   const [data, setData] = useState({
     StartupName: "",
     uploadnda: "",
@@ -39,13 +41,24 @@ function UNDA() {
     setData({ ...data, error: false, loading: true });
 
     ndaUpload(userId, formData)
-      .then()
+      .then((response) => {
+        setDidRedirect(true);
+      })
       .catch((err) => {
         // errorMessage(err)();
       });
   };
 
-  return (
+  const performRedirect = () => {
+    const { user } = isAuthenticated();
+    if (didRedirect) {
+      console.log(user);
+
+      history.push("/user/dashboard");
+      window.location.reload();
+    }
+  };
+  const uploadForm = () => (
     <div className="dnNDA">
       <h1 className="main-head">Upload NDA</h1>
       <div className="container">
@@ -87,6 +100,13 @@ function UNDA() {
           </NavLink>
         </form>
       </div>
+    </div>
+  );
+
+  return (
+    <div>
+      {uploadForm()}
+      {performRedirect()}
     </div>
   );
 }

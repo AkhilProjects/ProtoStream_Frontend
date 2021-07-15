@@ -18,7 +18,6 @@ function Signin() {
   });
   const { email, password, error, loading, didRedirect } = values;
 
-
   const signinError = () => {
     if (error) {
       return <Redirect to="/error_404" />;
@@ -54,6 +53,9 @@ function Signin() {
       console.log(user);
       if (user && user.role === 1) {
         history.push("/user/dashboard");
+        window.location.reload();
+      } else if (user && user.role === 2) {
+        history.push("/user/TBI-dashboard");
         window.location.reload();
       }
     }

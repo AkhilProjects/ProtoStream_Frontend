@@ -8,6 +8,7 @@ import { isAuthenticated, otp } from "../../auth";
 
 function Steps() {
   const [disabled, setDisabled] = useState(false);
+  const [isStepOne, setIsStepOne] = useState(true)
 
   return (
     <div className="Steps">
@@ -16,8 +17,8 @@ function Steps() {
         subHead="Register Mobile Number and download NDA"
         icon={Badge}
         link="verify"
-        isdisabled={disabled}
-        isStepOne={true}
+        isdisabled={true}
+        isStepOne={isStepOne}
       />
       <Step
         head="Step 2"

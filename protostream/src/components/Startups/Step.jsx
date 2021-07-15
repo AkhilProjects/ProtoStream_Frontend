@@ -5,10 +5,11 @@ import { isAuthenticated, otp } from "../../auth";
 
 function Step({ head, subHead, link, icon, isdisabled, isStepOne }) {
   const onClickStep1Handler = () => {
-    const user = isAuthenticated().user._id;
-    console.log(user);
 
+    const user = isAuthenticated().user._id;
+  
     if (isStepOne) {
+      
       console.log("inside stepOne");
       otp(user)
         .then((data) => {})

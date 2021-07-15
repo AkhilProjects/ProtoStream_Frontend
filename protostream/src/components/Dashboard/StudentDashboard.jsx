@@ -3,17 +3,26 @@ import "../../css/DashBoard/dashboard.css";
 import profile from "../../assets/images/profile.svg";
 import ListCard from "../Startups/ListCard";
 import Box from "./components/Box";
-import { isAuthenticated, signout } from "../../auth";
+import { allHackathons, isAuthenticated, signout } from "../../auth";
 import { NavLink, useHistory } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
 
 const Dashboard = () => {
-  // window.location.reload();
   const [load, setLoad] = useState();
+  const [hackathons, setHackathons] = useState([]);
+
   const preload = () => {
     if (load === true) setLoad(false);
+    allHackathons()
+      .then((response) => {
+        setHackathons(response);
+        console.log(response);
+      })
+      .catch();
+    // console.log(allHackathons());
   };
+
   useEffect(() => {
     preload();
   }, []);
@@ -67,10 +76,14 @@ const Dashboard = () => {
                 List of your enrolled projects/startups
               </div>
               <div className="projects-container">
-                <ListCard />
-                <ListCard />
-                <ListCard />
-                <ListCard />
+                {hackathons.map((hackathon) => (
+                  <ListCard
+                    name={hackathon.TeamName}
+                    desc={hackathon.AddDescription}
+                    branch={hackathon.Branch}
+                    founder={hackathon.TeamLeader}
+                  />
+                ))}
               </div>
             </div>
           </Main>

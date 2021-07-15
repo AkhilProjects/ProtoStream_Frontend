@@ -1,7 +1,5 @@
 const { API } = require("../backend");
 
-
-
 export const signup = (user) => {
   return fetch(`${API}/register`, {
     method: "POST",
@@ -19,7 +17,6 @@ export const signup = (user) => {
       console.log(error);
     });
 };
-
 
 export const signin = (user) => {
   return fetch(`${API}/login`, {
@@ -64,7 +61,6 @@ export const isAuthenticated = () => {
     console.log("jwt not found");
     return false;
   }
-  
 
   if (localStorage.getItem("jwt")) {
     return JSON.parse(localStorage.getItem("jwt"));
@@ -73,7 +69,6 @@ export const isAuthenticated = () => {
     return false;
   }
 };
-
 
 export const schemeFetch = (token) => {
   return fetch(`${API}/schemes/allSchemes/`, {
@@ -95,7 +90,6 @@ export const schemeSubmit = (userId, scheme) => {
     .then((response) => response.json())
     .catch((error) => error);
 };
-
 
 export const hackathonSubmit = (hackathon, userId) => {
   console.log("inside hackathon submit", hackathon);
@@ -127,14 +121,15 @@ export const allHackathons = () => {
 // Startups..
 
 export const otp = (userId) => {
-  
+  console.log("inside");
+
   return fetch(`${API}/startup/register/${userId}`, {
     method: "GET",
   })
     .then((response) => response.json())
     .catch((err) => console.log(err));
-}
-export const optVerify = (userId,otpCode) =>{
+};
+export const optVerify = (userId, otpCode) => {
   return fetch(`${API}/startup/verify/${userId}`, {
     method: "POST",
     headers: {
@@ -150,12 +145,11 @@ export const optVerify = (userId,otpCode) =>{
       console.log("inside error");
       console.log(error);
     });
-}
+};
 
 // nda
 
-export  const ndaUpload = (userId,formData) =>{
- 
+export const ndaUpload = (userId, formData) => {
   return fetch(`${API}/startup/nda/upload/${userId}`, {
     method: "POST",
     headers: {
@@ -165,30 +159,33 @@ export  const ndaUpload = (userId,formData) =>{
   })
     .then((response) => response.json())
     .catch((error) => error);
-}
+};
 
-export const fetchNda = (userId) =>{
-  
+export const fetchNda = (userId) => {
   return fetch(`${API}/myndas/${userId}`, {
     method: "GET",
   })
     .then((response) => response.json())
     .catch((err) => console.log(err));
-}
+};
 
-export const startupFormSubmit = (formData,userId,ndaId) =>{
-  console.log(ndaId)
-  return fetch(`${API}/createstartup/${ndaId}/${userId}`,{
-    method:"POST",
-    headers:{
-      Accept:"application/json",
+export const startupFormSubmit = (formData, userId, ndaId) => {
+  console.log(ndaId);
+  return fetch(`${API}/createstartup/${ndaId}/${userId}`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
     },
-    body:formData
-  }).then(response => response.json()).catch(error => error)
-}
+    body: formData,
+  })
+    .then((response) => response.json())
+    .catch((error) => error);
+};
 
-export const fetchStartups = () =>{
-  return fetch(`${API}/allstartups`,{
-    method:"GET",
-  }).then(response =>response.json()).catch(error => error)
-}
+export const fetchStartups = (UserId) => {
+  return fetch(`${API}/startups/allstartups/${UserId}`, {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .catch((error) => error);
+};
