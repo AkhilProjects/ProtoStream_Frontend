@@ -90,7 +90,7 @@ const Header = () => {
         )}
       </ul>
       {!user ? (
-        <NavLink to="/login" className="buttons">
+        <NavLink to="/signin" className="buttons">
           <button className="btn">Login</button>
         </NavLink>
       ) : (
